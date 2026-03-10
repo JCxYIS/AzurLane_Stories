@@ -27,29 +27,34 @@ def main():
 
     args = parser.parse_args()
 
-    print(f"Initializing StoryReader with data dir: {args.data_dir}")
-    try:
-        reader = StoryReader(data_dir=args.data_dir)
-        parsed_stories = reader.get_parsed_stories()
-        print(f"Successfully loaded and parsed {len(parsed_stories)} story groups.")
-    except Exception as e:
-        print("Failed to read story data.")
-        traceback.print_exc()
-        sys.exit(1)
-
+    regions = ["CN", "EN", "JP", "KR", "TW"]
     print(f"Initializing MarkdownWriter with output dir: {args.out_dir}")
-    try:
-        writer = MarkdownWriter(output_dir=args.out_dir)
-        writer.generate_stories(
-            parsed_stories=parsed_stories,
-            story_reader=reader,
-            overwrite=args.overwrite
-        )
-        print("Done generating markdown stories.")
-    except Exception as e:
-        print("Failed to write markdown stories.")
-        traceback.print_exc()
-        sys.exit(1)
+    writer = MarkdownWriter(output_dir=args.out_dir)
+
+    for region in regions:
+        print(f"\n--- Processing Region: {region} ---")
+        try:
+            reader = StoryReader(data_dir=args.data_dir, region=region)
+            parsed_stories = reader.get_parsed_stories()
+            print(f"Successfully loaded and parsed {len(parsed_stories)} story groups for {region}.")
+        except Exception as e:
+            print(f"Failed to read story data for {region}.")
+            traceback.print_exc()
+            continue
+
+        try:
+            writer.generate_stories(
+                parsed_stories=parsed_stories,
+                story_reader=reader,
+                overwrite=args.overwrite
+            )
+            print(f"Done generating markdown stories for {region}.")
+        except Exception as e:
+            print(f"Failed to write markdown stories for {region}.")
+            traceback.print_exc()
+            continue
+
+    print("\nDone generating markdown stories for all regions.")
 
 if __name__ == "__main__":
     main()

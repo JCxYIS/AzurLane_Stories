@@ -13,13 +13,16 @@ class MarkdownWriter:
         parsed_stories: { story_group: { chapter: [scripts...] } }
         story_reader: instance of StoryReader needed to resolve actors
         """
-        index_lines = ["# Azur Lane JP Stories\n"]
+        region = getattr(story_reader, "region", "JP").lower()
+        region_upper = region.upper()
+        
+        index_lines = [f"# Azur Lane {region_upper} Stories\n"]
         
         for group, chapters in parsed_stories.items():
-            group_dir = os.path.join(self.output_dir, group, "jp")
+            group_dir = os.path.join(self.output_dir, group, region)
             os.makedirs(group_dir, exist_ok=True)
             
-            index_lines.append(f"- [{group}](./stories/{group}/)\n")
+            index_lines.append(f"- [{group}](./stories/{group}/{region}/)\n")
             
             for chapter, scripts in chapters.items():
                 
@@ -39,7 +42,7 @@ class MarkdownWriter:
 
         # Write global index
         os.makedirs(self.output_dir, exist_ok=True)
-        index_filepath = os.path.join(os.path.dirname(self.output_dir), "index.md")
+        index_filepath = os.path.join(os.path.dirname(self.output_dir), f"index_{region}.md")
         with open(index_filepath, 'w', encoding='utf-8') as f:
             f.writelines(index_lines)
             

@@ -3,10 +3,12 @@ import re
 import os
 
 class StoryReader:
-    def __init__(self, data_dir="f:/AZL_ScriptSite/AzurLaneData"):
+    def __init__(self, data_dir="f:/AZL_ScriptSite/AzurLaneData", region="JP"):
         self.data_dir = data_dir
-        self.story_filepath = os.path.join(data_dir, "JP", "GameCfg", "storyjp.json")
-        self.ship_skin_filepath = os.path.join(data_dir, "JP", "ShareCfg", "ship_skin_template.json")
+        self.region = region
+        story_filename = "storyjp.json" if region == "JP" else "story.json"
+        self.story_filepath = os.path.join(data_dir, region, "GameCfg", story_filename)
+        self.ship_skin_filepath = os.path.join(data_dir, region, "ShareCfg", "ship_skin_template.json")
         self.stories = {}
         self.skin_templates = {}
         self._load_data()
