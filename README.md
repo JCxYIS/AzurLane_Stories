@@ -1,5 +1,15 @@
 # AZL_ScriptSite
 
+## Terms
+
+```
+Group       |  [1, 2, ..., 298, ...]
+↓                          ^^^
+Memories    |  [3911, 3912, 3913, ..., 3923]
+↓                     ^^^^
+Stories     |  [..., MAIZANGYUBIANZHIHUA1, ...]
+```
+
 ## Implementation
 
 ### Git Sparse checkout init

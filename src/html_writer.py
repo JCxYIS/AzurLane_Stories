@@ -8,18 +8,18 @@ class HtmlWriter:
 
     def generate_stories(self, aggregated_stories, story_readers_by_region, overwrite=False):
         """
-        aggregated_stories: { story_group: { region: { chapter: [scripts...] } } }
+        aggregated_stories: { group_id: { "titles": {region: title}, "regions": { region: { chapter: [scripts...] } } } }
         story_readers_by_region: { "EN": StoryReaderObject, "JP": StoryReaderObject, ... }
         """
         # Global index
         os.makedirs(self.output_dir, exist_ok=True)
         index_filepath = os.path.join(os.path.dirname(self.output_dir), "index.html")
         
-        self._write_global_index(index_filepath, list(aggregated_stories.keys()))
+        self._write_global_index(index_filepath, aggregated_stories)
         
         # Write individual group pages
-        for group, regions_data in aggregated_stories.items():
-            group_dir = os.path.join(self.output_dir, group)
+        for group_id, group_data in aggregated_stories.items():
+            group_dir = os.path.join(self.output_dir, str(group_id))
             os.makedirs(group_dir, exist_ok=True)
             page_filepath = os.path.join(group_dir, "index.html")
             
@@ -27,10 +27,19 @@ class HtmlWriter:
                 print(f"Skipping HTML generation for {page_filepath} (already exists)")
                 continue
                 
-            self._write_group_page(page_filepath, group, regions_data, story_readers_by_region)
+            self._write_group_page(page_filepath, str(group_id), group_data, story_readers_by_region)
 
-    def _write_global_index(self, filepath, groups):
-        # HTML template for grid with CSS
+    def _write_global_index(self, filepath, aggregated_stories):
+        # Extract titles for JS
+        groups_data = {}
+        for g_id, data in aggregated_stories.items():
+            groups_data[str(g_id)] = {
+                "titles": data.get("titles", {}),
+                "type": data.get("type", "Unknown")
+            }
+            
+        json_groups = json.dumps(groups_data, ensure_ascii=False)
+        
         html_content = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,9 +56,50 @@ class HtmlWriter:
         }}
         h1 {{
             text-align: left;
+            margin-bottom: 10px;
+        }}
+        .header-controls {{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             border-bottom: 2px solid #ccc;
             padding-bottom: 10px;
             margin-bottom: 30px;
+        }}
+        .tabs {{
+            display: flex;
+            gap: 15px;
+        }}
+        .tab-btn {{
+            background: none;
+            border: none;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #777;
+            cursor: pointer;
+            padding: 5px 10px;
+            transition: color 0.2s;
+        }}
+        .tab-btn.active {{
+            color: #000;
+            border-bottom: 3px solid #000;
+        }}
+        .tab-btn:hover {{ color: #000; }}
+        
+        .sections-container {{
+            display: flex;
+            flex-direction: column;
+        }}
+        .type-section {{
+            margin-bottom: 40px;
+        }}
+        .type-header {{
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            color: #444;
+            font-size: 1.5em;
+            font-weight: bold;
         }}
         .grid-container {{
             display: grid;
@@ -96,19 +146,129 @@ class HtmlWriter:
     </style>
 </head>
 <body>
-    <h1>Azur Lane Stories</h1>
-    <div class="grid-container">
-"""
-        for group in sorted(groups):
-            # Fallback handling for empty chapter if any.
-            html_content += f"""
-        <a href="./stories/{group}/index.html" class="card">
-            <div class="card-img-placeholder">Image Placeholder</div>
-            <div class="card-title">{group}</div>
-        </a>"""
-
-        html_content += """
+    <div class="header-controls">
+        <h1>Azur Lane Stories</h1>
+        <div class="tabs" id="region-tabs"></div>
     </div>
+    
+    <div class="sections-container" id="sections-container">
+    </div>
+
+    <script id="groups-data" type="application/json">
+        {json_groups}
+    </script>
+
+    <script>
+        const groupsData = JSON.parse(document.getElementById('groups-data').textContent);
+        const regionTabsContainer = document.getElementById('region-tabs');
+        const sectionsContainer = document.getElementById('sections-container');
+        
+        const regionOrder = ["EN", "CN", "JP", "KR", "TW"];
+        let currentRegion = "JP"; // Default
+        
+        // Define human readable form for types
+        const typeNames = {{
+            "1": "Main Story",
+            "2": "Event",
+            "Orphan": "Orphans"
+        }};
+        
+        // Find all available regions across all titles
+        let allRegionsSet = new Set();
+        Object.values(groupsData).forEach(data => {{
+            Object.keys(data.titles).forEach(r => allRegionsSet.add(r));
+        }});
+        
+        let availableRegions = Array.from(allRegionsSet).sort((a,b) => {{
+            let ia = regionOrder.indexOf(a), ib = regionOrder.indexOf(b);
+            if(ia === -1) ia = 99; if(ib === -1) ib = 99;
+            return ia - ib;
+        }});
+
+        function init() {{
+            if(availableRegions.length > 0) {{
+                // Prefer JP or EN if available
+                if(availableRegions.includes("EN")) currentRegion = "EN";
+                if(availableRegions.includes("JP")) currentRegion = "JP";
+            }}
+            renderRegionTabs();
+            selectRegion(currentRegion);
+        }}
+
+        function renderRegionTabs() {{
+            regionTabsContainer.innerHTML = '';
+            availableRegions.forEach(region => {{
+                const btn = document.createElement('button');
+                btn.className = 'tab-btn';
+                btn.textContent = region;
+                btn.onclick = () => selectRegion(region);
+                if (region === currentRegion) btn.classList.add('active');
+                regionTabsContainer.appendChild(btn);
+            }});
+        }}
+
+        function selectRegion(region) {{
+            currentRegion = region;
+            
+            Array.from(regionTabsContainer.children).forEach(btn => {{
+                btn.classList.toggle('active', btn.textContent === region);
+            }});
+            
+            renderGrid();
+        }}
+
+        function renderGrid() {{
+            sectionsContainer.innerHTML = '';
+            
+            // Group by type
+            let typeMap = {{}};
+            Object.keys(groupsData).forEach(g_id => {{
+                const data = groupsData[g_id];
+                const t = data.type;
+                if(!typeMap[t]) typeMap[t] = [];
+                typeMap[t].push(g_id);
+            }});
+            
+            let sortedTypes = Object.keys(typeMap).sort((a,b) => {{
+                if (a === "Orphan") return 1;
+                if (b === "Orphan") return -1;
+                return parseInt(a) - parseInt(b);
+            }});
+            
+            sortedTypes.forEach(type => {{
+                const section = document.createElement("div");
+                section.className = "type-section";
+                
+                const header = document.createElement("div");
+                header.className = "type-header";
+                header.textContent = typeNames[type] || `Type ${{type}}`;
+                section.appendChild(header);
+                
+                const grid = document.createElement("div");
+                grid.className = "grid-container";
+                
+                let sortedKeys = typeMap[type].sort((a,b) => parseInt(a) - parseInt(b));
+                sortedKeys.forEach(g_id => {{
+                    const titles = groupsData[g_id].titles;
+                    let displayTitle = titles[currentRegion] || titles["JP"] || titles["EN"] || Object.values(titles)[0] || g_id;
+                    
+                    const card = document.createElement("a");
+                    card.href = `./stories/${{g_id}}/index.html`;
+                    card.className = "card";
+                    card.innerHTML = `
+                        <div class="card-img-placeholder">Image Placeholder</div>
+                        <div class="card-title">${{displayTitle}}</div>
+                    `;
+                    grid.appendChild(card);
+                }});
+                
+                section.appendChild(grid);
+                sectionsContainer.appendChild(section);
+            }});
+        }}
+
+        init();
+    </script>
 </body>
 </html>
 """
@@ -116,7 +276,10 @@ class HtmlWriter:
             f.write(html_content)
         print(f"Generated global index HTML: {filepath}")
 
-    def _write_group_page(self, filepath, group, regions_data, story_readers_by_region):
+    def _write_group_page(self, filepath, group_id, group_data, story_readers_by_region):
+        regions_data = group_data.get("regions", {})
+        titles_data = group_data.get("titles", {})
+        
         processed_data = {}
         for region, chapters in regions_data.items():
             processed_data[region] = {}
@@ -128,14 +291,10 @@ class HtmlWriter:
                     if not isinstance(s, dict):
                         continue
                     
-                    # BGM
                     if s.get('bgm'): ps['bgm'] = s['bgm']
                     if s.get('stopbgm'): ps['stopbgm'] = True
-                        
-                    # Background
                     if s.get('bgName'): ps['bgName'] = s['bgName']
                     
-                    # Sequence
                     if s.get('sequence'):
                         seq_text = []
                         for seq in s['sequence']:
@@ -144,7 +303,6 @@ class HtmlWriter:
                         if seq_text:
                             ps['sequence'] = seq_text
                     
-                    # Say
                     if 'say' in s:
                         ps['say'] = str(s['say']).replace('\\n', '<br>')
                         if 'actor' in s or 'actorName' in s:
@@ -167,18 +325,21 @@ class HtmlWriter:
                             
                     processed_scripts.append(ps)
                 
-                # Make sure chapter is at least "1" if empty string
                 chap_key = chapter if chapter else "1"
                 processed_data[region][chap_key] = processed_scripts
 
         json_data = json.dumps(processed_data, ensure_ascii=False)
+        json_titles = json.dumps(titles_data, ensure_ascii=False)
+        
+        # Initial title (fallback to JP/EN/whatever is there)
+        display_title = titles_data.get("JP") or titles_data.get("EN") or (list(titles_data.values())[0] if titles_data else group_id)
 
         html_content = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Story: {group}</title>
+    <title>Story: {display_title}</title>
     <style>
         body {{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -289,7 +450,7 @@ class HtmlWriter:
 <body>
     <a href="../../index.html" class="back-link">← Back to Index</a>
     <div class="header">
-        <h1>{group}</h1>
+        <h1><span id="story-title">{display_title}</span></h1>
         <div class="tabs" id="region-tabs"></div>
         <div class="chapter-tabs" id="chapter-tabs"></div>
     </div>
@@ -301,9 +462,13 @@ class HtmlWriter:
     <script id="story-data" type="application/json">
         {json_data}
     </script>
+    <script id="titles-data" type="application/json">
+        {json_titles}
+    </script>
 
     <script>
         const storyData = JSON.parse(document.getElementById('story-data').textContent);
+        const titlesData = JSON.parse(document.getElementById('titles-data').textContent);
         const regionTabsContainer = document.getElementById('region-tabs');
         const chapterTabsContainer = document.getElementById('chapter-tabs');
         const contentContainer = document.getElementById('story-content');
@@ -342,6 +507,13 @@ class HtmlWriter:
         function selectRegion(region) {{
             currentRegion = region;
             
+            // Update title
+            const titleElem = document.getElementById('story-title');
+            if(titleElem && titlesData[region]) {{
+                titleElem.textContent = titlesData[region];
+                document.title = "Story: " + titlesData[region];
+            }}
+            
             // Update active state on RegionTabs
             Array.from(regionTabsContainer.children).forEach(btn => {{
                 btn.classList.toggle('active', btn.textContent === region);
@@ -362,17 +534,13 @@ class HtmlWriter:
             chapterTabsContainer.innerHTML = '';
             if(!storyData[currentRegion]) return;
             
-            const chapters = Object.keys(storyData[currentRegion]).sort((a,b) => {{
-                // Numeric sort if possible
-                let numA = parseInt(a), numB = parseInt(b);
-                if (!isNaN(numA) && !isNaN(numB)) return numA - numB;
-                return a.localeCompare(b);
-            }});
+            // Use the JSON keys exactly in the order they were inserted by Python dict
+            const chapters = Object.keys(storyData[currentRegion]);
             
             chapters.forEach(chapter => {{
                 const btn = document.createElement('button');
                 btn.className = 'chapter-btn';
-                btn.textContent = 'Chapter ' + chapter;
+                btn.textContent = chapter;
                 btn.onclick = () => selectChapter(chapter);
                 if (chapter === currentChapter) btn.classList.add('active');
                 chapterTabsContainer.appendChild(btn);
@@ -383,9 +551,7 @@ class HtmlWriter:
             currentChapter = chapter;
             
             Array.from(chapterTabsContainer.children).forEach(btn => {{
-                // TextContent has 'Chapter ' prefix so we strip to compare
-                const cap = btn.textContent.replace('Chapter ', '');
-                btn.classList.toggle('active', cap === chapter);
+                btn.classList.toggle('active', btn.textContent === chapter);
             }});
             
             renderContent();
@@ -462,3 +628,4 @@ class HtmlWriter:
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(html_content)
         print(f"Generated HTML story page: {filepath}")
+
