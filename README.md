@@ -1,5 +1,9 @@
 # AZL_ScriptSite
 
+---
+
+dev notes
+
 ## Terms
 
 ```
@@ -44,7 +48,8 @@ git pull
 git sparse-checkout set
 ```
 
-## Data Sources
+## Data Sources | Special Thanks
 
 - [AzurLaneData by AzurLaneTools](https://github.com/AzurLaneTools/AzurLaneData)
 - [Azur Lane Resources by Fernando2603](https://github.com/Fernando2603/AzurLane/tree/main)
+- [Azur Lane Utility on azurlane.nagami.moe](https://azurlane.nagami.moe/)

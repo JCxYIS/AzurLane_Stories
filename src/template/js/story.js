@@ -44,10 +44,15 @@ async function fetchStoryData() {
 function init() {
   if (availableRegions.length === 0) return;
 
-  // Default to EN or JP if possible
-  currentRegion = availableRegions[0];
-  if (availableRegions.includes("EN")) currentRegion = "EN";
-  else if (availableRegions.includes("JP")) currentRegion = "JP";
+  const savedRegion = localStorage.getItem('selectedRegion');
+  if (savedRegion && availableRegions.includes(savedRegion)) {
+    currentRegion = savedRegion;
+  } else {
+    // Default to EN or JP if possible
+    currentRegion = availableRegions[0];
+    if (availableRegions.includes("EN")) currentRegion = "EN";
+    else if (availableRegions.includes("JP")) currentRegion = "JP";
+  }
 
   renderRegionTabs();
   selectRegion(currentRegion);
@@ -67,6 +72,7 @@ function renderRegionTabs() {
 
 function selectRegion(region) {
   currentRegion = region;
+  localStorage.setItem('selectedRegion', region);
 
   if (titleElem && titlesData[region]) {
     titleElem.textContent = titlesData[region];
@@ -118,16 +124,16 @@ function renderContent() {
   if (!scripts) return;
 
   scripts.forEach(s => {
-    if (s.bgm) {
-      const div = document.createElement('div');
-      div.className = 'bgm-change';
-      div.innerHTML = '▶ BGM: ' + s.bgm;
-      contentContainer.appendChild(div);
-    }
     if (s.stopbgm) {
       const div = document.createElement('div');
       div.className = 'bgm-change';
       div.innerHTML = '⏸ BGM Stopped';
+      contentContainer.appendChild(div);
+    }
+    if (s.bgm) {
+      const div = document.createElement('div');
+      div.className = 'bgm-change';
+      div.innerHTML = '▶ BGM: ' + s.bgm;
       contentContainer.appendChild(div);
     }
     if (s.bgName) {

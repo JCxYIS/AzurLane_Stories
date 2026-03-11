@@ -17,6 +17,15 @@ h1 {
   padding-bottom: 10px;
   margin-bottom: 30px;
 }
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #f4f4f9;
+  z-index: 100;
+  padding-top: 10px;
+  /* padding-bottom: 5px; */
+  margin-top: -10px; /* Offset the body padding slightly if needed */
+}
 .tabs {
   display: flex;
   gap: 15px;
@@ -105,7 +114,17 @@ h1 {
   margin-bottom: 30px;
   border-bottom: 1px solid #ccc;
   padding-bottom: 10px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: thin; /* Firefox */
+}
+.chapter-tabs::-webkit-scrollbar {
+  height: 6px;
+}
+.chapter-tabs::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
 }
 .chapter-btn {
   background: none;
@@ -114,6 +133,7 @@ h1 {
   color: #0066cc;
   cursor: pointer;
   padding: 5px;
+  flex-shrink: 0;
 }
 .chapter-btn.active {
   font-weight: bold;
@@ -166,7 +186,7 @@ h1 {
 
 .back-link {
   display: inline-block;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   text-decoration: none;
   color: #0066cc;
 }

@@ -75,7 +75,7 @@ class HtmlWriter:
         filepath = os.path.join(data_dir, "groups.json")
         
         with open(filepath, 'w', encoding='utf-8') as f:
-            json.dump(groups_data, f, ensure_ascii=False)
+            json.dump(groups_data, f, ensure_ascii=False, indent=2)
         print(f"Generated global groups.json: {filepath}")
 
     def _write_group_data(self, filepath, group_id, group_data, story_readers_by_region):
@@ -88,6 +88,7 @@ class HtmlWriter:
             processed_data[region] = {}
             for chapter, scripts in chapters.items():
                 processed_scripts = []
+                prev_bg = None
                 for s in scripts:
                     ps = {}
                     
@@ -96,10 +97,15 @@ class HtmlWriter:
                     
                     if s.get('bgm'): ps['bgm'] = s['bgm']
                     if s.get('stopbgm'): ps['stopbgm'] = True
-                    if s.get('bgName'): ps['bgName'] = s['bgName']
+                    
+                    curr_bg = s.get('bgName')
+                    if curr_bg and curr_bg != prev_bg:
+                        ps['bgName'] = curr_bg
+                    prev_bg = curr_bg
                     
                     reader = story_readers_by_region.get(region)
                     
+                    # Sequence
                     if s.get('sequence'):
                         seq_text = []
                         for seq in s['sequence']:
@@ -113,7 +119,12 @@ class HtmlWriter:
                                     stxt,
                                     flags=re.IGNORECASE|re.DOTALL
                                 )
-                                seq_text.append(stxt)
+                                stxt = re.sub(
+                                    r'\n',
+                                    '&nbsp;',
+                                    stxt
+                                )
+                                seq_text.append(stxt+"<br>")
                         if seq_text:
                             ps['sequence'] = seq_text
                     
@@ -131,7 +142,8 @@ class HtmlWriter:
                             ps['say'],
                             flags=re.IGNORECASE|re.DOTALL
                         )
-                            
+
+                        # actor
                         if 'actor' in s or 'actorName' in s:
                             actor_name = ""
                             if 'actorName' in s:

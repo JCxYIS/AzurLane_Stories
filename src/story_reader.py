@@ -101,7 +101,7 @@ class StoryReader:
         orphan_group_title = "non-archived"
         parsed["non-archived"] = {
             "title": orphan_group_title,
-            "type": "Non-archived",
+            "type": "non-archived",
             "chapters": {}
         }
         

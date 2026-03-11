@@ -8,7 +8,8 @@ let currentRegion = "JP"; // Default
 const typeNames = {
     "1": "Main Story",
     "2": "Event",
-    "Orphan": "Orphans"
+    "3": "Character Story",
+    "non-archived": "Non Archived"
 };
 
 let availableRegions = [];
@@ -37,9 +38,13 @@ async function fetchGroupsData() {
 }
 
 function init() {
-    if (availableRegions.length > 0) {
+    const savedRegion = localStorage.getItem('selectedRegion');
+    if (savedRegion && availableRegions.includes(savedRegion)) {
+        currentRegion = savedRegion;
+    } else if (availableRegions.length > 0) {
         if (availableRegions.includes("EN")) currentRegion = "EN";
-        if (availableRegions.includes("JP")) currentRegion = "JP";
+        else if (availableRegions.includes("JP")) currentRegion = "JP";
+        else currentRegion = availableRegions[0];
     }
     renderRegionTabs();
     selectRegion(currentRegion);
@@ -59,6 +64,7 @@ function renderRegionTabs() {
 
 function selectRegion(region) {
     currentRegion = region;
+    localStorage.setItem('selectedRegion', region);
 
     Array.from(regionTabsContainer.children).forEach(btn => {
         btn.classList.toggle('active', btn.textContent === region);
@@ -79,8 +85,8 @@ function renderGrid() {
     });
 
     let sortedTypes = Object.keys(typeMap).sort((a, b) => {
-        if (a === "Orphan") return 1;
-        if (b === "Orphan") return -1;
+        // if (a === "non-archived") return 1;
+        // if (b === "non-archived") return -1;
         return parseInt(a) - parseInt(b);
     });
 
@@ -90,7 +96,7 @@ function renderGrid() {
 
         const header = document.createElement("div");
         header.className = "type-header";
-        header.textContent = typeNames[type] || `Type ${type}`;
+        header.textContent = typeNames[type] || `${type}`;
         section.appendChild(header);
 
         const grid = document.createElement("div");
@@ -114,7 +120,7 @@ function renderGrid() {
             card.href = `story.html?id=${g_id}`;
 
             card.innerHTML = `
-                <div class="card-img-placeholder">Image (Story ${g_id})</div>
+                <div class="card-img-placeholder">Story ${g_id}</div>
                 <div class="card-title">${title}</div>
             `;
             grid.appendChild(card);
