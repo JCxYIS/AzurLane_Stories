@@ -1,0 +1,129 @@
+let groupsData = {};
+const regionTabsContainer = document.getElementById('region-tabs');
+const sectionsContainer = document.getElementById('sections-container');
+
+const regionOrder = ["EN", "CN", "JP", "KR", "TW"];
+let currentRegion = "JP"; // Default
+
+const typeNames = {
+    "1": "Main Story",
+    "2": "Event",
+    "Orphan": "Orphans"
+};
+
+let availableRegions = [];
+
+async function fetchGroupsData() {
+    try {
+        const response = await fetch('data/groups.json');
+        groupsData = await response.json();
+
+        let allRegionsSet = new Set();
+        Object.values(groupsData).forEach(data => {
+            Object.keys(data.titles).forEach(r => allRegionsSet.add(r));
+        });
+
+        availableRegions = Array.from(allRegionsSet).sort((a, b) => {
+            let ia = regionOrder.indexOf(a), ib = regionOrder.indexOf(b);
+            if (ia === -1) ia = 99; if (ib === -1) ib = 99;
+            return ia - ib;
+        });
+
+        init();
+    } catch (e) {
+        console.error("Failed to load global story index", e);
+        sectionsContainer.innerHTML = "<p>Error loading story list. Ensure you are running a local web server (e.g., python -m http.server).</p>";
+    }
+}
+
+function init() {
+    if (availableRegions.length > 0) {
+        if (availableRegions.includes("EN")) currentRegion = "EN";
+        if (availableRegions.includes("JP")) currentRegion = "JP";
+    }
+    renderRegionTabs();
+    selectRegion(currentRegion);
+}
+
+function renderRegionTabs() {
+    regionTabsContainer.innerHTML = '';
+    availableRegions.forEach(region => {
+        const btn = document.createElement('button');
+        btn.className = 'tab-btn';
+        btn.textContent = region;
+        btn.onclick = () => selectRegion(region);
+        if (region === currentRegion) btn.classList.add('active');
+        regionTabsContainer.appendChild(btn);
+    });
+}
+
+function selectRegion(region) {
+    currentRegion = region;
+
+    Array.from(regionTabsContainer.children).forEach(btn => {
+        btn.classList.toggle('active', btn.textContent === region);
+    });
+
+    renderGrid();
+}
+
+function renderGrid() {
+    sectionsContainer.innerHTML = '';
+
+    let typeMap = {};
+    Object.keys(groupsData).forEach(g_id => {
+        const data = groupsData[g_id];
+        const t = data.type;
+        if (!typeMap[t]) typeMap[t] = [];
+        typeMap[t].push(g_id);
+    });
+
+    let sortedTypes = Object.keys(typeMap).sort((a, b) => {
+        if (a === "Orphan") return 1;
+        if (b === "Orphan") return -1;
+        return parseInt(a) - parseInt(b);
+    });
+
+    sortedTypes.forEach(type => {
+        const section = document.createElement("div");
+        section.className = "type-section";
+
+        const header = document.createElement("div");
+        header.className = "type-header";
+        header.textContent = typeNames[type] || `Type ${type}`;
+        section.appendChild(header);
+
+        const grid = document.createElement("div");
+        grid.className = "grid-container";
+
+        // Sort stories roughly numerically within a type
+        let sortedGroupIds = typeMap[type].sort((a, b) => parseInt(a) - parseInt(b));
+
+        sortedGroupIds.forEach(g_id => {
+            const data = groupsData[g_id];
+            // Get title for current region, fallback to any available if missing
+            let title = data.titles[currentRegion];
+            if (!title) {
+                const available = Object.keys(data.titles);
+                if (available.length > 0) title = data.titles[available[0]] + ` (${available[0]})`;
+                else title = `Group ${g_id}`;
+            }
+
+            const card = document.createElement("a");
+            card.className = "card";
+            card.href = `story.html?id=${g_id}`;
+
+            card.innerHTML = `
+                <div class="card-img-placeholder">Image (Story ${g_id})</div>
+                <div class="card-title">${title}</div>
+            `;
+            grid.appendChild(card);
+        });
+
+        section.appendChild(grid);
+        sectionsContainer.appendChild(section);
+    });
+}
+
+// Start app
+fetchGroupsData();

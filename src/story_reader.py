@@ -3,7 +3,10 @@ import os
 import re
 
 class StoryReader:
-    def __init__(self, data_dir="f:/AZL_ScriptSite/AzurLaneData", region="JP"):
+    def __init__(self, data_dir=None, region="JP"):
+        # default read path: `../AzurLaneData`
+        if data_dir is None:
+            data_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "AzurLaneData")
         self.data_dir = data_dir
         self.region = region
         story_filename = "storyjp.json" if region == "JP" else "story.json"
@@ -95,10 +98,10 @@ class StoryReader:
             }
 
         # Handle Orphans
-        orphan_group_title = "Orphans"
-        parsed["Orphans"] = {
+        orphan_group_title = "non-archived"
+        parsed["non-archived"] = {
             "title": orphan_group_title,
-            "type": "Orphan",
+            "type": "Non-archived",
             "chapters": {}
         }
         
@@ -113,10 +116,10 @@ class StoryReader:
             if story_key.lower() not in used_stories:
                 # Use the key itself as the chapter title
                 chapter_title = story_key
-                parsed["Orphans"]["chapters"][chapter_title] = val['scripts']
+                parsed["non-archived"]["chapters"][chapter_title] = val['scripts']
                 
-        if not parsed["Orphans"]["chapters"]:
-            del parsed["Orphans"]
+        if not parsed["non-archived"]["chapters"]:
+            del parsed["non-archived"]
             
         return parsed
 

@@ -1,28 +1,30 @@
 import argparse
 import sys
 import traceback
-import traceback
+import os
 from story_reader import StoryReader
 from html_writer import HtmlWriter
 
 def main():
-    parser = argparse.ArgumentParser(description="Parse AzureLane JP story data to Markdown or HTML.")
+    parser = argparse.ArgumentParser(description="Parse AzureLane JP story data to HTML.")
     parser.add_argument(
         "--overwrite",
         action="store_true",
-        help="Overwrite existing markdown/html files. If not set, existing files are skipped."
+        help="Overwrite existing html files. If not set, existing files are skipped."
     )
+    project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # parent of `src/`
+    
     # Allows specifying a different data directory if needed, defaulting to the structure requested
     parser.add_argument(
         "--data-dir",
         type=str,
-        default="f:/AZL_ScriptSite/AzurLaneData",
+        default=os.path.join(project_root, "AzurLaneData"),
         help="Path to the AzurLaneData directory."
     )
     parser.add_argument(
         "--out-dir",
         type=str,
-        default="f:/AZL_ScriptSite/output/stories",
+        default=os.path.join(project_root, "output", "stories"),
         help="Path to the output stories directory."
     )
 

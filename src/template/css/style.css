@@ -1,0 +1,175 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f9;
+  color: #333;
+}
+h1 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.header-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+.tabs {
+  display: flex;
+  gap: 15px;
+}
+.tab-btn {
+  background: none;
+  border: none;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #777;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: color 0.2s;
+}
+.tab-btn.active {
+  color: #000;
+  border-bottom: 3px solid #000;
+}
+.tab-btn:hover {
+  color: #000;
+}
+
+.sections-container {
+  display: flex;
+  flex-direction: column;
+}
+.type-section {
+  margin-bottom: 40px;
+}
+.type-header {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  color: #444;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 15px;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+.card-img-placeholder {
+  width: 100%;
+  height: 120px;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+.card-title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.1em;
+  padding: 0 10px;
+  word-wrap: break-word;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.chapter-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  flex-wrap: wrap;
+}
+.chapter-btn {
+  background: none;
+  border: none;
+  font-size: 1em;
+  color: #0066cc;
+  cursor: pointer;
+  padding: 5px;
+}
+.chapter-btn.active {
+  font-weight: bold;
+  color: #004499;
+  text-decoration: underline;
+}
+.chapter-btn:hover {
+  text-decoration: underline;
+}
+
+.story-content {
+  max-width: 800px;
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+.bgm-change,
+.bg-change {
+  color: #888;
+  font-size: 0.9em;
+  margin: 10px 0;
+  font-style: italic;
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.sequence {
+  margin: 20px 0;
+  font-style: italic;
+  color: #555;
+  text-align: center;
+}
+
+.dialogue-box {
+  margin-bottom: 15px;
+}
+
+.actor-name {
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.narration {
+  font-style: italic;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #0066cc;
+}
+.back-link:hover {
+  text-decoration: underline;
+}
