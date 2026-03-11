@@ -1,6 +1,7 @@
 import os
 import json
 import html
+import re
 
 class HtmlWriter:
     def __init__(self, output_dir="f:/AZL_ScriptSite/output/stories"):
@@ -295,11 +296,22 @@ class HtmlWriter:
                     if s.get('stopbgm'): ps['stopbgm'] = True
                     if s.get('bgName'): ps['bgName'] = s['bgName']
                     
+                    reader = story_readers_by_region.get(region)
+                    
                     if s.get('sequence'):
                         seq_text = []
                         for seq in s['sequence']:
                             if isinstance(seq, list) and len(seq) > 0:
-                                seq_text.append(seq[0])
+                                stxt = seq[0]
+                                if reader:
+                                    stxt = reader.replace_namecodes(stxt)
+                                stxt = re.sub(
+                                    r'<size=(\d+)>(.*?)</size>',
+                                    lambda m: f'<span style="font-size: {int(m.group(1))/60.0:.3f}em;">{m.group(2)}</span>',
+                                    stxt,
+                                    flags=re.IGNORECASE|re.DOTALL
+                                )
+                                seq_text.append(stxt)
                         if seq_text:
                             ps['sequence'] = seq_text
                     
@@ -307,9 +319,16 @@ class HtmlWriter:
                     if 'say' in s:
                         ps['say'] = str(s['say']).replace('\\n', '<br>')
                         
-                        reader = story_readers_by_region.get(region)
                         if reader:
                             ps['say'] = reader.replace_namecodes(ps['say'])
+                            
+                        # Parse <size=XX> tags
+                        ps['say'] = re.sub(
+                            r'<size=(\d+)>(.*?)</size>',
+                            lambda m: f'<span style="font-size: {int(m.group(1))/60.0:.3f}em;">{m.group(2)}</span>',
+                            ps['say'],
+                            flags=re.IGNORECASE|re.DOTALL
+                        )
                             
                         if 'actor' in s or 'actorName' in s:
                             actor_name = ""
@@ -324,6 +343,13 @@ class HtmlWriter:
                             
                             if reader:
                                 actor_name = reader.replace_namecodes(actor_name)
+                                
+                            actor_name = re.sub(
+                                r'<size=(\d+)>(.*?)</size>',
+                                lambda m: f'<span style="font-size: {int(m.group(1))/60.0:.3f}em;">{m.group(2)}</span>',
+                                actor_name,
+                                flags=re.IGNORECASE|re.DOTALL
+                            )
                                 
                             ps['actorName'] = actor_name
                             
@@ -595,7 +621,7 @@ class HtmlWriter:
                     div.className = 'sequence';
                     s.sequence.forEach(line => {{
                         const p = document.createElement('div');
-                        p.textContent = line;
+                        p.innerHTML = line;
                         div.appendChild(p);
                     }});
                     contentContainer.appendChild(div);
@@ -616,7 +642,7 @@ class HtmlWriter:
                         if (s.nameColor) {{
                             nameDiv.style.color = s.nameColor;
                         }}
-                        nameDiv.textContent = s.actorName;
+                        nameDiv.innerHTML = s.actorName;
                         
                         const textDiv = document.createElement('div');
                         textDiv.innerHTML = s.say;
