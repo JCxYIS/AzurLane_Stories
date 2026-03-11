@@ -303,19 +303,28 @@ class HtmlWriter:
                         if seq_text:
                             ps['sequence'] = seq_text
                     
+                    # Say
                     if 'say' in s:
                         ps['say'] = str(s['say']).replace('\\n', '<br>')
+                        
+                        reader = story_readers_by_region.get(region)
+                        if reader:
+                            ps['say'] = reader.replace_namecodes(ps['say'])
+                            
                         if 'actor' in s or 'actorName' in s:
                             actor_name = ""
                             if 'actorName' in s:
                                 actor_name = str(s['actorName'])
                             elif 'actor' in s:
                                 actor_id = s['actor']
-                                reader = story_readers_by_region.get(region)
                                 if reader and (isinstance(actor_id, int) or (isinstance(actor_id, str) and actor_id.isdigit())):
                                     actor_name = reader.resolve_actor_name(actor_id)
                                 else:
                                     actor_name = str(actor_id)
+                            
+                            if reader:
+                                actor_name = reader.replace_namecodes(actor_name)
+                                
                             ps['actorName'] = actor_name
                             
                             if 'nameColor' in s:

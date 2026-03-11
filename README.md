@@ -22,6 +22,7 @@ git sparse-checkout set "/CN/GameCfg/story.json" "/EN/GameCfg/story.json" "/JP/G
 git sparse-checkout add "/CN/ShareCfg/ship_skin_template.json" "/EN/ShareCfg/ship_skin_template.json" "/JP/ShareCfg/ship_skin_template.json" "/KR/ShareCfg/ship_skin_template.json" "/TW/ShareCfg/ship_skin_template.json"
 git sparse-checkout add "/CN/ShareCfg/memory_template.json" "/EN/ShareCfg/memory_template.json" "/JP/ShareCfg/memory_template.json" "/KR/ShareCfg/memory_template.json" "/TW/ShareCfg/memory_template.json"
 git sparse-checkout add "/CN/ShareCfg/memory_group.json" "/EN/ShareCfg/memory_group.json" "/JP/ShareCfg/memory_group.json" "/KR/ShareCfg/memory_group.json" "/TW/ShareCfg/memory_group.json"
+git sparse-checkout add "/CN/ShareCfg/name_code.json" "/EN/ShareCfg/name_code.json" "/JP/ShareCfg/name_code.json" "/KR/ShareCfg/name_code.json" "/TW/ShareCfg/name_code.json"
 git checkout main
 ```
 

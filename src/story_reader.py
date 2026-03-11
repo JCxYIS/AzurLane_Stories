@@ -1,5 +1,6 @@
 import json
 import os
+import re
 
 class StoryReader:
     def __init__(self, data_dir="f:/AZL_ScriptSite/AzurLaneData", region="JP"):
@@ -16,6 +17,7 @@ class StoryReader:
         self.skin_templates = {}
         self.memory_groups = {}
         self.memory_templates = {}
+        self.name_codes = {}
         self._load_data()
 
     def _load_data(self):
@@ -32,6 +34,11 @@ class StoryReader:
             with open(self.memory_template_filepath, 'r', encoding='utf-8') as f:
                 self.memory_templates = json.load(f)
                 
+            name_code_filepath = os.path.join(self.data_dir, self.region, "ShareCfg", "name_code.json")
+            if os.path.exists(name_code_filepath):
+                with open(name_code_filepath, 'r', encoding='utf-8') as f:
+                    self.name_codes = json.load(f)
+                    
         except Exception as e:
             print(f"Error loading JSON data for {self.region}: {e}")
 
@@ -55,6 +62,7 @@ class StoryReader:
             # Avoid empty keys in dicts just in case, though they usually have a title
             if not group_title:
                 group_title = f"Group_{g_id}"
+            group_title = self.replace_namecodes(group_title)
                 
             memories = group_data.get('memories', [])
             
@@ -66,6 +74,7 @@ class StoryReader:
                     continue
                     
                 chapter_title = template_data.get('title', f"Memory_{mem_id}")
+                chapter_title = self.replace_namecodes(chapter_title)
                 story_ref = str(template_data.get('story', "NON_EXISTENT")).lower()
                 
                 # The story mapping often uses lowercase keys in `story.json`
@@ -117,5 +126,18 @@ class StoryReader:
         if actor_str in self.skin_templates:
             return self.skin_templates[actor_str].get('name', actor_str)
         return actor_str
+
+    def replace_namecodes(self, text: str) -> str:
+        """Replaces {namecode:XX} with the actual character name from name_code.json"""
+        if not text or not isinstance(text, str):
+            return text
+            
+        def replacer(match):
+            code_id = match.group(1)
+            if code_id in self.name_codes:
+                return self.name_codes[code_id].get('name', match.group(0))
+            return match.group(0)
+            
+        return re.sub(r'\{namecode:(\d+)\}', replacer, text)
 
 
