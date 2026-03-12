@@ -199,6 +199,11 @@ h1 {
   margin-bottom: 5px;
 }
 
+.factiontag {
+  font-size: 0.8em;
+  padding-left: 6px;
+}
+
 .narration {
   font-style: italic;
   margin-bottom: 15px;

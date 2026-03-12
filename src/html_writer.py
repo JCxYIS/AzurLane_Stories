@@ -154,11 +154,13 @@ class HtmlWriter:
                                 if reader and (isinstance(actor_id, int) or (isinstance(actor_id, str) and actor_id.isdigit())):
                                     actor_name = reader.resolve_actor_name(actor_id)
                                 else:
-                                    actor_name = str(actor_id)                      
-                            
+                                    actor_name = str(actor_id)                                                  
+
+                            # replace {namecode:XX}             
                             if reader:
-                                actor_name = reader.replace_namecodes(actor_name)
-                                
+                                actor_name = reader.replace_namecodes(actor_name)                            
+
+                            # Parse <size=XX> tags
                             actor_name = re.sub(
                                 r'<size=(\d+)>(.*?)</size>',
                                 lambda m: f'<span style="font-size: {int(m.group(1))/60.0:.3f}em;">{m.group(2)}</span>',
@@ -170,6 +172,8 @@ class HtmlWriter:
                             
                             if 'nameColor' in s:
                                 ps['nameColor'] = s['nameColor']
+                            if 'factiontag' in s:
+                                ps['factiontag'] = s['factiontag']
                         else:
                             ps['narration'] = True
                             

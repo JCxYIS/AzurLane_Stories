@@ -168,7 +168,8 @@ function renderContent() {
         if (s.actor) {
           const img = document.createElement('img');
           img.src = `https://raw.githubusercontent.com/Fernando2603/AzurLane/main/images/skin/${s.actor}/banner.png`;
-          img.onerror = () => { img.style.display = 'none'; }; // Graceful fallback
+          img.alt = `${s.actorName} (${s.actor})`;
+          // img.onerror = () => { img.style.display = 'none'; }; // Graceful fallback
           bannerDiv.appendChild(img);
         }
 
@@ -181,6 +182,15 @@ function renderContent() {
           nameDiv.style.color = s.nameColor;
         }
         nameDiv.innerHTML = s.actorName;
+        if (s.factiontag) {
+          nameDiv.innerHTML += "<span class='factiontag'>" + s.factiontag + "</span>";
+        }
+
+        // const factiontagDiv = document.createElement('div');
+        // factiontagDiv.className = 'factiontag';
+        // if (s.factiontag) {
+        //   factiontagDiv.innerHTML = s.factiontag;
+        // }
 
         const textDiv = document.createElement('div');
         textDiv.innerHTML = s.say;

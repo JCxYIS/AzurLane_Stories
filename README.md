@@ -23,6 +23,7 @@ Stories     |  [..., MAIZANGYUBIANZHIHUA1, ...]
 900011 (story.html?id=219)
 900236 (story.html?id=185)
 607011
+303190 雲仙 | factiontag  ワタツミの心 (story.html?id=257)
 ```
 
 ## Implementation

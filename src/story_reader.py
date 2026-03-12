@@ -138,12 +138,16 @@ class StoryReader:
         # if the actor_group is the same as the actor_id_endwith0_group, then use the name of the actor_id_endwith0_str
         actor_id_endwith0_str = actor_id_str[:-1] + "0"
         if actor_id_endwith0_str in self.skin_templates:
-            actor_id_endwith0_group = self.skin_templates[actor_id_endwith0_str]['ship_group']
             actor_group = self.skin_templates[actor_id_str]['ship_group']        
+            actor_id_endwith0_group = self.skin_templates[actor_id_endwith0_str]['ship_group']
             if actor_group == actor_id_endwith0_group:
-                return self.resolve_actor_name(self.skin_templates[actor_id_endwith0_str]['name'])
+                actor_id_endwith0_rawname = self.skin_templates[actor_id_endwith0_str]['name']
+                actor_name = self.resolve_actor_name(actor_id_endwith0_rawname)
+                actor_skin_name = self.resolve_actor_name(actor_rawname)
+                # "NAME [SKIN_NAME]"
+                return f'{actor_name} [{actor_skin_name}]' if actor_name != actor_skin_name else actor_name
         # otherwise return the name of the actor_id_str
-        return self.resolve_actor_name(self.skin_templates[actor_id_str]['name'])
+        return self.resolve_actor_name(actor_rawname)
 
     def replace_namecodes(self, text: str) -> str:
         """Replaces {namecode:XX(:XXXX)} with the actual character name from name_code.json"""
