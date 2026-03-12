@@ -20,7 +20,7 @@ class HtmlWriter:
         os.makedirs(self.output_dir, exist_ok=True)
         
         # 1. Copy the template directory to the root output dir
-        self._copy_template(overwrite)
+        self._copy_template(True)
         
         # 2. Write global groups.json
         self._write_groups_json(aggregated_stories)

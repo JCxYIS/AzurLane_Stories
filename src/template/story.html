@@ -8,7 +8,14 @@
 </head>
 <body>
     <div class="header">
-        <a href="index.html" class="back-link">← Back</a>
+        <div class="header-top">
+            <a href="index.html" class="back-link">← Back</a>
+            <div class="music-controls">
+                <span id="music-song-id">No BGM</span>
+                <button id="music-play-btn">▶</button>
+                <input type="range" id="music-volume" min="0" max="1" step="0.01" value="1">
+            </div>
+        </div>
         <h1><span id="story-title">Loading...</span></h1>
         <div class="tabs" id="region-tabs"></div>
         <div class="chapter-tabs" id="chapter-tabs"></div>

@@ -11,6 +11,55 @@ let currentChapter = null;
 const regionOrder = ["EN", "CN", "JP", "KR", "TW"];
 let availableRegions = [];
 
+const bgmPlayer = new Audio();
+bgmPlayer.loop = true;
+
+const musicPlayBtn = document.getElementById('music-play-btn');
+const musicVolume = document.getElementById('music-volume');
+const musicSongId = document.getElementById('music-song-id');
+
+// Load saved volume
+const savedVolume = localStorage.getItem('bgmVolume');
+if (savedVolume !== null) {
+  bgmPlayer.volume = parseFloat(savedVolume);
+  musicVolume.value = savedVolume;
+}
+
+musicPlayBtn.onclick = () => {
+  if (bgmPlayer.paused) {
+    if (bgmPlayer.src) {
+      bgmPlayer.play();
+    } else {
+      // bgmPlayer.src = 'https://cdn.nagami.moe/bgm/bgm-main.ogg';
+      bgmPlayer.src = 'https://raw.githubusercontent.com/Fernando2603/AzurLane/main/audio/bgm/main.ogg';
+      bgmPlayer.play().catch(e => console.error("Audio playback failed", e));
+    }
+  } else {
+    bgmPlayer.pause();
+  }
+  updateMusicUI();
+};
+
+musicVolume.oninput = () => {
+  bgmPlayer.volume = musicVolume.value;
+  localStorage.setItem('bgmVolume', musicVolume.value);
+};
+
+function updateMusicUI() {
+  musicPlayBtn.textContent = bgmPlayer.paused ? '▶' : '⏸';
+  if (bgmPlayer.src) {
+    const url = new URL(bgmPlayer.src);
+    const filename = url.pathname.split('/').pop();
+    const songId = filename.replace('bgm-', '').replace('.ogg', '');
+    musicSongId.textContent = songId;
+  } else {
+    musicSongId.textContent = 'No BGM';
+  }
+}
+
+bgmPlayer.onplay = updateMusicUI;
+bgmPlayer.onpause = updateMusicUI;
+
 async function fetchStoryData() {
   try {
     const urlParams = new URLSearchParams(window.location.search);
@@ -76,7 +125,7 @@ function selectRegion(region) {
 
   if (titleElem && titlesData[region]) {
     titleElem.textContent = titlesData[region];
-    document.title = "Story: " + titlesData[region];
+    document.title = "AZL Story: " + titlesData[region];
   }
 
   Array.from(regionTabsContainer.children).forEach(btn => {
@@ -116,6 +165,11 @@ function selectChapter(chapter) {
   });
 
   renderContent();
+
+  window.scrollTo({
+    top: 1,
+    behavior: 'smooth'
+  });
 }
 
 function renderContent() {
@@ -124,22 +178,41 @@ function renderContent() {
   if (!scripts) return;
 
   scripts.forEach(s => {
+    // stop bgm is typically top-priority (to stop last playback)
     if (s.stopbgm) {
       const div = document.createElement('div');
       div.className = 'bgm-change';
       div.innerHTML = '⏸ BGM Stopped';
+      div.onclick = () => {
+        bgmPlayer.pause();
+      };
       contentContainer.appendChild(div);
     }
     if (s.bgm) {
       const div = document.createElement('div');
       div.className = 'bgm-change';
       div.innerHTML = '▶ BGM: ' + s.bgm;
+      div.onclick = () => {
+        // const src = `https://cdn.nagami.moe/bgm/bgm-${s.bgm}.ogg`;
+        const src = `https://raw.githubusercontent.com/Fernando2603/AzurLane/main/audio/bgm/${s.bgm}.ogg`;
+        if (src !== bgmPlayer.src) {
+          bgmPlayer.src = src;
+        }
+        bgmPlayer.play().catch(e => alert("Audio playback failed", e));
+      };
       contentContainer.appendChild(div);
     }
     if (s.bgName) {
       const div = document.createElement('div');
       div.className = 'bg-change';
       div.innerHTML = '🖼 Background: ' + s.bgName;
+      div.style.cursor = 'pointer';
+      div.onclick = () => {
+        document.body.style.backgroundImage = `url(https://cdn.nagami.moe/bg/${s.bgName}.png)`;
+        document.body.style.backgroundSize = 'cover';
+        document.body.style.backgroundAttachment = 'fixed';
+        document.body.style.backgroundPosition = 'center';
+      };
       contentContainer.appendChild(div);
     }
     if (s.sequence) {
