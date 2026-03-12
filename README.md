@@ -14,6 +14,17 @@ Memories    |  [3911, 3912, 3913, ..., 3923]
 Stories     |  [..., MAIZANGYUBIANZHIHUA1, ...]
 ```
 
+## char note ad-hoc check
+
+```
+(story.html?id=158)
+(story.html?id=219)
+403036 (story.html?id=285)
+900011 (story.html?id=219)
+900236 (story.html?id=185)
+607011
+```
+
 ## Implementation
 
 ### Git Sparse checkout init

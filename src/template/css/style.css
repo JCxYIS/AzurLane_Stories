@@ -170,12 +170,33 @@ h1 {
 }
 
 .dialogue-box {
-  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.actor-banner {
+  width: 240px;
+  min-width: 240px; /* the blank space if no actor */
+  /* margin-right: 15px; */
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.actor-banner img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.dialogue-content {
+  flex-grow: 1;
 }
 
 .actor-name {
   font-weight: bold;
-  margin-bottom: 2px;
+  margin-bottom: 5px;
 }
 
 .narration {

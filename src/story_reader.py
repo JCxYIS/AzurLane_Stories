@@ -125,13 +125,28 @@ class StoryReader:
 
     def resolve_actor_name(self, actor_id):
         """Resolves a numeric actor ID using ship_skin_template.json"""
-        actor_str = str(actor_id)
-        if actor_str in self.skin_templates:
-            return self.skin_templates[actor_str].get('name', actor_str)
-        return actor_str
+        actor_id_str = str(actor_id)
+
+        # given id not found in dict: return the id directly
+        if actor_id_str not in self.skin_templates:
+            return actor_id_str
+        
+        # fetch from dict: this could be real name or skin name
+        actor_rawname = self.skin_templates[actor_id_str].get('name', actor_id_str)
+
+        # usually XXXXX0 is the ship real name, we can validate their ship_group
+        # if the actor_group is the same as the actor_id_endwith0_group, then use the name of the actor_id_endwith0_str
+        actor_id_endwith0_str = actor_id_str[:-1] + "0"
+        if actor_id_endwith0_str in self.skin_templates:
+            actor_id_endwith0_group = self.skin_templates[actor_id_endwith0_str]['ship_group']
+            actor_group = self.skin_templates[actor_id_str]['ship_group']        
+            if actor_group == actor_id_endwith0_group:
+                return self.resolve_actor_name(self.skin_templates[actor_id_endwith0_str]['name'])
+        # otherwise return the name of the actor_id_str
+        return self.resolve_actor_name(self.skin_templates[actor_id_str]['name'])
 
     def replace_namecodes(self, text: str) -> str:
-        """Replaces {namecode:XX} with the actual character name from name_code.json"""
+        """Replaces {namecode:XX(:XXXX)} with the actual character name from name_code.json"""
         if not text or not isinstance(text, str):
             return text
             
@@ -141,6 +156,6 @@ class StoryReader:
                 return self.name_codes[code_id].get('name', match.group(0))
             return match.group(0)
             
-        return re.sub(r'\{namecode:(\d+)\}', replacer, text)
+        return re.sub(r'\{namecode:(\d+)(:.+)*\}', replacer, text)
 
 

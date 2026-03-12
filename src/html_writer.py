@@ -143,17 +143,18 @@ class HtmlWriter:
                             flags=re.IGNORECASE|re.DOTALL
                         )
 
-                        # actor
+                        # actor or narration
                         if 'actor' in s or 'actorName' in s:
                             actor_name = ""
-                            if 'actorName' in s:
+                            if 'actorName' in s:  # use actorName first 
                                 actor_name = str(s['actorName'])
                             elif 'actor' in s:
                                 actor_id = s['actor']
+                                ps['actor'] = actor_id
                                 if reader and (isinstance(actor_id, int) or (isinstance(actor_id, str) and actor_id.isdigit())):
                                     actor_name = reader.resolve_actor_name(actor_id)
                                 else:
-                                    actor_name = str(actor_id)
+                                    actor_name = str(actor_id)                      
                             
                             if reader:
                                 actor_name = reader.replace_namecodes(actor_name)

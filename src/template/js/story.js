@@ -163,6 +163,18 @@ function renderContent() {
         const box = document.createElement('div');
         box.className = 'dialogue-box';
 
+        const bannerDiv = document.createElement('div');
+        bannerDiv.className = 'actor-banner';
+        if (s.actor) {
+          const img = document.createElement('img');
+          img.src = `https://raw.githubusercontent.com/Fernando2603/AzurLane/main/images/skin/${s.actor}/banner.png`;
+          img.onerror = () => { img.style.display = 'none'; }; // Graceful fallback
+          bannerDiv.appendChild(img);
+        }
+
+        const contentDiv = document.createElement('div');
+        contentDiv.className = 'dialogue-content';
+
         const nameDiv = document.createElement('div');
         nameDiv.className = 'actor-name';
         if (s.nameColor) {
@@ -173,8 +185,11 @@ function renderContent() {
         const textDiv = document.createElement('div');
         textDiv.innerHTML = s.say;
 
-        box.appendChild(nameDiv);
-        box.appendChild(textDiv);
+        contentDiv.appendChild(nameDiv);
+        contentDiv.appendChild(textDiv);
+
+        box.appendChild(bannerDiv);
+        box.appendChild(contentDiv);
         contentContainer.appendChild(box);
       }
     }
