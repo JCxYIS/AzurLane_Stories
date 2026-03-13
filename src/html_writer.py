@@ -67,7 +67,9 @@ class HtmlWriter:
         for g_id, data in aggregated_stories.items():
             groups_data[str(g_id)] = {
                 "titles": data.get("titles", {}),
-                "type": data.get("type", "Unknown")
+                "type": data.get("type", "Unknown"),
+                "subtype": data.get("subtype", "Unknown"),
+                "icon": data.get("icon", "title_event"),
             }
             
         data_dir = os.path.join(self.root_output_dir, "data")

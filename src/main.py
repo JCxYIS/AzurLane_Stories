@@ -48,7 +48,13 @@ def main():
             
             for group_id, data in parsed_stories.items():
                 if group_id not in aggregated_stories:
-                    aggregated_stories[group_id] = {"titles": {}, "regions": {}, "type": data.get("type", 0)}
+                    aggregated_stories[group_id] = {
+                        "titles": {},
+                        "regions": {},
+                        "type": data.get("type", 0),
+                        "subtype": data.get("subtype", 0),
+                        "icon": data.get("icon", "title_event"),
+                    }
                 
                 aggregated_stories[group_id]["regions"][region] = data["chapters"]
                 aggregated_stories[group_id]["titles"][region] = data["title"]

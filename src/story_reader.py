@@ -94,6 +94,8 @@ class StoryReader:
             parsed[str(g_id)] = {
                 "title": group_title,
                 "type": group_data.get("type", 0),
+                "subtype": group_data.get("subtype", 0),
+                "icon": group_data.get("icon", "title_event"),
                 "chapters": chapters_dict
             }
 

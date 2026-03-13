@@ -19,11 +19,11 @@ Stories     |  [..., MAIZANGYUBIANZHIHUA1, ...]
 ```
 (story.html?id=158)
 (story.html?id=219)
-403036 (story.html?id=285)
-900011 (story.html?id=219)
 900236 (story.html?id=185)
-607011
+403036 (story.html?id=285)
 303190 雲仙 | factiontag  ワタツミの心 (story.html?id=257)
+
+900232 オブザーバー & 900315 ヘレナ(META) (story.html?id=338)
 ```
 
 ## Implementation

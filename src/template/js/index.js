@@ -12,6 +12,14 @@ const typeNames = {
     "non-archived": "Non Archived"
 };
 
+const subtypeNames = {
+    "2": { // Subtypes for Type 2 (Event)
+        "1": "Event (EX)",
+        "2": "Special (SP)",
+        "3": "Permanent (Daily Life)"
+    }
+};
+
 let availableRegions = [];
 
 async function fetchGroupsData() {
@@ -99,35 +107,69 @@ function renderGrid() {
         header.textContent = typeNames[type] || `${type}`;
         section.appendChild(header);
 
-        const grid = document.createElement("div");
-        grid.className = "grid-container";
+        if (type === "2") {
+            // Group by subtype for type 2
+            let subtypeMap = {};
+            typeMap[type].forEach(g_id => {
+                const sub = groupsData[g_id].subtype || "0";
+                if (!subtypeMap[sub]) subtypeMap[sub] = [];
+                subtypeMap[sub].push(g_id);
+            });
 
-        // Sort stories roughly numerically within a type
-        let sortedGroupIds = typeMap[type].sort((a, b) => parseInt(a) - parseInt(b));
+            // Sort subtypes numerically
+            let sortedSubtypes = Object.keys(subtypeMap).sort((a, b) => parseInt(a) - parseInt(b));
 
-        sortedGroupIds.forEach(g_id => {
-            const data = groupsData[g_id];
-            // Get title for current region, fallback to any available if missing
-            let title = data.titles[currentRegion];
-            if (!title) {
-                const available = Object.keys(data.titles);
-                if (available.length > 0) title = data.titles[available[0]] + ` (${available[0]})`;
-                else title = `Group ${g_id}`;
-            }
+            sortedSubtypes.forEach(sub => {
+                const subHeader = document.createElement("div");
+                subHeader.className = "subtype-header";
+                subHeader.textContent = (subtypeNames[type] && subtypeNames[type][sub]) || `Subtype ${sub}`;
+                section.appendChild(subHeader);
 
-            const card = document.createElement("a");
-            card.className = "card";
-            card.href = `story.html?id=${g_id}`;
+                const grid = document.createElement("div");
+                grid.className = "grid-container";
 
-            card.innerHTML = `
-                <div class="card-img-placeholder">Story ${g_id}</div>
-                <div class="card-title">${title}</div>
-            `;
-            grid.appendChild(card);
-        });
+                let sortedGroupIds = subtypeMap[sub].sort((a, b) => parseInt(a) - parseInt(b));
+                renderCardsToGrid(sortedGroupIds, grid);
+                section.appendChild(grid);
+            });
+        } else {
+            const grid = document.createElement("div");
+            grid.className = "grid-container";
 
-        section.appendChild(grid);
+            // Sort stories roughly numerically within a type
+            let sortedGroupIds = typeMap[type].sort((a, b) => parseInt(a) - parseInt(b));
+            renderCardsToGrid(sortedGroupIds, grid);
+            section.appendChild(grid);
+        }
+
         sectionsContainer.appendChild(section);
+    });
+}
+
+function renderCardsToGrid(groupIds, grid) {
+    groupIds.forEach(g_id => {
+        const data = groupsData[g_id];
+        // Get title for current region, fallback to any available if missing
+        let title = data.titles[currentRegion];
+        if (!title) {
+            const available = Object.keys(data.titles);
+            if (available.length > 0) title = data.titles[available[0]] + ` (${available[0]})`;
+            else title = `Group ${g_id}`;
+        }
+
+        const card = document.createElement("a");
+        card.className = "card";
+        card.href = `story.html?id=${g_id}`;
+
+        card.innerHTML = `
+            <div class="card-img-placeholder">
+                Story Group ${g_id} <br>
+                Type-SubType: ${data.type}-${data.subtype}<br>
+                Icon: ${data.icon}<br>
+            </div>
+            <div class="card-title">${title}</div>
+        `;
+        grid.appendChild(card);
     });
 }
 
