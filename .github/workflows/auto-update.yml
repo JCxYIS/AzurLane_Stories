@@ -1,0 +1,64 @@
+name: 🥰 Auto update azl stories
+
+on:
+  push:
+    branches:
+      - main
+  # auto update at 12:00 every day
+  schedule:
+    - cron: "0 12 * * *"
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout current repository
+        uses: actions/checkout@v4
+
+      - name: Check for sauce repo updates
+        id: check_update
+        run: |
+          TARGET_REPO="https://github.com/AzurLaneTools/AzurLaneData.git"
+
+          LATEST_SHA=$(git ls-remote "$TARGET_REPO" refs/heads/main | awk '{print $1}')
+          echo "Sauce Repo last commit= $LATEST_SHA"
+
+          git fetch origin web || echo "no web branch found!!!"
+          PREV_SHA=$(git show origin/web:commit_id.txt 2>/dev/null || echo "none")
+          echo "Our Repo last processed commit= $PREV_SHA"
+
+          if [ "$LATEST_SHA" == "$PREV_SHA" ]; then
+            echo "Sauce no change."
+            echo "DO_UPDATE=false" >> $GITHUB_OUTPUT
+          else
+            echo "Sauce updated. AF 可能缺少淡水。"
+            echo "DO_UPDATE=true" >> $GITHUB_OUTPUT
+            echo "TARGET_SHA=$LATEST_SHA" >> $GITHUB_ENV 
+          fi
+
+      # only run if DO_UPDATE is true
+      - name: Run sparse checkout script
+        if: steps.check_update.outputs.DO_UPDATE == 'true'
+        run: |
+          chmod +x ./setup-source.sh
+          ./setup-source.sh
+
+      - name: Run main processing script
+        if: steps.check_update.outputs.DO_UPDATE == 'true'
+        run: |
+          python3 src/main.py --overwrite
+
+      - name: Push to web branch
+        if: steps.check_update.outputs.DO_UPDATE == 'true'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: web
+          publish_dir: ./output
+          user_name: "Bot"
+          user_email: "268117545+jcxyis-bot[bot]@users.noreply.github.com"
+          commit_message: "Auto update AZL stories -> [${{ env.TARGET_SHA }}](https://github.com/AzurLaneTools/AzurLaneData/commit/${{ env.TARGET_SHA }})"
