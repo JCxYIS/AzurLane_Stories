@@ -1,8 +1,4 @@
-# AZL_ScriptSite
-
----
-
-dev notes
+# AZL_ScriptSite dev notes
 
 ## Terms
 
