@@ -19,25 +19,28 @@ jobs:
       - name: Checkout current repository
         uses: actions/checkout@v4
 
-      - name: Check for sauce repo updates
+      - name: Check for updates (Should we run?)
         id: check_update
         run: |
           TARGET_REPO="https://github.com/AzurLaneTools/AzurLaneData.git"
 
           LATEST_SHA=$(git ls-remote "$TARGET_REPO" refs/heads/main | awk '{print $1}')
-          echo "Sauce Repo last commit= $LATEST_SHA"
+          echo "Sauce Repo last commit: $LATEST_SHA"
 
           git fetch origin web || echo "no web branch found!!!"
           PREV_SHA=$(git show origin/web:commit_id.txt 2>/dev/null || echo "none")
-          echo "Our Repo last processed commit= $PREV_SHA"
+          echo "Our Repo last processed commit: $PREV_SHA"
 
-          if [ "$LATEST_SHA" == "$PREV_SHA" ]; then
-            echo "Sauce no change."
-            echo "DO_UPDATE=false" >> $GITHUB_OUTPUT
-          else
-            echo "Sauce updated. AF 可能缺少淡水。"
+          EVENT_NAME="${{ github.event_name }}"
+          echo "This GH Action is Triggered by: $EVENT_NAME"
+
+          if [ "$LATEST_SHA" != "$PREV_SHA" ] || [ "$EVENT_NAME" == "push" ] || [ "$EVENT_NAME" == "workflow_dispatch" ]; then
+            echo "Sauce or Project Repo updated. AF 可能缺少淡水。"
             echo "DO_UPDATE=true" >> $GITHUB_OUTPUT
             echo "TARGET_SHA=$LATEST_SHA" >> $GITHUB_ENV 
+          else
+            echo "Sauce no change. Skip processing."
+            echo "DO_UPDATE=false" >> $GITHUB_OUTPUT
           fi
 
       # only run if DO_UPDATE is true
@@ -61,4 +64,4 @@ jobs:
           publish_dir: ./output
           user_name: "Bot"
           user_email: "268117545+jcxyis-bot[bot]@users.noreply.github.com"
-          commit_message: "Auto update AZL stories -> [${{ env.TARGET_SHA }}](https://github.com/AzurLaneTools/AzurLaneData/commit/${{ env.TARGET_SHA }})"
+          commit_message: "Auto update -> https://github.com/AzurLaneTools/AzurLaneData/commit/${{ env.TARGET_SHA }}"
