@@ -175,3 +175,41 @@ function renderCardsToGrid(groupIds, grid) {
 
 // Start app
 fetchGroupsData();
+fetchCommitInfo();
+
+async function fetchCommitInfo() {
+    try {
+        const [idRes, timeRes] = await Promise.allSettled([
+            fetch('commit_id.txt'),
+            fetch('commit_time.txt'),
+        ]);
+
+        let commitId = '';
+        let commitTime = '';
+
+        if (idRes.status === 'fulfilled' && idRes.value.ok) {
+            commitId = (await idRes.value.text()).trim();
+        }
+        if (timeRes.status === 'fulfilled' && timeRes.value.ok) {
+            commitTime = (await timeRes.value.text()).trim();
+        }
+
+        const timeEl = document.getElementById('footer-commit-time');
+        const linkEl = document.getElementById('footer-commit-link');
+        const idEl = document.getElementById('footer-commit-id');
+
+        if (timeEl) timeEl.textContent = commitTime || 'unknown';
+
+        if (idEl && linkEl) {
+            const shortId = commitId ? commitId.slice(0, 7) : 'unknown';
+            idEl.textContent = shortId;
+            if (commitId) {
+                linkEl.href = `https://github.com/JCxYIS/AzurLane_Stories/commit/${commitId}`;
+                linkEl.target = '_blank';
+                linkEl.rel = 'noopener noreferrer';
+            }
+        }
+    } catch (e) {
+        console.warn('Could not load commit info:', e);
+    }
+}

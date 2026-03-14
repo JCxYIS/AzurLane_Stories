@@ -281,3 +281,102 @@ h1 {
 .back-link:hover {
   text-decoration: underline;
 }
+
+
+.site-footer {
+  margin-top: 60px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 28px 20px 24px;
+  color: #888;
+  font-size: 0.85em;
+  line-height: 1.7;
+}
+
+.footer-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.footer-update {
+  color: #777;
+  font-size: 0.9em;
+}
+
+.footer-commit-time {
+  color: #aaa;
+}
+
+.footer-commit-link {
+  color: #39c5bb;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-commit-link:hover {
+  color: #6ddbd6;
+  text-decoration: underline;
+}
+
+.footer-commit-link code {
+  font-family: monospace;
+  font-size: 0.95em;
+}
+
+.footer-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #39c5bb;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #6ddbd6;
+  text-decoration: underline;
+}
+
+.footer-sources {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer-label {
+  font-weight: 600;
+  color: #aaa;
+  margin-right: 3px;
+}
+
+.footer-sources a {
+  color: #39c5bb;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-sources a:hover {
+  color: #6ddbd6;
+  text-decoration: underline;
+}
+
+.footer-sep {
+  color: #555;
+}
+
+.footer-disclaimer {
+  color: #666;
+  font-size: 0.9em;
+  font-style: italic;
+}
