@@ -1,0 +1,4624 @@
+{
+  "1": {
+    "titles": {
+      "CN": "序章",
+      "EN": "Prologue",
+      "JP": "序章",
+      "KR": "프롤로그",
+      "TW": "序章"
+    },
+    "type": 1,
+    "subtype": 0,
+    "icon": "title_main"
+  },
+  "2": {
+    "titles": {
+      "CN": "虎！虎！虎！",
+      "EN": "Tora! Tora! Tora!",
+      "JP": "トラ！トラ！トラ！",
+      "KR": "진주만을 기억하라!",
+      "TW": "虎！虎！虎！"
+    },
+    "type": 1,
+    "subtype": 0,
+    "icon": "title_main"
+  },
+  "3": {
+    "titles": {
+      "CN": "珊瑚海首秀",
+      "EN": "Battle of Coral Sea",
+      "JP": "初陣！珊瑚海",
+      "KR": "출전! 산호해",
+      "TW": "珊瑚海首秀"
+    },
+    "type": 1,
+    "subtype": 0,
+    "icon": "title_main"
+  },
+  "4": {
+    "titles": {
+      "CN": "决战中途岛",
+      "EN": "Midway Showdown",
+      "JP": "AF決戦",
+      "KR": "미드웨이 결전",
+      "TW": "決戰中途島"
+    },
+    "type": 1,
+    "subtype": 0,
+    "icon": "title_main"
+  },
+  "98": {
+    "titles": {
+      "CN": "「天运拟合」开启",
+      "EN": "Unlock \"Fate Simulation.\" ",
+      "JP": "「竜骨編纂」開放 ",
+      "KR": "「용골편찬」오픈 ",
+      "TW": "「天運擬合」開啟"
+    },
+    "type": 1,
+    "subtype": 0,
+    "icon": "title_main"
+  },
+  "99": {
+    "titles": {
+      "CN": "指挥喵、登场！",
+      "EN": "Enter the Meowfficers! ",
+      "JP": "オフニャ、登場！",
+      "KR": "지휘냥, 등장!",
+      "TW": "指揮喵、登場！"
+    },
+    "type": 1,
+    "subtype": 0,
+    "icon": "title_main"
+  },
+  "100": {
+    "titles": {
+      "CN": "科研系统·开放",
+      "EN": "Unlock the new Research feature. ",
+      "JP": "新機能「研究」開放！",
+      "KR": "과학연구 시스템 개방!",
+      "TW": "科研系統·開放"
+    },
+    "type": 1,
+    "subtype": 0,
+    "icon": "title_main"
+  },
+  "101": {
+    "titles": {
+      "CN": "努力、希望和计划",
+      "EN": "Strive, Wish and Strategize ",
+      "JP": "「努力、希望と計画」",
+      "KR": "「노력, 희망과 계획」",
+      "TW": "努力、希望和計畫"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "102": {
+    "titles": {
+      "CN": "「异色格」作战",
+      "EN": "Divergent Chessboard",
+      "JP": "鏡写されし異色",
+      "KR": "거울에 비친 이색",
+      "TW": "「異色格」作戰"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "103": {
+    "titles": {
+      "CN": "七夕与传说的巧克力"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "104": {
+    "titles": {
+      "CN": "与凤翔相处的一天"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "105": {
+    "titles": {
+      "CN": "铅色的追忆"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "106": {
+    "titles": {
+      "CN": "逸仙·羁绊"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "107": {
+    "titles": {
+      "CN": "月夕·愿祈",
+      "EN": "Mid-Autumn Festival",
+      "JP": "玉兎・月夜に酔う",
+      "KR": "옥토끼 - 달밤에 취하다",
+      "TW": "月夕·願祈"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "108": {
+    "titles": {
+      "CN": "红染的参访者",
+      "EN": "Visitors Dyed in Red",
+      "JP": "紅染の来訪者",
+      "KR": "홍염의 방문자",
+      "TW": "紅染的參訪者"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "109": {
+    "titles": {
+      "CN": "光荣之战",
+      "EN": "Glorious Battle ",
+      "JP": "栄光なる最終戦",
+      "KR": "영광스런 최종전",
+      "TW": "光榮之戰"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "110": {
+    "titles": {
+      "CN": "“魔女”们的万圣夜",
+      "EN": "Witches' Eve",
+      "JP": "「魔女達」の前夜祭",
+      "KR": "\"마녀들\"의 전야제",
+      "TW": "“魔女”們的萬聖夜"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "111": {
+    "titles": {
+      "CN": "小小的勇气",
+      "EN": "Bits of Courage",
+      "JP": "星の歌姫と小さな勇気",
+      "KR": "스타더스트와 자그마한 용기 ",
+      "TW": "小小的勇氣"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "112": {
+    "titles": {
+      "CN": "热热闹闹的下午茶",
+      "EN": "Lively Afternoon Tea Party",
+      "JP": "ワイワイお茶会",
+      "KR": "왁자지껄 다과회",
+      "TW": "熱熱鬧鬧的下午茶"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "113": {
+    "titles": {
+      "CN": "爱与和平的圣夜祭",
+      "EN": "Sacred Love and Peace",
+      "JP": "愛と平和の聖夜祭",
+      "KR": "사랑과 평화의 성야제 ",
+      "TW": "愛與和平的聖夜祭"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "114": {
+    "titles": {
+      "CN": "新年快乐",
+      "EN": "Lunar New Year Celebration ",
+      "JP": "謹賀新年",
+      "TW": "新年快樂"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "115": {
+    "titles": {
+      "CN": "坠落之翼",
+      "EN": "Fallen Wings ",
+      "JP": "闇に堕ちた青き翼",
+      "KR": "어둠에 떨어진 푸른 날개",
+      "TW": "墜落之翼"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "116": {
+    "titles": {
+      "CN": "冬日攻势",
+      "EN": "Winter Offensive",
+      "JP": "夏(?)の大作戦",
+      "KR": "여름(?)의 대작전",
+      "TW": "冬日攻勢"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "117": {
+    "titles": {
+      "CN": "围剿斯佩伯爵！",
+      "EN": "The Pursuit of Graf Spee ",
+      "JP": "グラーフ・シュペー追撃戦",
+      "KR": "그라프 슈피 추격전",
+      "TW": "圍剿施佩伯爵！"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "118": {
+    "titles": {
+      "CN": "异次元的访客-日常篇",
+      "EN": "Visitors From Another Dimension: Mission Cutscenes ",
+      "JP": "別次元からの来訪者・日常編",
+      "KR": "다른 차원의 방문자 - 일상 편"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "119": {
+    "titles": {
+      "CN": "异次元的访客-关卡篇",
+      "EN": "Visitors From Another Dimension: Stage Cutscenes ",
+      "JP": "別次元からの来訪者・ステージ編",
+      "KR": "다른 차원의 방문자 - 스테이지 편"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "120": {
+    "titles": {
+      "CN": "鞍山的绘图日记",
+      "EN": "An Shan's Coloring Book ",
+      "JP": "四天王大冒険・鞍山編",
+      "KR": "안샨의 그림 교실 ",
+      "TW": "鞍山的繪圖日記"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "121": {
+    "titles": {
+      "CN": "抚顺的大冒险",
+      "EN": "Fu Shun's Great Adventure ",
+      "JP": "四天王大冒険・撫順編",
+      "KR": "푸슌의 대모험 ",
+      "TW": "撫順的大冒險"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "122": {
+    "titles": {
+      "CN": "春风的十字星",
+      "EN": "Sea Star on Shore",
+      "JP": "春風の十字星",
+      "KR": "여름 바람의 십자성",
+      "TW": "春風的十字星"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "123": {
+    "titles": {
+      "CN": "凛冬王冠",
+      "EN": "Winter's Crown ",
+      "JP": "凛冽なりし冬の王冠",
+      "KR": "싸늘한 겨울의 왕관",
+      "TW": "凜冬王冠"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "124": {
+    "titles": {
+      "CN": "春天的赏樱大会",
+      "EN": "Flower Festival",
+      "JP": "春のお花見大会",
+      "KR": "벚꽃놀이 대소동 ",
+      "TW": "春天的賞櫻大會"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "125": {
+    "titles": {
+      "CN": "樱花烂漫开学祭",
+      "EN": "School Day Celebrations",
+      "JP": "桜華爛漫新学期",
+      "KR": "사쿠라 로맨스 - 새 학기",
+      "TW": "櫻花爛漫開學祭"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "128": {
+    "titles": {
+      "CN": "36年Z组 Z23老师",
+      "EN": "Year 36 Z Class Z23-Sensei",
+      "JP": "36年Z組ニーミ先生",
+      "KR": "가르쳐줘! Z23 선생님!",
+      "TW": "36年Z組 Z23老師"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "129": {
+    "titles": {
+      "CN": "明日的淑女",
+      "EN": "Lady of Tomorrow",
+      "JP": "小さなめいどちょー",
+      "KR": "귀여운 꼬마 메이드",
+      "TW": "明日的淑女"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "130": {
+    "titles": {
+      "CN": "炎夏的火锅大会？！",
+      "JP": "夏の鍋大会！？",
+      "KR": "여름의 전골 대회?!"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "131": {
+    "titles": {
+      "CN": "墨染的钢铁之花",
+      "EN": "Ink-Stained Steel Sakura ",
+      "JP": "墨染まりし鋼の桜",
+      "KR": "검게 물든 강철의 벚꽃 ",
+      "TW": "墨染的鋼鐵之花"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "132": {
+    "titles": {
+      "CN": "月光下的序曲",
+      "EN": "Moonlit Overture ",
+      "JP": "月夜の開幕曲 ",
+      "KR": "월하의 서곡",
+      "TW": "月光下的序曲"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "133": {
+    "titles": {
+      "CN": "光与影的鸢尾之华",
+      "EN": "Iris of Light and Dark ",
+      "JP": "光と影のアイリス",
+      "KR": "빛과 그림자의 아이리스 ",
+      "TW": "光與影的鳶尾之華"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "134": {
+    "titles": {
+      "CN": "白衣天使or恶魔？",
+      "EN": "Angel or Devil in White? ",
+      "JP": "白衣の天使or悪魔？",
+      "KR": "백의의 천사 or 악마?",
+      "TW": "白衣天使or惡魔？"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "135": {
+    "titles": {
+      "CN": "盛夏的半人马座",
+      "EN": "Midsummer Sagittarius ",
+      "JP": "盛夏の射手座",
+      "KR": "한여름의 사수자리",
+      "TW": "盛夏的半人馬座"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "136": {
+    "titles": {
+      "CN": "三笠前辈的收藏大公开",
+      "EN": "Mikasa's Model Museum ",
+      "JP": "三笠大先輩のミニ博物館",
+      "KR": "미카사 선배의 프라모델 박물관",
+      "TW": "三笠前輩的收藏大公開"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "137": {
+    "titles": {
+      "CN": "特别庆典·开幕！",
+      "EN": "Ceremonial Gala ",
+      "JP": "特別パーティー、開幕！",
+      "KR": "특별 제전, 개막!",
+      "TW": "特別慶典·開幕！"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "138": {
+    "titles": {
+      "CN": "港区的特别宴会",
+      "EN": "The Special Banquet",
+      "JP": "母港の特別宴会",
+      "KR": "모항의 특별 연회",
+      "TW": "港區的特別宴會"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "139": {
+    "titles": {
+      "CN": "闪耀☆战斗之星！",
+      "EN": "Sparkling Battle Star!",
+      "JP": "輝く☆バトルスター！",
+      "KR": "빛나라! ☆ 배틀스타~!",
+      "TW": "閃耀☆戰鬥之星！"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "140": {
+    "titles": {
+      "CN": "战斗！皇家女仆队！",
+      "JP": "戦え！ロイヤルメイド隊",
+      "KR": "싸워라! 로열 메이드대"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "141": {
+    "titles": {
+      "CN": "捣蛋万圣夜！",
+      "EN": "Trick or Treat Halloween Night! ",
+      "JP": "悪戯ハロウィン",
+      "KR": "장난스런 핼러윈 ",
+      "TW": "搗蛋萬聖夜！"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "142": {
+    "titles": {
+      "CN": "梦幻的交汇-关卡篇",
+      "JP": "夢幻の邂逅・ステージ編",
+      "KR": "꿈의 만남 - 스테이지편"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "143": {
+    "titles": {
+      "CN": "梦幻的交汇-日常篇",
+      "JP": "夢幻の邂逅・日常編",
+      "KR": "꿈의 만남 - 일상편"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "144": {
+    "titles": {
+      "CN": "梦幻的交汇-特别篇",
+      "JP": "夢幻の邂逅・スペシャル",
+      "KR": "꿈의 만남 - 스페셜"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "145": {
+    "titles": {
+      "CN": "斯图尔特的硝烟",
+      "EN": "The Solomon Ranger",
+      "JP": "南洋に靡く硝煙",
+      "KR": "솔로몬의 무사 ",
+      "TW": "斯圖爾特的硝煙"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "146": {
+    "titles": {
+      "CN": "圣诞礼物大作战！",
+      "EN": "Operation: Christmas! ",
+      "JP": "オペレーション・クリスマス！",
+      "KR": "크리스마스 선물 대작전! ",
+      "TW": "聖誕禮物大作戰！"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "147": {
+    "titles": {
+      "CN": "新年的祝福",
+      "EN": "Blessed New Year",
+      "JP": "正月の祝福",
+      "KR": "정월의 축복 ",
+      "TW": "新年的祝福"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "148": {
+    "titles": {
+      "CN": "苍红的回响",
+      "EN": "Crimson Echoes ",
+      "JP": "縹映る深緋の残響",
+      "KR": "청홍의 메아리 ",
+      "TW": "蒼紅的迴響"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "149": {
+    "titles": {
+      "CN": "闹腾嬉戏东煌春节",
+      "EN": "Lunar New Yay-Yay-Year! ",
+      "JP": "ワイワイ旧正月！",
+      "KR": "시끌벅적 설날 축제 ",
+      "TW": "鬧騰嬉戲東煌春節"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "150": {
+    "titles": {
+      "CN": "特别演习·埃塞克斯级",
+      "EN": "Air Raid Drills with Essex ",
+      "JP": "特別演習・超空強襲波",
+      "KR": "특별훈련·에식스급 ",
+      "TW": "特別演習·艾塞克斯級"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "151": {
+    "titles": {
+      "CN": "峡湾间的星辰",
+      "EN": "Stars of the Shimmering Fjord",
+      "JP": "輝ける峡湾の星",
+      "KR": "피오르드의 별 ",
+      "TW": "峽灣間的星辰"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "152": {
+    "titles": {
+      "CN": "「虚拟连接的共时性」-日常篇",
+      "EN": "\"Virtual Connection Synchronicity\" - Daily Memorabilia",
+      "JP": "「仮想繋げし共時性」-日常編",
+      "KR": "「버츄얼 연결고리의 공시성」 -일상편"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "153": {
+    "titles": {
+      "CN": "「虚拟连接的共时性」-净化篇",
+      "EN": "\"Virtual Connection Synchronicity\" - Purification",
+      "JP": "「仮想繋げし共時性」-スッキリ編",
+      "KR": "「버츄얼 연결고리의 공시성」 -정화편"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "154": {
+    "titles": {
+      "CN": "「虚拟连接的共时性」-关卡篇",
+      "EN": "\"Virtual Connection Synchronicity\" - Task",
+      "JP": "「仮想繋げし共時性」-ステージ編",
+      "KR": "「버츄얼 연결고리의 공시성」 -클리어편"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "155": {
+    "titles": {
+      "CN": "港区逃离大作战！",
+      "EN": "Operation: Escape from Port!",
+      "JP": "母港脱出作戦！",
+      "KR": "항구탈출 대작전!",
+      "TW": "港區逃離大作戰！"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "156": {
+    "titles": {
+      "CN": "小小的誓言",
+      "EN": "\"One Small Promise\" ",
+      "JP": "小さな約束",
+      "KR": "희망의 맹세",
+      "TW": "小小的誓言"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "157": {
+    "titles": {
+      "CN": "理科实验时间！",
+      "EN": "Science Rules!",
+      "JP": "理科実験タイム！",
+      "KR": "이과 시험시간!",
+      "TW": "理科實驗時間！"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "158": {
+    "titles": {
+      "CN": "铁血、音符与誓言",
+      "EN": "Scherzo of Iron and Blood",
+      "JP": "黒鉄の楽章、誓いの海",
+      "KR": "메탈 블러드, 음표 & 맹세 ",
+      "TW": "鐵血、音符與誓言"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "159": {
+    "titles": {
+      "CN": "祈愿与祝福之宴",
+      "EN": "A Prayer for Peace ",
+      "JP": "平和に祈りを",
+      "KR": "평화에 기도를 ",
+      "TW": "祈願與祝福之宴 "
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "160": {
+    "titles": {
+      "CN": "月刊漫画Javelin",
+      "EN": "Javelin's Monthly Manga ",
+      "JP": "月刊マンガJavelin",
+      "KR": "월간 만화 - 재블린 ",
+      "TW": "月刊漫畫Javelin"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "161": {
+    "titles": {
+      "CN": "角落的向日葵",
+      "EN": "Wallflower in the Corner ",
+      "JP": "隅っこのヒマワリ",
+      "KR": "외톨이 해바라기 ",
+      "TW": "角落的向日葵"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "162": {
+    "titles": {
+      "CN": "风暴前夕",
+      "EN": "Approaching Storm ",
+      "JP": "迫りくる嵐",
+      "KR": "폭풍전야 ",
+      "TW": "風暴前夕"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "163": {
+    "titles": {
+      "CN": "箱庭疗法",
+      "EN": "Ashen Simulacrum ",
+      "JP": "開かれし紺碧の砂箱",
+      "KR": "샌드 플레이 ",
+      "TW": "箱庭療法"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "164": {
+    "titles": {
+      "CN": "碧海的偶像",
+      "EN": "Superstar of the Blue Seas ",
+      "JP": "青い海のアイドル",
+      "KR": "바다의 아이돌 ",
+      "TW": "碧海的偶像"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "165": {
+    "titles": {
+      "CN": "大家的夏日祭",
+      "EN": "Summer Festival ",
+      "JP": "みんなの夏祭り",
+      "KR": "모두의 여름 축제 ",
+      "TW": "大家的夏日祭"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "166": {
+    "titles": {
+      "CN": "荣耀殿堂",
+      "EN": "Hall of Fame",
+      "JP": "SPストーリー",
+      "KR": "명예의 전당 ",
+      "TW": "榮耀殿堂"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_rongyaodiantang"
+  },
+  "167": {
+    "titles": {
+      "CN": "神圣的悲喜剧",
+      "EN": "Empyreal Tragicomedy ",
+      "JP": "悲歎せし焔海の詩",
+      "KR": "디바인 트래지코미디 ",
+      "TW": "神聖的悲喜劇 "
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "168": {
+    "titles": {
+      "CN": "心血来潮的夜宴",
+      "EN": "Swept Away in the Moment ",
+      "JP": "シンプルパーティー？",
+      "KR": "영감이 떠오르는 파티 ",
+      "TW": "心血來潮的夜宴"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "169": {
+    "titles": {
+      "CN": "穿越彼方的水线",
+      "EN": "Crosswave ",
+      "JP": "交錯する新たな波",
+      "KR": "저편을 건너온 물결 ",
+      "TW": "穿越彼方的水線"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "170": {
+    "titles": {
+      "CN": "最珍贵的宝物",
+      "EN": "The Enigma and the Shark ",
+      "JP": "鉄血鮫とエニグマ",
+      "KR": "최고의 보물 ",
+      "TW": "最珍貴的寶物"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "171": {
+    "titles": {
+      "CN": "混沌的万圣之夜",
+      "EN": "Halloween Chaos!",
+      "JP": "カオティック・ハロウィンナイト",
+      "KR": "혼돈의 핼러윈 나이트 ",
+      "TW": "混沌的萬聖之夜"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "172": {
+    "titles": {
+      "CN": "激奏的Polaris",
+      "EN": "Passionate Polaris",
+      "JP": "激奏のポラリス",
+      "KR": "격주의 폴라리스",
+      "TW": "激奏的Polaris"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "173": {
+    "titles": {
+      "CN": "某日的polaris",
+      "EN": "A Day with Polaris",
+      "JP": "ある日のポラリス",
+      "KR": "어느 날의 폴라리스",
+      "TW": "某日的polaris"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "174": {
+    "titles": {
+      "CN": "「虚拟与真实的双向镜」-关卡篇",
+      "EN": "Looking Glass of Fact and Fiction",
+      "JP": "「幻想と真実の二重奏」-ステージ編",
+      "KR": "환상과 진실의 이중주-스테이지 편"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "175": {
+    "titles": {
+      "CN": "「虚拟与真实的双向镜」-日常篇",
+      "EN": "Looking Glass of Fact and Fiction - Funsies",
+      "JP": "「幻想と真実の二重奏」-日常編",
+      "KR": "환상과 진실의 이중주-일상 편"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "176": {
+    "titles": {
+      "CN": "平安夜的姜饼物语",
+      "EN": "Christmas Party! ",
+      "JP": "クリスマスパーティー！",
+      "KR": "크리스마스 이브 진저브레드 이야기 ",
+      "TW": "平安夜的薑餅物語"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "177": {
+    "titles": {
+      "CN": "浮樱影华",
+      "EN": "Swirling Cherry Blossoms",
+      "JP": "翳りし満ちる影の華",
+      "KR": "빛나는 벚꽃의 그림자",
+      "TW": "浮櫻影華"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "178": {
+    "titles": {
+      "CN": "各自的新年",
+      "EN": "Blessings and Tidings",
+      "JP": "あけおめ2020",
+      "KR": "각자의 새해",
+      "TW": "各自的新年"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "179": {
+    "titles": {
+      "CN": "战斗！皇家女仆队2nd",
+      "EN": "Fight On, Royal Maids!(part 2)",
+      "JP": "戦え！ロイヤルメイド2nd",
+      "KR": "싸워라! 로열 메이드 2nd",
+      "TW": "戰鬥！皇家女僕隊2nd"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "180": {
+    "titles": {
+      "CN": "各自的春节",
+      "EN": "Spring Festival Party",
+      "JP": "新春パーティー",
+      "KR": "각자의 설날",
+      "TW": "各自的春節"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "181": {
+    "titles": {
+      "CN": "北境序曲",
+      "EN": "Northern Overture ",
+      "JP": "凍絶の北海",
+      "KR": "동절의 북해 ",
+      "TW": "北境序曲"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "182": {
+    "titles": {
+      "CN": "迷雾之下",
+      "EN": "Under the Mist ",
+      "JP": "闇靄接近",
+      "KR": "언더 더 미스트 ",
+      "TW": "迷霧之下"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "183": {
+    "titles": {
+      "CN": "微层混合",
+      "EN": "Microlayer Medley ",
+      "JP": "闇靄払う銀翼 ",
+      "KR": "어둠을 쫓는 은익 ",
+      "TW": "微層混合"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "184": {
+    "titles": {
+      "CN": "黄金的秘宝",
+      "EN": "The Golden Doubulin ",
+      "JP": "ブリと黄金の秘宝",
+      "KR": "황금의 보물 ",
+      "TW": "黃金的秘寶"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "185": {
+    "titles": {
+      "CN": "夜幕下的归途",
+      "EN": "The Way Home in the Dark ",
+      "JP": "帰路は海色の陰りへと",
+      "KR": "어둠 속의 귀로 ",
+      "TW": "夜幕下的歸途 "
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "186": {
+    "titles": {
+      "CN": "穹顶下的圣咏曲",
+      "EN": "Skybound Oratorio ",
+      "JP": "神穹を衝く聖歌",
+      "KR": "하늘 아래의 찬송가 ",
+      "TW": "穹頂下的聖詠曲"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "187": {
+    "titles": {
+      "CN": "峡湾间的反击",
+      "EN": "Counterattack Within the Fjord ",
+      "JP": "峡湾間の反撃",
+      "KR": "피오르드 반격전 ",
+      "TW": "峽灣間的反擊"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "188": {
+    "titles": {
+      "CN": "永夜幻光",
+      "EN": "Aurora Noctis ",
+      "JP": "極夜照らす幻光  ",
+      "KR": "영원한 밤의 환광 ",
+      "TW": "永夜幻光"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "189": {
+    "titles": {
+      "CN": "蝶海梦花",
+      "EN": "Dreamwaker's Butterfly ",
+      "JP": "刹那觀る胡蝶の夢",
+      "KR": "나비 바다 꿈의 꽃",
+      "TW": "蝶海夢花"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "190": {
+    "titles": {
+      "CN": "划破海空之翼",
+      "EN": "Sundered Blue ",
+      "JP": "奔る彩帆の青",
+      "KR": "날카로운 해상의 날개",
+      "TW": "劃破海空之翼"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "191": {
+    "titles": {
+      "CN": "激唱的Universe",
+      "EN": "Universe in Unison ",
+      "JP": "激唱のユニバース",
+      "KR": "격창의 유니버스",
+      "TW": "激唱的Universe"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "192": {
+    "titles": {
+      "CN": "「假日航线」-关卡篇",
+      "EN": "Vacation Lane - Venus Visitation ",
+      "JP": "バケーションレーン-ステージ",
+      "KR": "휴일항로-해역편",
+      "TW": "「假日航線」-關卡篇"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "193": {
+    "titles": {
+      "CN": "「假日航线」-日常篇",
+      "EN": "Vacation Lane - Cozy Days ",
+      "JP": "バケーションレーン-日常編",
+      "KR": "휴일항로-일상편",
+      "TW": "「假日航線」-日常篇"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "194": {
+    "titles": {
+      "CN": "负象限作战",
+      "EN": "Inverted Orthant ",
+      "JP": "虚畳なりし限象",
+      "KR": "부상한 작전",
+      "TW": "負象限作戰"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "195": {
+    "titles": {
+      "CN": "破晓冰华",
+      "EN": "Khorovod of Dawn's Rime",
+      "JP": "暁射す氷華の嵐",
+      "KR": "새벽녘에 비치는 빙화",
+      "TW": "破曉冰華"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "196": {
+    "titles": {
+      "CN": "复兴的赞美诗",
+      "EN": "Daedalian Hymn ",
+      "JP": "讃える復興の迷路",
+      "KR": "부흥의 찬송가",
+      "TW": "復興的讚美詩"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "197": {
+    "titles": {
+      "CN": "银色档案",
+      "EN": "Silver Archives ",
+      "JP": "再現記録",
+      "KR": "은색 파일",
+      "TW": "銀色檔案 "
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "198": {
+    "titles": {
+      "CN": "镜位螺旋",
+      "EN": "Mirror Involution ",
+      "JP": "照らす螺旋の鏡海",
+      "KR": "비추는 나선의 경해",
+      "TW": "鏡位螺旋 "
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "199": {
+    "titles": {
+      "CN": "「响彻碧海的偶像歌」-日常篇",
+      "EN": "Azur Anthem - Side Story",
+      "JP": "海に響くアイドルの歌-日常編",
+      "KR": "바다에 울려퍼지는 아이돌 노래-스테이지 편",
+      "TW": "「響徹碧海的偶像之歌」-日常篇"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "200": {
+    "titles": {
+      "CN": "「响彻碧海的偶像歌」-关卡篇",
+      "EN": "Azur Anthem",
+      "JP": "海に響くアイドルの歌-ステージ編",
+      "KR": "바다에 울려퍼지는 아이돌 노래-일상 편",
+      "TW": "「響徹碧海的偶像之歌」-關卡篇"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "202": {
+    "titles": {
+      "CN": "碧海光粼",
+      "EN": "Upon the Shimmering Blue ",
+      "JP": "駆けよ 碧海の吹き風",
+      "KR": "맑고 푸른 바다",
+      "TW": "碧海光粼"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "203": {
+    "titles": {
+      "CN": "杰诺瓦的焰火",
+      "EN": "The Flame-Touched Dagger ",
+      "JP": "燈火のシニエ",
+      "KR": "제노바의 화염",
+      "TW": "杰諾瓦的焰火"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "204": {
+    "titles": {
+      "CN": "「交汇世界的弧光」-关卡篇",
+      "EN": "World-Spanning Arclight",
+      "JP": "弧光は交わる世界にて-ステージ編",
+      "KR": "호광은 교차하는 세계에서-스테이지 편",
+      "TW": "「交匯世界的弧光」-關卡篇"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "205": {
+    "titles": {
+      "CN": "「交汇世界的弧光」-日常篇",
+      "EN": "Dynamic Days",
+      "JP": "弧光は交わる世界にて-日常編",
+      "KR": "호광은 교차하는 세계에서-일상 편",
+      "TW": "「交匯世界的弧光」-日常篇"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "206": {
+    "titles": {
+      "CN": "碳酸与红茶",
+      "EN": "Tonic and Tea",
+      "JP": "炭酸と紅茶",
+      "KR": "탄산과 홍차",
+      "TW": "碳酸與紅茶"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "207": {
+    "titles": {
+      "CN": "逆转彩虹之塔",
+      "EN": "Tower of Transcendence",
+      "JP": "遡望せし虹彩の塔",
+      "KR": "역행하는 무지개 탑",
+      "TW": "逆轉彩虹之塔"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "208": {
+    "titles": {
+      "CN": "演习神秘事件调查",
+      "EN": "An Exercise Gone Slightly Wrong",
+      "JP": "名状しがたき演習事件",
+      "KR": "연습 신비 사건 조사",
+      "TW": "演習神秘事件調查"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "209": {
+    "titles": {
+      "CN": "春节游园摄影会",
+      "EN": "The Great Lunar New Year Photoshoot",
+      "JP": "春節遊園撮影会",
+      "KR": "춘절 기념 촬영회",
+      "TW": "春節遊園攝影會"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "210": {
+    "titles": {
+      "CN": "黎明之暗",
+      "EN": "Darkness Within Dawn ",
+      "JP": "絶海前話",
+      "KR": "새벽의 어둠",
+      "TW": "黎明之暗"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "211": {
+    "titles": {
+      "CN": "深度回音",
+      "EN": "Abyssal Refrain",
+      "JP": "鳴動せし星霜の淵",
+      "KR": "깊게 울리는 메아리",
+      "TW": "深度回音"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "212": {
+    "titles": {
+      "CN": "虚像构筑之塔·序章",
+      "EN": "Virtual Tower",
+      "JP": "幻像の塔・発見編",
+      "KR": "한정 이벤트: 허상의 탑·프롤로그",
+      "TW": "虛像構築之塔·序章"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "213": {
+    "titles": {
+      "CN": "布里之誓",
+      "EN": "Band of Bulins",
+      "JP": "ブリの誓い",
+      "KR": "부린의 맹세",
+      "TW": "布里之誓"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "214": {
+    "titles": {
+      "CN": "永夜之城的魅影",
+      "EN": "Tales From the Count's Castle ",
+      "JP": "永き城の麗しき影",
+      "KR": "영야의 성의 그림자",
+      "TW": "永夜之城的魅影"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "215": {
+    "titles": {
+      "CN": "虹彩的终幕曲",
+      "EN": "Rondo at Rainbow's End ",
+      "JP": "吟ずる瑠璃の楽章",
+      "KR": "레인보우 피날레",
+      "TW": "虹彩的終幕曲"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "216": {
+    "titles": {
+      "CN": "意外的旅途",
+      "EN": "Letters and Travels",
+      "JP": "慶弔と帰路",
+      "KR": "뜻밖의 여정",
+      "TW": "意外的旅途"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "217": {
+    "titles": {
+      "CN": "女仆的另一面",
+      "EN": "The Many Lives of Maids",
+      "JP": "風変わりなメイドたち",
+      "KR": "메이드 스타일",
+      "TW": "女僕的另一面"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "218": {
+    "titles": {
+      "CN": "泠誓光庭",
+      "EN": "Pledge of the Radiant Court ",
+      "JP": "誠閃の剣　搖光の城",
+      "KR": "빛나는 맹세의 정원",
+      "TW": "泠誓光庭"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "219": {
+    "titles": {
+      "CN": "合雅之宴",
+      "EN": "The Graceful Banquet",
+      "JP": "雅なる宴",
+      "KR": "우아한 연회",
+      "TW": "合雅之宴"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "220": {
+    "titles": {
+      "CN": "童话森林奇遇记",
+      "EN": "Adventures in the Forest of Fables",
+      "JP": "御伽の森冒険記",
+      "KR": "숲속 동화 이야기",
+      "TW": "童話森林奇遇記"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "221": {
+    "titles": {
+      "CN": "来自鸢尾的天使",
+      "EN": "Angel of the Iris",
+      "JP": "アイリスの天使",
+      "KR": "아이리스의 천사",
+      "TW": "來自鳶尾的天使"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "222": {
+    "titles": {
+      "CN": "撒丁的邀约",
+      "EN": "Where All Roads Lead",
+      "JP": "開け！世界博覧会",
+      "KR": "사르데냐의 초대",
+      "TW": "薩丁的邀請"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "223": {
+    "titles": {
+      "CN": "雄鹰的叙事歌",
+      "EN": "Aquilifer's Ballade",
+      "JP": "鋼鷲の冒険譚",
+      "KR": "독수리의 서사곡",
+      "TW": "雄鷹的敘事歌"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "224": {
+    "titles": {
+      "CN": "远汇点作战",
+      "EN": "Operation Convergence",
+      "JP": "結像点作戦",
+      "KR": "결상점 작전",
+      "TW": "遠匯點作戰"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "225": {
+    "titles": {
+      "CN": "静海惊雷",
+      "EN": "Tranquil Sea, Distant Thunder",
+      "JP": "静海遠雷",
+      "KR": "정해경뢰",
+      "TW": "靜海驚雷"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "226": {
+    "titles": {
+      "CN": "紫绛槿岚",
+      "EN": "Violet Tempest, Blooming Lycoris",
+      "JP": "赫の涙月　菫の暁風",
+      "KR": "짙은 자줏빛의 안개",
+      "TW": "紫絳槿嵐"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "227": {
+    "titles": {
+      "CN": "勇者的旅途",
+      "EN": "Rising of the Ship Heroes!",
+      "JP": "勇者の旅路",
+      "KR": "용자의 여정",
+      "TW": "勇者的旅途"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "228": {
+    "titles": {
+      "CN": "围剿小斯佩伯爵",
+      "EN": "The Pursuit of Little Spee",
+      "JP": "シュペーちゃん追撃戦？",
+      "KR": "꼬마 그라프 슈피 추격전",
+      "TW": "圍剿小施佩伯爵"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "229": {
+    "titles": {
+      "CN": "战斗！皇家女仆队3rd？ ",
+      "EN": "Fight On, Royal Maids! (Part 3)",
+      "JP": "戦え！ロイヤルメイド隊？",
+      "KR": "싸워라! 로열 메이드 3rd?",
+      "TW": "戰鬥！皇家女僕隊3rd？"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "230": {
+    "titles": {
+      "CN": "万圣夜的「奇遇」",
+      "EN": "Halloween Hijinks",
+      "JP": "ハロウィンの遭遇",
+      "KR": "핼러윈 밤의 '기묘한 만남'",
+      "TW": "萬聖夜的「奇遇」"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "231": {
+    "titles": {
+      "CN": "「炼金术士与秘密遗迹群岛」-日常篇",
+      "EN": "The Alchemist and the Archipelago of Secrets - Peaceful Port Days",
+      "JP": "錬金術士と謎の遺跡群島-「日常編」",
+      "KR": "연금술사와 비밀 유적군도 - '일상편'",
+      "TW": "「鍊金術士與秘密遺跡群島」-日常篇"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "232": {
+    "titles": {
+      "CN": "「炼金术士与秘密遗迹群岛」-关卡篇",
+      "EN": "The Alchemist and the Archipelago of Secrets",
+      "JP": "錬金術士と謎の遺跡群島-「ステージ編」",
+      "KR": "연금술사와 비밀 유적군도 - '스테이지 편'",
+      "TW": "「鍊金術士與秘密遺跡群島」-關卡篇"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "233": {
+    "titles": {
+      "CN": "异向偏振",
+      "EN": "Causality Transposition",
+      "JP": "分極する空想の因果",
+      "KR": "이방성 편광",
+      "TW": "異向偏振"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "234": {
+    "titles": {
+      "CN": "水边的假日",
+      "EN": "Beachside Vacation Vignettes",
+      "JP": "水辺の休日",
+      "KR": "물가의 휴일",
+      "TW": "水邊的假日"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "235": {
+    "titles": {
+      "CN": "定向折叠",
+      "EN": "Parallel Superimposition",
+      "JP": "積重なる事象の幻界",
+      "KR": "거듭되는 평행세계",
+      "TW": "定向折疊"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "236": {
+    "titles": {
+      "CN": "冬日的寻路人",
+      "EN": "Winter Pathfinder",
+      "JP": "ウィンター・パスファインダー",
+      "KR": "겨울날의 길잡이",
+      "TW": "冬日的尋路人"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "237": {
+    "titles": {
+      "CN": "华灯流彩正佳音",
+      "EN": "Myriad Colors of the New Year",
+      "JP": "春節2023",
+      "KR": "현란한 등불의 기쁨",
+      "TW": "華燈流彩正佳音"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "238": {
+    "titles": {
+      "CN": "飞彩迎新春",
+      "EN": "Spring Blossoms in the Sky",
+      "JP": "華彩舞い上がる新春",
+      "KR": "춘절 폭죽",
+      "TW": "飛彩迎新春"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "239": {
+    "titles": {
+      "CN": "女王的一天",
+      "EN": "The Queen's Ordinary Day",
+      "JP": "女王の一日",
+      "KR": "여왕의 하루",
+      "TW": "女王的一天"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "240": {
+    "titles": {
+      "CN": "湮烬尘墟",
+      "EN": "Revelations of Dust",
+      "JP": "黙示の遺構",
+      "KR": "잿빛 폐허",
+      "TW": "湮燼塵墟"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "241": {
+    "titles": {
+      "CN": "极地风暴",
+      "EN": "Frostfall",
+      "JP": "星霜海嵐",
+      "KR": "극지 폭풍Pt",
+      "TW": "極地風暴"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "242": {
+    "titles": {
+      "CN": "融雪的邀约",
+      "EN": "Invitation of Melting Snow",
+      "JP": "雪見温泉の招待状",
+      "KR": "눈 녹는 날의 초대",
+      "TW": "融雪的邀約"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "243": {
+    "titles": {
+      "CN": "一锤！Burin！",
+      "EN": "One-Punch! Bulin!",
+      "JP": "一撃！PURIN！",
+      "KR": "원 펀치! 푸링!",
+      "TW": "一錘！ Burin！"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "244": {
+    "titles": {
+      "CN": "智者与蜘蛛",
+      "EN": "The Weaver's Omen",
+      "JP": "凶兆のアクム",
+      "KR": "지자와 거미",
+      "TW": "智者與蜘蛛"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "245": {
+    "titles": {
+      "CN": "空相交汇点",
+      "EN": "Confluence of Nothingness",
+      "JP": "覆天せし万象の塵",
+      "KR": "오엽각 교차점",
+      "TW": "空相交會點"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "246": {
+    "titles": {
+      "CN": "海风与夏日的无人岛",
+      "EN": "Uncharted Summer",
+      "JP": "潮風と夏の無人島",
+      "KR": "바닷바람과 여름날의 무인도",
+      "TW": "海風與夏日的無人島"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "247": {
+    "titles": {
+      "CN": "清茶氤氲",
+      "EN": "Pristine Leaves, Rich Warmth",
+      "JP": "清茶馥郁",
+      "KR": "청차의 향기",
+      "TW": "清茶氤氳"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "248": {
+    "titles": {
+      "CN": "翩若飞仙",
+      "EN": "Like a Soaring Apsaras",
+      "JP": "飛仙にあやかりて",
+      "KR": "신선의 춤사위",
+      "TW": "翩若飛仙"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "249": {
+    "titles": {
+      "CN": "绿洲往事",
+      "EN": "Reflections of the Oasis",
+      "JP": "緑地伽話",
+      "KR": "오아시스 옛담",
+      "TW": "綠洲往事"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "250": {
+    "titles": {
+      "CN": "白领与美梦",
+      "EN": "Cubicle Dreamin'",
+      "JP": "オフィス・ドリーム",
+      "KR": "오피스 드림",
+      "TW": "白領與美夢"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "251": {
+    "titles": {
+      "CN": "奏响鸢尾之歌",
+      "EN": "Anthem of Remembrance",
+      "JP": "燃ゆる聖都の回想曲",
+      "KR": "불타는 아이리스 회상곡",
+      "TW": "奏響鳶尾之歌"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "252": {
+    "titles": {
+      "CN": "长夜降临之前",
+      "EN": "Eventide's Eve",
+      "JP": "博覧会の夜",
+      "KR": "박람회의 밤",
+      "TW": "長夜前夕"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "253": {
+    "titles": {
+      "CN": "鸢尾芳馨弥漫时",
+      "EN": "The Orthodoxy's Banquet",
+      "JP": "パーティー・ウィズ・アイリス",
+      "KR": "파티 위드 아이리스",
+      "TW": "鳶尾芳馨瀰漫時"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "254": {
+    "titles": {
+      "CN": "愚者的天平",
+      "EN": "The Fool's Scales",
+      "JP": "愚者の天秤",
+      "KR": "어리석은 자의 천칭",
+      "TW": "愚者的天秤"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "255": {
+    "titles": {
+      "CN": "薰风下的邀约",
+      "EN": "Invitation of the Wind",
+      "JP": "薫風の招待状",
+      "KR": "라벤더의 초대",
+      "TW": "薰風下的邀約"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "256": {
+    "titles": {
+      "CN": "月夜未央",
+      "EN": "Waxing Moonlight",
+      "JP": "暁夜半宵",
+      "KR": "새벽달 떠오르는 밤",
+      "TW": "月夜未央"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "257": {
+    "titles": {
+      "CN": "须臾望月抄",
+      "EN": "Effulgence Before Eclipse",
+      "JP": "須臾望月抄",
+      "KR": "만월이 밝아오기 전에",
+      "TW": "須臾望月抄"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "258": {
+    "titles": {
+      "CN": "港区时尚特刊：合订集[1]",
+      "EN": "Port Fashion Collection! Part 1",
+      "JP": "母港着せ替え特集！その①",
+      "KR": "모항 패션 컬렉션: 합본집[1]",
+      "TW": "港區時尚特刊：慶典禮服"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "259": {
+    "titles": {
+      "CN": "度假村神秘事件调查",
+      "EN": "The Spiriting-Away Incident?",
+      "JP": "温泉街神隠し事件",
+      "KR": "리조트 신비 사건 조사",
+      "TW": "渡假村神秘事件調查"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "260": {
+    "titles": {
+      "CN": "港区时尚特刊：合订集[2]",
+      "EN": "Port Fashion Collection! Part 2",
+      "JP": "母港着せ替え特集！その②",
+      "KR": "모항 패션 컬렉션: 합본집[2]",
+      "TW": "港區時尚特刊：夏日泳裝"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "261": {
+    "titles": {
+      "CN": "港区时尚特刊：Race Begins！",
+      "EN": "Port Fashion Collection! Racing Special",
+      "JP": "レーシング・ステージ！",
+      "KR": "모항 패션 컬렉션：Race Begins！",
+      "TW": "港區時尚特刊：Race Begins！"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "262": {
+    "titles": {
+      "CN": "皇家财富的秘密船厂",
+      "EN": "Royal Fortune's Secret Shipyard",
+      "JP": "ロイヤル・フォーチュンの秘密造船所",
+      "KR": "로열 포춘의 비밀 조선소",
+      "TW": "皇家幸運的秘密船廠"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "263": {
+    "titles": {
+      "CN": "飓风与青春之泉",
+      "EN": "Tempesta and the Fountain of Youth",
+      "JP": "テンペスタと若返りの泉",
+      "KR": "템페스타와 청춘의 샘",
+      "TW": "颶風與青春之泉"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "264": {
+    "titles": {
+      "CN": "雨夜惊魂",
+      "EN": "A Bump in the Rainy Night",
+      "JP": "嵐夜綺譚",
+      "KR": "비가 오는 밤의 괴담",
+      "TW": "雨夜驚魂"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "265": {
+    "titles": {
+      "CN": "今日主推商品是…？",
+      "EN": "Today's Featured Product",
+      "JP": "今日の一押しは？",
+      "TW": "今日主推商品是…？"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "266": {
+    "titles": {
+      "CN": "「苍闪忍法帖」-关卡篇",
+      "EN": "The Ninja Scrolls: Azur Flash",
+      "JP": "蒼閃忍法帖-ステージ",
+      "KR": "창섬인법첩",
+      "TW": "蒼閃忍法帖-「關卡篇」"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "267": {
+    "titles": {
+      "CN": "「苍闪忍法帖」-日常篇",
+      "EN": "The Ninja Scrolls: At Your Leisure",
+      "JP": "蒼閃忍法帖-日常",
+      "KR": "창섬인법첩-「일상편」",
+      "TW": "蒼閃忍法帖-「日常篇」"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "268": {
+    "titles": {
+      "CN": "人气投票新篇章",
+      "EN": "Popularity Poll 2023",
+      "JP": "人気投票2023",
+      "KR": "인기투표 새로운 챕터",
+      "TW": "人氣投票新篇章"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "269": {
+    "titles": {
+      "CN": "晴空之下",
+      "EN": "Beneath Clear, Starry Skies",
+      "JP": "星凪の空",
+      "KR": "고요한 별하늘",
+      "TW": "晴空之下"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "270": {
+    "titles": {
+      "CN": "星海逐光",
+      "EN": "Light-Chasing Sea of Stars",
+      "JP": "光追う星の海",
+      "KR": "빛을 쫓는 별의 바다",
+      "TW": "星海逐光"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "271": {
+    "titles": {
+      "CN": "港区时尚特刊：炫彩缤纷夜",
+      "EN": "Port Fashion Collection: Resplendent Night",
+      "JP": "母港ナイト",
+      "KR": "모항 패션 컬렉션: 현란한 밤",
+      "TW": "港區時尚特刊：炫彩繽紛夜"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "272": {
+    "titles": {
+      "CN": "港区时尚特刊：合订集[3]",
+      "EN": "Port Fashion Collection: Resplendent Night II",
+      "JP": "母港着せ替え特集！その③",
+      "KR": "모항 패션 컬렉션:합정본[3]",
+      "TW": "港區時尚特刊：淺斟低酌"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "273": {
+    "titles": {
+      "CN": "寰昌宇定家事忙",
+      "EN": "Spring Festive Fiasco",
+      "JP": "新春宴会狂騒曲",
+      "KR": "정신 없는 환창이네",
+      "TW": "寰昌宇定家事忙"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "274": {
+    "titles": {
+      "CN": "新春的冒险之王",
+      "EN": "The Queen of Adventure",
+      "JP": "スプリング冒険キング",
+      "KR": "새봄의 모험왕",
+      "TW": "新春的冒險之王"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "275": {
+    "titles": {
+      "CN": "港区时尚特刊：新春合集[1]",
+      "EN": "Port Fashion Collection: Spring Festival I",
+      "JP": "着せ替え特集　春節2023　①",
+      "KR": "모항 패션 컬렉션: 새봄 합본집[1]",
+      "TW": "港區時尚特刊：祥蛇賀春"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "276": {
+    "titles": {
+      "CN": "港区时尚特刊：新春合集[2]",
+      "EN": "Port Fashion Collection: Spring Festival II",
+      "JP": "着せ替え特集　春節2023　②",
+      "KR": "모항 패션 컬렉션: 새봄 합본집[2]",
+      "TW": "港區時尚特刊：祥蛇賀春[2]"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "277": {
+    "titles": {
+      "CN": "向山而行",
+      "EN": "Mist Upon Silver Summits",
+      "JP": "銀嶺烟霞",
+      "KR": "은빛 정상의 안개",
+      "TW": "向山而行"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "278": {
+    "titles": {
+      "CN": "雪境迷踪",
+      "EN": "Snowrealm Peregrination",
+      "JP": "銀界遊廻",
+      "KR": "설경미종",
+      "TW": "雪境迷蹤"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "279": {
+    "titles": {
+      "CN": "暗金不夜城",
+      "EN": "Endless Drama in the Sleepless City",
+      "JP": "電影不夜城",
+      "KR": "암금불야성",
+      "TW": "暗金不夜城"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "280": {
+    "titles": {
+      "CN": "吟游者之诗",
+      "EN": "The Bard's Poem",
+      "JP": "バードの詩",
+      "KR": "음유자의 시",
+      "TW": "吟遊者之詩"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "281": {
+    "titles": {
+      "CN": "从零开始的魔王讨伐之旅",
+      "EN": "From Zero to Hero",
+      "JP": "ゼロから頑張る魔王討伐",
+      "KR": "제로부터 시작하는 마왕 토벌",
+      "TW": "從零開始的魔王討伐之旅"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "282": {
+    "titles": {
+      "CN": "觉醒的黄金",
+      "EN": "Rebirth of Gold",
+      "JP": "蘇るゴールデン",
+      "KR": "각성의 황금",
+      "TW": "覺醒的黃金"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "283": {
+    "titles": {
+      "CN": "彼岸花开暗香来",
+      "EN": "Spider Lily's Redolence",
+      "JP": "彼岸のレドレント",
+      "KR": "저편에 핀 꽃의 향기",
+      "TW": "彼岸花開暗香來"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "284": {
+    "titles": {
+      "CN": "共鸣的Passion",
+      "EN": "Heart-Linking Harmony",
+      "JP": "共鳴のパッション",
+      "KR": "공명의 Passion",
+      "TW": "共鳴的Passion"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "285": {
+    "titles": {
+      "CN": "港区时尚特刊：别样的日常",
+      "EN": "Port Fashion Collection! A Glimpse Into Another Life",
+      "JP": "着せ替え特集  一味違う日常",
+      "KR": "모항 패션 컬렉션 색다른 일상",
+      "TW": "港區時尚特刊：別樣的日常"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "286": {
+    "titles": {
+      "CN": "于启航之前",
+      "EN": "The Bon Before the Voyage",
+      "JP": "出航せよ母港クルーズ",
+      "KR": "출항하기 전에",
+      "TW": "於啟航之前"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "287": {
+    "titles": {
+      "CN": "彼方之音",
+      "EN": "Echoes From Afar",
+      "JP": "彼方の響",
+      "KR": "저편에서의 메아리",
+      "TW": "彼方之音"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "288": {
+    "titles": {
+      "CN": "假日！心跳！大邮轮！",
+      "EN": "Pleasure, Leisure, and Treasure",
+      "JP": "トキメク休日大航海",
+      "KR": "휴일! 심쿵! 크루즈!",
+      "TW": "假日！心跳！大郵輪！"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "289": {
+    "titles": {
+      "CN": "绽放于辉光之城",
+      "EN": "Light of the Martyrium",
+      "JP": "赫輝のマルティリウム",
+      "KR": "휘광의 성에서 피어나라",
+      "TW": "綻放於輝光之城"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "290": {
+    "titles": {
+      "CN": "翠园佳绣",
+      "EN": "A Tale From the Sylvan Garden",
+      "JP": "翠園佳繍",
+      "KR": "취원가수",
+      "TW": "翠園佳繡"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "291": {
+    "titles": {
+      "CN": "悠然碧海行",
+      "EN": "A Leisurely Trip to Jade Seas",
+      "JP": "悠然碧海行",
+      "KR": "유연한 푸른 바다",
+      "TW": "悠然碧海行"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "292": {
+    "titles": {
+      "CN": "欢迎来到童心学院",
+      "EN": "Welcome to Little Academy",
+      "JP": "リトル学園へようこそ",
+      "KR": "웰컴 투 동심 학원",
+      "TW": "歡迎來到童心學院"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "293": {
+    "titles": {
+      "CN": "幻梦间奏曲",
+      "EN": "Interlude of Illusions",
+      "JP": "夢幻の間奏曲",
+      "KR": "환몽 간주곡",
+      "TW": "幻夢間奏曲"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "294": {
+    "titles": {
+      "CN": "港区时尚特刊：夏日极速",
+      "EN": "Port Fashion Collection: Summer Racing",
+      "JP": "着せ替え特集  サマーレース",
+      "KR": "스킨 특집 서머 레이스",
+      "TW": "港區時尚特刊：夏日極速"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "295": {
+    "titles": {
+      "CN": "朱红迷局",
+      "EN": "Crimson Prelusion",
+      "JP": "朱染断章",
+      "KR": "주염단장",
+      "TW": "朱紅迷局"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "296": {
+    "titles": {
+      "CN": "铁翼擎风",
+      "EN": "Windborne Steel Wings",
+      "JP": "錬翼空翔",
+      "KR": "강철의 날개와 바람",
+      "TW": "鐵翼擎風"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "297": {
+    "titles": {
+      "CN": "荒野假日开拓记",
+      "EN": "Wild West Vacation Log",
+      "JP": "荒野休日開拓記",
+      "KR": "황야 휴일 개척기",
+      "TW": "荒野假日開拓記"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "298": {
+    "titles": {
+      "CN": "埋葬于彼岸之花",
+      "EN": "Whence Flowers Bear No Fruit",
+      "JP": "徒花咲かす彼岸",
+      "KR": "저편에 묻혀진 꽃",
+      "TW": "葬於彼岸之花"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "299": {
+    "titles": {
+      "CN": "汇聚于此岸之尘",
+      "EN": "Whence the Dust Settles",
+      "JP": "風塵積もる此岸",
+      "KR": "현세로 날려드는 먼지",
+      "TW": "匯聚於此岸之塵"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "300": {
+    "titles": {
+      "CN": "乐园的起始符",
+      "EN": "Paradise Opens for Business",
+      "JP": "楽園の開始符",
+      "KR": "낙원의 시작부",
+      "TW": "樂園的起始符"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "301": {
+    "titles": {
+      "CN": "梦幻乐园的梦幻假日",
+      "EN": "Dreamy Day in Dream Park",
+      "JP": "ドリームランド・ドリームデイズ",
+      "KR": "드림 랜드의 드림 휴일",
+      "TW": "夢幻樂園的夢幻假日"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "302": {
+    "titles": {
+      "CN": "唤醒苍红之炎",
+      "EN": "Ode of Everblooming Crimson",
+      "JP": "絳染む丹華の詠歌",
+      "KR": "깨워라 창홍의 바람",
+      "TW": "喚醒蒼紅之炎"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "303": {
+    "titles": {
+      "CN": "环绕心间之舞",
+      "EN": "Dancing Her Heart Out",
+      "JP": "ハート・ダンシング",
+      "KR": "하트 댄싱",
+      "TW": "環繞心間之舞"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "304": {
+    "titles": {
+      "CN": "宿舍焕新计划！",
+      "EN": "The Dorm Extension Project",
+      "JP": "寮舎新館計画だにゃ！",
+      "KR": "숙소 신관 계획이다냥!",
+      "TW": "宿舍煥新計劃！"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "305": {
+    "titles": {
+      "CN": "啾信火热测试中！",
+      "EN": "The Newest App on the Block",
+      "JP": "艦船通信、新装テスト！",
+      "KR": "쥬스타그램, 신규 기능 테스트!",
+      "TW": "啾信火熱測試中！"
+    },
+    "type": 1,
+    "subtype": 0,
+    "icon": "title_event"
+  },
+  "306": {
+    "titles": {
+      "CN": "飓风与沉眠之海",
+      "EN": "Tempesta and the Sleeping Sea",
+      "JP": "テンペスタと眠りし海",
+      "KR": "템페스타와 잠든 바다",
+      "TW": "颶風與沉眠之海"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "307": {
+    "titles": {
+      "CN": "《港区假日鬼怪故事集》",
+      "EN": "Sails and Spooks",
+      "JP": "母港休日ハロウィン",
+      "KR": "모항 휴일 도깨비 괴담집",
+      "TW": "《港區假日鬼怪故事集》"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "308": {
+    "titles": {
+      "CN": "新型促销来袭！",
+      "EN": "A Brand New Sales Campaign!",
+      "TW": "新型促銷來襲！"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "309": {
+    "titles": {
+      "CN": "「危险发明迫近中！」-关卡篇",
+      "EN": "Dangerous Inventions Incoming!",
+      "JP": "危険発明接近中！-ステージ編",
+      "KR": "위험한 발명 접근 중! - 스테이지 편 ",
+      "TW": "「危險發明逼近中！」-關卡篇"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "310": {
+    "titles": {
+      "CN": "「危险发明迫近中！」-日常篇",
+      "EN": "Dangerous Inventions Incoming - Port Stories",
+      "JP": "危険発明接近中！-日常編",
+      "KR": "위험한 발명 접근 중! - 일상편",
+      "TW": "「危險發明逼近中！」-日常篇"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "311": {
+    "titles": {
+      "CN": "「危险发明迫近中！」-委托篇",
+      "EN": "Help Me, Miss Lala!",
+      "JP": "危険発明接近中！-依頼編",
+      "KR": "도와줘! 라라 씨 ",
+      "TW": "「危險發明逼近中！」-委託篇"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "312": {
+    "titles": {
+      "CN": "领域外的归途",
+      "EN": "Return From the Beyond",
+      "JP": "領域外からの帰還",
+      "KR": "영역 밖의 귀로",
+      "TW": "領域外的歸途"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "313": {
+    "titles": {
+      "CN": "星光下的余晖",
+      "EN": "Substellar Crepuscule",
+      "JP": "星降る夕影の残光",
+      "KR": "별빛 아래의 석양",
+      "TW": "星光下的餘暉"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "314": {
+    "titles": {
+      "CN": "港区时尚特刊·节日特辑",
+      "EN": "Port Fashion Collection: Holiday Special",
+      "JP": "ゲーミング・ナイト！",
+      "KR": "모항 패션 컬렉션: 홀리데이",
+      "TW": "港區時尚特刊·夏日旖旎"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "315": {
+    "titles": {
+      "CN": "港区时尚特刊：合订集[5]",
+      "EN": "Port Fashion Collection: Holiday Special",
+      "JP": "ゲーミング・ナイト！",
+      "KR": "모항 패션 컬렉션: 합본집[5]",
+      "TW": "港區時尚特刊：夏日旖旎[2]"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "316": {
+    "titles": {
+      "CN": "港区时尚特刊：新春合集[3]",
+      "EN": "Port Fashion Collection: Spring Festival III",
+      "JP": "新春華裳協奏曲",
+      "KR": "봄맞이 패션 협주곡",
+      "TW": "港區時尚特刊：祥蛇賀春[3]"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "317": {
+    "titles": {
+      "CN": "华裳巧展喜事长",
+      "EN": "Spring Fashion Festa",
+      "JP": "新春華裳協奏曲",
+      "KR": "봄맞이 패션 협주곡",
+      "TW": "華裳巧展喜事長"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "318": {
+    "titles": {
+      "CN": "港区时尚特刊：新春合集[4]",
+      "EN": "Port Fashion Collection: Spring Festival IV",
+      "JP": "新春華裳協奏曲",
+      "KR": "봄맞이 패션 협주곡",
+      "TW": "港區時尚特刊：祥蛇賀春[4]"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "319": {
+    "titles": {
+      "CN": "受选者之路",
+      "EN": "Path of the Chosen",
+      "JP": "被選者の道",
+      "KR": "선택받은 자의 길",
+      "TW": "受選者之路"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "320": {
+    "titles": {
+      "CN": "樊笼内的神光",
+      "EN": "Paradiso of Shackled Light",
+      "JP": "籠檻に囚われし神光",
+      "KR": "새장에 갇힌 신의 빛",
+      "TW": "樊籠內的神光"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "321": {
+    "titles": {
+      "CN": "港区时尚特刊：尼罗河文化展",
+      "EN": "Port Fashion Collection: Colors of the Nile",
+      "JP": "ナイル文化展",
+      "KR": "나일강 문화전",
+      "TW": "港區時尚特刊-尼羅河文化展"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "322": {
+    "titles": {
+      "CN": "深谷来信",
+      "EN": "Letters from Valley Hospital",
+      "JP": "病院探訪",
+      "KR": "병원 탐방",
+      "TW": "深谷來信"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "323": {
+    "titles": {
+      "CN": "布里战队大破港区危机",
+      "EN": "The Bulin Brigade in: Down with the Megacorp!",
+      "JP": "ブリ戦隊と母港暗黒コーポ",
+      "KR": "부린 전대와 대기업의 음모",
+      "TW": "布里戰隊大破港區危機"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "324": {
+    "titles": {
+      "CN": "港区时尚特刊：春日慵懒",
+      "EN": "Port Fashion Collection: Lazy Spring Day",
+      "JP": "母港着せ替え特集:春のんびり",
+      "KR": "모항 패션 컬렉션: 봄날의 게으름",
+      "TW": "港區時尚特刊：夏日繾綣"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "325": {
+    "titles": {
+      "CN": "扬起郁金之旗",
+      "EN": "Toward Tulipa's Seas",
+      "JP": "チュリッパの海へ",
+      "KR": "튤리퍼의 바다로",
+      "TW": "揚起鬱金之旗"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "326": {
+    "titles": {
+      "CN": "假日别墅筹备中",
+      "EN": "Planning the Villa Vacation",
+      "JP": "リゾート準備中",
+      "KR": "리조트 준비 중",
+      "TW": "假日別墅籌備中"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "327": {
+    "titles": {
+      "CN": "日不落的远征",
+      "EN": "March of the Neversetting Sun",
+      "JP": "太陽未だ沈まぬ",
+      "KR": "영주의 원정",
+      "TW": "日不落的遠征"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "328": {
+    "titles": {
+      "CN": "夏日重建！海岛别墅度假计划！",
+      "EN": "Midsummer Returns! The Villa Reconstruction",
+      "JP": "盛夏再び！リゾート再建計画！",
+      "KR": "다시 돌아온 한여름! 리조트 재건 계획!",
+      "TW": "夏日重建！海島別墅渡假計畫！"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "329": {
+    "titles": {
+      "CN": "高塔上的蔷薇",
+      "EN": "A Rose on the High Tower",
+      "JP": "高い塔の薔薇",
+      "KR": "높은 탑의 장미",
+      "TW": "高塔上的薔薇"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "330": {
+    "titles": {
+      "CN": "天青胜玉",
+      "EN": "A Sky Blue Eclipsing Jade",
+      "JP": "碧玉勝りし天青",
+      "KR": "벽옥보다 푸른 천청색",
+      "TW": "天青勝玉"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "331": {
+    "titles": {
+      "CN": "幻影迷途者-「关卡篇」",
+      "EN": "Illusory Drifters",
+      "JP": "幻影の迷い人",
+      "KR": "환영 속 방황자",
+      "TW": "幻影迷途者-「關卡篇」"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "332": {
+    "titles": {
+      "CN": "幻影迷途者-「日常篇」",
+      "EN": "Illusory Drifters - Warm Welcome",
+      "JP": "幻影の迷い人",
+      "KR": "환영 속 방황자",
+      "TW": "幻影迷途者-「日常篇」"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "333": {
+    "titles": {
+      "CN": "迷彩都市的寻踪者",
+      "EN": "The Neon City Investigator",
+      "JP": "ネオンシティの探索者",
+      "KR": "네온 시티의 탐색자",
+      "TW": "迷彩都市的尋蹤者"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "334": {
+    "titles": {
+      "CN": "炼金术士与天际交汇之塔-「关卡篇」",
+      "EN": "The Alchemist and the Tower of Horizons",
+      "JP": "錬金術士と天空邂逅の塔-ステージ編",
+      "KR": "연금술사와 하늘 끝이 만나는 탑 - 스테이지편",
+      "TW": "鍊金術士與天際交會之塔-「關卡篇」"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "335": {
+    "titles": {
+      "CN": "炼金术士与天际交汇之塔-「日常篇」",
+      "EN": "The Alchemist and the Tower of Horizons - Daily Life",
+      "JP": "錬金術士と天空邂逅の塔-日常編",
+      "KR": "연금술사와 하늘 끝이 만나는 탑 - 일상편",
+      "TW": "鍊金術士與天際交會之塔-「日常篇」"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "336": {
+    "titles": {
+      "CN": "奇渊下的秘密",
+      "EN": "Secrets of the Abyss",
+      "JP": "淵層界の秘密",
+      "KR": "심연 아래의 비밀",
+      "TW": "奇淵下的秘密"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "337": {
+    "titles": {
+      "CN": "港区时尚特刊：假日悠闲",
+      "EN": "Port Fashion Collection: Lazy Vacation Days",
+      "JP": "母港ファッション　ホリデー",
+      "KR": "모항 패션 홀리데이",
+      "TW": "港區時尚特刊：假日悠閒"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "338": {
+    "titles": {
+      "CN": "重樱的邀约",
+      "EN": "Summons From the Sakura Empire",
+      "JP": "重桜の招待",
+      "KR": "사쿠라 엠파이어의 초대",
+      "TW": "重櫻的邀約"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "339": {
+    "titles": {
+      "CN": "起舞于天原之上",
+      "EN": "A Dance for Amahara Above",
+      "JP": "アマハラに舞い奉れ",
+      "KR": "아마하라에 바치는 춤",
+      "TW": "起舞於天原之上"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "340": {
+    "titles": {
+      "CN": "激战！忍者之城！",
+      "EN": "Turmoil in the Ninja Castle",
+      "JP": "激戦！忍びの城！",
+      "KR": "격전! 닌자의 성!",
+      "TW": "激戰！忍者之城！"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "341": {
+    "titles": {
+      "CN": "晴空下的邂逅-「关卡篇」",
+      "EN": "An Encounter Beneath Clear Skies",
+      "JP": "青空の下で出会いを-ステージ編",
+      "KR": "푸른 하늘 아래의 만남 - 스테이지편",
+      "TW": "青空下的相遇"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "342": {
+    "titles": {
+      "CN": "晴空下的邂逅-「日常篇」",
+      "EN": "An Encounter Beneath Clear Skies - Daily Stories",
+      "JP": "青空の下で出会いを-日常編",
+      "KR": "푸른 하늘 아래의 만남 - 일상편",
+      "TW": "青空下的相遇-「日常篇」"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "343": {
+    "titles": {
+      "CN": "港区假日鬼怪故事集II",
+      "EN": "Sails and Spooks II",
+      "JP": "母港の休日怪談集Ⅱ",
+      "KR": "모항 휴일 도깨비 괴담집Ⅱ",
+      "TW": "港區假日鬼怪故事集II"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "344": {
+    "titles": {
+      "CN": "飓风与自由群岛",
+      "EN": "Tempesta and Islas de Libertád",
+      "JP": "テンペスタと自由群島",
+      "KR": "템페스타와 자유 군도",
+      "TW": "颶風與自由群島"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "345": {
+    "titles": {
+      "CN": "港区时尚特刊：疾驰热浪",
+      "EN": "Port Fashion Collection: Race Track Fever",
+      "JP": "母港ファッション：ピット・スタンバイ",
+      "KR": "모항 패션 컬렉션: 피트 스탠바이"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "346": {
+    "titles": {
+      "CN": "今年的促销形式是！",
+      "EN": "The New Sales Campaign Just Dropped!"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "347": {
+    "titles": {
+      "CN": "DATE A LANE-「关卡篇」",
+      "EN": "DATE A LANE",
+      "JP": "DATE A LANE-「ステージ編」",
+      "KR": "DATE A LANE-「스테이지편」",
+      "TW": "DATE A LANE"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "348": {
+    "titles": {
+      "CN": "DATE A LANE-「日常篇」",
+      "EN": "DATE A LANE - Side Stories",
+      "JP": "DATE A LANE-「日常編」",
+      "KR": "DATE A LANE-「일상편」",
+      "TW": "DATE A LANE-「日常篇」"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "349": {
+    "titles": {
+      "CN": "忆海留声",
+      "EN": "Memories in Echo",
+      "JP": "追憶の残響",
+      "KR": "추억의 잔향",
+      "TW": "憶海留聲"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "350": {
+    "titles": {
+      "CN": "致美好世界",
+      "EN": "To a Brighter World",
+      "JP": "美しい世界へ",
+      "KR": "아름다운 세계에게",
+      "TW": "致美好世界"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "351": {
+    "titles": {
+      "CN": "响彻于天穹之音",
+      "EN": "A Note Through the Firmament",
+      "JP": "天穹に響く音謡",
+      "KR": "창공에 울리는 소리",
+      "TW": "響徹於天穹之音"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "title_event"
+  },
+  "352": {
+    "titles": {
+      "CN": "港区时尚特刊：专属心动时刻[1]",
+      "EN": "Port Fashion Collection: Heart-Throbbing Moment I",
+      "JP": "母港ファッション",
+      "KR": "모항 패션 컬렉션: 나만의 설렘 시간(상)",
+      "TW": "港區時尚特刊：專屬心動時刻[1]"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "353": {
+    "titles": {
+      "CN": "港区时尚特刊：专属心动时刻[2]",
+      "EN": "Port Fashion Collection: Heart-Throbbing Moment II",
+      "JP": "母港ファッション",
+      "KR": "모항 패션 컬렉션 나만의 설렘 시간(하)",
+      "TW": "港區時尚特刊：專屬心動時刻[2]"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "354": {
+    "titles": {
+      "CN": "光影风尚——拍摄进行时！",
+      "EN": "Light & Shadow Fashion Shoot!",
+      "JP": "特集写真――撮影進行中！",
+      "KR": "명암과 패션, 촬영 진행 중!",
+      "TW": "光影風尚——拍攝進行時！"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "355": {
+    "titles": {
+      "CN": "春宴怀玉香满庭",
+      "EN": "Spring Auction Adventure",
+      "JP": "新春珠玉逸品会",
+      "KR": "신춘 주옥 명품회",
+      "TW": "春宴懷玉香滿庭"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "356": {
+    "titles": {
+      "CN": "情人节——甜蜜大作战！",
+      "EN": "Valentine's Day - The Chocolatastrophy!",
+      "JP": "バレンタイン――甘々大作戦！",
+      "KR": "발렌타인――달콤달콤 대작전!",
+      "TW": "情人節——甜蜜大作戰！"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "357": {
+    "titles": {
+      "CN": "港区时尚特刊：红绡帐暖",
+      "EN": "Port Fashion Collection: Silken-Red Embrace",
+      "JP": "着せ替え特集 紅帳衣裳",
+      "KR": "스킨 특집 홍장 의상",
+      "TW": "港區時尚特刊：紅綃帳暖"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "358": {
+    "titles": {
+      "CN": "春满客栈Online",
+      "EN": "Springtide Inn Online",
+      "JP": "春色旅籠Online",
+      "KR": "봄빛 여관 Online",
+      "TW": "春滿客棧Online"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  },
+  "501": {
+    "titles": {
+      "CN": "明石的委托",
+      "EN": "Akashi's Commission",
+      "JP": "明石のお願い",
+      "KR": "아카시의 의뢰",
+      "TW": "明石的委託"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_mingshi"
+  },
+  "502": {
+    "titles": {
+      "CN": "长岛小姐提不起劲",
+      "EN": "Long Island's Inner Peace",
+      "JP": "幽霊さんはガンバラナイ",
+      "KR": "유령 씨는 노력하지 않아",
+      "TW": "長島小姐提不起勁"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_changdao"
+  },
+  "503": {
+    "titles": {
+      "CN": "幸运之鹤",
+      "EN": "The Lucky Crane ",
+      "JP": "幸運の鶴",
+      "KR": "행운의 학 ",
+      "TW": "幸運之鶴"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_ruihe"
+  },
+  "504": {
+    "titles": {
+      "CN": "叫我雪风大人！",
+      "EN": "Call Me Yukikaze the Great! ",
+      "JP": "佐世保生まれの幸運艦",
+      "KR": "나는 유키카제님이다! ",
+      "TW": "叫我雪風大人！"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_xuefeng"
+  },
+  "505": {
+    "titles": {
+      "CN": "我的美好回忆",
+      "EN": "My Fond Memories",
+      "JP": "私の素晴らしい記憶",
+      "KR": "나의 아름다운 기억 ",
+      "TW": "我的美好回憶"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_ajiakesi"
+  },
+  "506": {
+    "titles": {
+      "CN": "哈曼观察日志",
+      "EN": "Hammann Observation Diary",
+      "JP": "ハムマン観察記録",
+      "KR": "허먼 관찰일기 ",
+      "TW": "哈曼觀察日誌"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_haman"
+  },
+  "507": {
+    "titles": {
+      "CN": "彼岸花之恋？",
+      "EN": "Red Spider Lily's Love",
+      "JP": "ヒガンバナの恋",
+      "KR": "피안화의 사랑 ",
+      "TW": "彼岸花之戀？"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_chicheng"
+  },
+  "508": {
+    "titles": {
+      "CN": "骑士与奖赏",
+      "EN": "Knights & Awards",
+      "JP": "ナイト＆アワード",
+      "KR": "기사와 포상 ",
+      "TW": "騎士與獎賞"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_kelifulan"
+  },
+  "509": {
+    "titles": {
+      "CN": "雨后天晴",
+      "EN": "After the Rain Comes the Sun",
+      "JP": "雨のち晴れ",
+      "KR": "비 온 뒤 맑음 ",
+      "TW": "雨過天晴"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_shancheng2"
+  },
+  "510": {
+    "titles": {
+      "CN": "荣光的间奏曲",
+      "EN": "Glorious Interlude",
+      "JP": "栄光なる間奏曲",
+      "KR": "영광스런 간주곡",
+      "TW": "榮光的間奏曲"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_guangrong"
+  },
+  "511": {
+    "titles": {
+      "CN": "Best Pictures!",
+      "EN": "Best Pictures! ",
+      "JP": "ベストピクチャーズ！",
+      "KR": "Best Pictures! ",
+      "TW": "Best Pictures!"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_salatuojia"
+  },
+  "512": {
+    "titles": {
+      "CN": "和姐姐的一日约会",
+      "EN": "A Date With Atago ",
+      "JP": "お姉さんと一日デート",
+      "KR": "누나와의 일일 데이트 ",
+      "TW": "和姐姐的一日約會"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_aidang"
+  },
+  "513": {
+    "titles": {
+      "CN": "纯白之诗",
+      "EN": "Pure-White Poem ",
+      "JP": "白き詩",
+      "KR": "순백의 시 ",
+      "TW": "純白之詩"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_z46"
+  },
+  "515": {
+    "titles": {
+      "CN": "骑士公主的忧郁",
+      "EN": "The Melancholy of a Princess Chevalier",
+      "JP": "騎士姫の憂鬱",
+      "KR": "기사 공주의 우울",
+      "TW": "騎士公主的憂鬱"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_kaixuan"
+  },
+  "516": {
+    "titles": {
+      "CN": "自由的天使",
+      "EN": "Émile, the Dancing Angel",
+      "JP": "踊り子天使エミール",
+      "KR": "무희 천사 에밀",
+      "TW": "自由的天使"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_aimier"
+  },
+  "517": {
+    "titles": {
+      "CN": "絮库夫的一天",
+      "EN": "Journée Surcouf!",
+      "JP": "ジュルネ・シュルクーフ！",
+      "KR": "쥬르네 쉬르쿠프!",
+      "TW": "速科夫的一天"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_xukufu"
+  },
+  "518": {
+    "titles": {
+      "CN": "融冰",
+      "EN": "Schmelzen ",
+      "JP": "「Schmelzen」",
+      "KR": "녹아내리는 얼음",
+      "TW": "融冰"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_tierbici"
+  },
+  "519": {
+    "titles": {
+      "CN": "半人马与港区的“前辈”们",
+      "EN": "Centaur and the Port \"Elders\" ",
+      "JP": "セントーと先輩たち",
+      "KR": "센토와 선배님들",
+      "TW": "半人馬與港區的“前輩”們"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_banrenma"
+  },
+  "520": {
+    "titles": {
+      "CN": "比叡的宴会",
+      "EN": "Hiei's Banquet ",
+      "JP": "御召艦の宴",
+      "KR": "의전함의 연회",
+      "TW": "比叡的宴會"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_birui"
+  },
+  "521": {
+    "titles": {
+      "CN": "德意志的忧郁",
+      "EN": "The Cloudy Mask ",
+      "JP": "曇りの仮面",
+      "KR": "도이칠란트의 우울",
+      "TW": "德意志的憂鬱"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_deyizhi"
+  },
+  "522": {
+    "titles": {
+      "CN": "大青花鱼的“陷阱”",
+      "EN": "Submarine Subterfuge!",
+      "JP": "サブマリン・トラップ！",
+      "KR": "서브마린 트랩!",
+      "TW": "大青花魚的“陷阱”"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_daqinghuayu"
+  },
+  "523": {
+    "titles": {
+      "CN": "“献身”的大凤",
+      "EN": "Taihou, Body and Soul",
+      "JP": "その女、賢妻につき",
+      "KR": "비서함 다이호의 헌신",
+      "TW": "“獻身”的大鳳"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_dafeng"
+  },
+  "524": {
+    "titles": {
+      "CN": "前辈与心结",
+      "EN": "Enterprise Troubles",
+      "JP": "先輩とわだかまり",
+      "KR": "선배와의 앙금",
+      "TW": "前輩與心結"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_aisaikesi"
+  },
+  "525": {
+    "titles": {
+      "CN": "忍者修行之路？",
+      "EN": "Enter: Akatsuki, The Ninja! ",
+      "JP": "ニンジャ暁参上！",
+      "KR": "닌자의 길",
+      "TW": "忍者修行之路？"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_xiao"
+  },
+  "526": {
+    "titles": {
+      "CN": "讴歌平静的日常",
+      "EN": "A Paean for Peace ",
+      "JP": "平穏を讃えて",
+      "KR": "평온한 일상을 바라며",
+      "TW": "謳歌平靜的日常"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_niukasier"
+  },
+  "527": {
+    "titles": {
+      "CN": "有关火奴鲁鲁的二三事",
+      "EN": "An Easily Flustered Girl's Story ",
+      "JP": "拗ねやすい彼女の小さなお話",
+      "KR": "호놀룰루의 사소한 일들",
+      "TW": "有關火奴魯魯的二三事"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_huonululu"
+  },
+  "528": {
+    "titles": {
+      "CN": "神秘的兔兔星人？！",
+      "EN": "Mysterious Rabbit Alien?! ",
+      "JP": "ウサウサ星人の謎？",
+      "KR": "토끼토끼성인의 수수께끼? ",
+      "TW": "神秘的兔兔星人？！"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_beili"
+  },
+  "529": {
+    "titles": {
+      "CN": "万能看板娘不知火",
+      "EN": "Shiranui, the Do-It-All Shopkeeper ",
+      "JP": "万能店員シラヌイ",
+      "KR": "만능 점원 시라누이 ",
+      "TW": "萬能看板娘不知火"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_buzhihuo"
+  },
+  "530": {
+    "titles": {
+      "CN": "康克德与甜食",
+      "EN": "Sugary Concord ",
+      "JP": "シュガリーコンコード",
+      "KR": "스위티 콩코드 ",
+      "TW": "康克德與甜食"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_kangkede"
+  },
+  "531": {
+    "titles": {
+      "CN": "轻型航母龙骧参上！",
+      "EN": "Light Carrier Ryuujou, Moving Out!",
+      "JP": "軽空母龍驤ここにあり",
+      "KR": "경항공모함 류조 참전! ",
+      "TW": "輕型航母龍驤參上！"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_longxiang"
+  },
+  "532": {
+    "titles": {
+      "CN": "来自大潮的温柔",
+      "EN": "Gentle and Sweet Ooshio!",
+      "JP": "大潮よりお届け♪",
+      "KR": "오오시오의 선물♪ ",
+      "TW": "來自大潮的溫柔"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_dachao"
+  },
+  "533": {
+    "titles": {
+      "CN": "前进吧，足柄！",
+      "EN": "Ashigara, Advance! ",
+      "JP": "足柄、すゝめ！",
+      "KR": "전진하라! 아시가라!",
+      "TW": "前進吧，足柄！"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_zubing"
+  },
+  "534": {
+    "titles": {
+      "CN": "与苍龙共度的时光",
+      "EN": "Together with Souryuu ",
+      "JP": "蒼龍さんと一緒",
+      "KR": "소류씨와 함께",
+      "TW": "與蒼龍共度的時光"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_canglong"
+  },
+  "535": {
+    "titles": {
+      "CN": "初春的烦恼",
+      "EN": "The Timid Black Cat ",
+      "JP": "人見知りの黒猫",
+      "KR": "하츠하루의 고민 ",
+      "TW": "初春的煩惱"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_chuchun"
+  },
+  "536": {
+    "titles": {
+      "CN": "妹妹的变化",
+      "EN": "My Sister's Growth Spurt?! ",
+      "JP": "妹の成長期？！",
+      "KR": "동생의 변화 ",
+      "TW": "妹妹的變化"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_wensensi"
+  },
+  "537": {
+    "titles": {
+      "CN": "这个女仆不太冷",
+      "EN": "Loaded with Lead and Love ",
+      "JP": "銃弾と、愛を込めて",
+      "KR": "탄환과, 사랑을 담아 ",
+      "TW": "這個女僕不太冷"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_xiefeierde"
+  },
+  "538": {
+    "titles": {
+      "CN": "天狼星改造计划",
+      "EN": "Sirius' Improvement Plan ",
+      "JP": "シリアス改造計画",
+      "KR": "시리우스 개조 계획 ",
+      "TW": "天狼星改造計劃"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_tianlangxing"
+  },
+  "539": {
+    "titles": {
+      "CN": "皇家的骑士",
+      "EN": "The Royal Knight ",
+      "JP": "ナイト・オブ・ロイヤル",
+      "KR": "나이트 오브 로열 네이비 ",
+      "TW": "皇家的騎士"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_yanzhan"
+  },
+  "540": {
+    "titles": {
+      "CN": "纪行的藏红花",
+      "EN": "Saffron Travelogue ",
+      "JP": "紀行のサフラン",
+      "KR": "기행의 사프란 ",
+      "TW": "紀行的藏紅花"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_xianggelila"
+  },
+  "542": {
+    "titles": {
+      "CN": "港湾",
+      "EN": "One Little Incident ",
+      "JP": "小さな出来事",
+      "KR": "항만 ",
+      "TW": "港灣"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_sipei"
+  },
+  "543": {
+    "titles": {
+      "CN": "另一个领导者？",
+      "EN": "Another Leader?",
+      "JP": "もうひとりのカリスマ？",
+      "KR": "또 다른 지도자?",
+      "TW": "另一個領導者？ "
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_qiaozhiwushi"
+  },
+  "544": {
+    "titles": {
+      "CN": "小小的骑士誓言！",
+      "EN": "A Knight's Promise",
+      "JP": "誓ってナイト！",
+      "KR": "기사의 맹세!",
+      "TW": "小小的騎士誓言！ "
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_u556story"
+  },
+  "545": {
+    "titles": {
+      "CN": "才不是小孩子！",
+      "EN": "I'm Not A Baby! ",
+      "JP": "コドモじゃないもん！",
+      "KR": "어린 애가 아니야! ",
+      "TW": "才不是小孩子！"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_jiqi"
+  },
+  "546": {
+    "titles": {
+      "CN": "彼岸的玫瑰",
+      "EN": "Storia di Rosa ",
+      "JP": "ローザ・ストーリア",
+      "KR": "피안의 장미 ",
+      "TW": "彼岸的玫瑰 "
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_zhala"
+  },
+  "547": {
+    "titles": {
+      "CN": "阿芙乐尔和愉快的伙伴们",
+      "EN": "Avrora and Her Jovial Friends ",
+      "JP": "アヴローラと愉快な仲間たち",
+      "KR": "아브로라와 유쾌한 동료들 ",
+      "TW": "曙光和愉快的夥伴們 "
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_afuleer"
+  },
+  "548": {
+    "titles": {
+      "CN": "笑容Overflow！",
+      "EN": "A Beaming Smile! ",
+      "JP": "笑顔オーバーフロー！",
+      "KR": "스마일 Overflow！ ",
+      "TW": "笑容Overflow！"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_juanbo"
+  },
+  "549": {
+    "titles": {
+      "CN": "为了印第的笑容！",
+      "EN": "Anything and Everything for Indy! ",
+      "JP": "インディちゃんの笑顔のために！",
+      "KR": "인디짱의 스마일을 위해!",
+      "TW": "為了印第的笑容"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_botelan"
+  },
+  "550": {
+    "titles": {
+      "CN": "淑女的小小提案",
+      "EN": "A Lady's Modest Proposal ",
+      "JP": "ご令嬢の小さな提案",
+      "KR": "숙녀의 작은 제안 ",
+      "TW": "淑女的小小提案"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_guanghui"
+  },
+  "551": {
+    "titles": {
+      "CN": "笑容之下的真心",
+      "EN": "The Heart Beneath the Smile ",
+      "JP": "笑顔なあの子の胸のウチ",
+      "KR": "미소 뒤의 진심",
+      "TW": "笑容之下的真心"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_fanji"
+  },
+  "552": {
+    "titles": {
+      "CN": "幸福的范式",
+      "EN": "Paradigm of Happiness ",
+      "JP": "幸せテンプレート",
+      "KR": "행복의 패러다임",
+      "TW": "幸福的典範 "
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_xipeier"
+  },
+  "553": {
+    "titles": {
+      "CN": "GO！肯特选手！",
+      "EN": "Unbridled Positivity ",
+      "JP": "GO！ポジティブ・メイド！",
+      "KR": "GO! 켄트 선수!",
+      "TW": "GO！肯特選手！"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_kente"
+  },
+  "554": {
+    "titles": {
+      "CN": "与「大小姐」共处的时刻",
+      "EN": "Moments with the Young Miss ",
+      "JP": "お嬢様とめぐるひとときを",
+      "KR": "「아가씨」와 함께하는 시간",
+      "TW": "與「大小姐」共處的時刻"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_zhuiganzhe"
+  },
+  "555": {
+    "titles": {
+      "CN": "恋爱的季节到了",
+      "EN": "Tis the Season of Love!",
+      "JP": "それは恋を呼ぶ季節",
+      "KR": "그것은…연애의 계절",
+      "TW": "『戀愛的季節到了』"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_gelasige"
+  },
+  "556": {
+    "titles": {
+      "CN": "飒爽之白",
+      "EN": "White Gallantry",
+      "JP": "颯爽の「白」",
+      "KR": "씩씩한 흰색",
+      "TW": "颯爽之白"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_beilaluosi"
+  },
+  "557": {
+    "titles": {
+      "CN": "丹佛的港区委托！",
+      "EN": "Denver's Quest!",
+      "JP": "デンバーの母港クエスト！",
+      "KR": "덴버의 모항 의뢰!",
+      "TW": "丹佛的港區委託！"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_danfo"
+  },
+  "558": {
+    "titles": {
+      "CN": "3星豪华恋物语",
+      "EN": "Three-Star Luxury Romance",
+      "JP": "3つ星プレミアム恋物語",
+      "KR": "3성 럭셔리 로맨스",
+      "TW": "三星豪華戀物語"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_ailunsamuna"
+  },
+  "559": {
+    "titles": {
+      "CN": "爱操心的她可不是闹着玩的",
+      "EN": "Heart in the Right Place",
+      "JP": "世話焼き娘はダテじゃない",
+      "KR": "걱정 많은 그녀는 진지해",
+      "TW": "愛操心的她可不是鬧著玩的"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_shiyu"
+  },
+  "560": {
+    "titles": {
+      "CN": "大小姐的学习日记",
+      "EN": "The Growth of a Courtly Lady",
+      "JP": "お嬢様学習帳",
+      "KR": "레이디의 학습 일지",
+      "TW": "大小姐的學習日記 "
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_tianying"
+  },
+  "561": {
+    "titles": {
+      "CN": "温柔、安静又温暖",
+      "EN": "Days of Tranquility",
+      "JP": "やさしくて静かであたたかくて",
+      "KR": "상냥하고 조용한, 그리고 따뜻한",
+      "TW": "溫柔、安靜又溫暖"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_u47"
+  },
+  "562": {
+    "titles": {
+      "CN": "无法坦率的心意",
+      "EN": "The Virtue of Being Earnest",
+      "JP": "素直になれないキモチ",
+      "KR": "솔직하지 못한 마음",
+      "TW": "無法坦率的心意"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_naerxun"
+  },
+  "563": {
+    "titles": {
+      "CN": "香醇的提拉米苏",
+      "EN": "Me and the Boise",
+      "JP": "ティラミス・マーマレード",
+      "KR": "맛있는 티라미수",
+      "TW": "香醇的提拉米蘇"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_boyixi"
+  },
+  "564": {
+    "titles": {
+      "CN": "在樱花纷飞的那天之后",
+      "EN": "After the Flowers Bloomed",
+      "JP": "桜流しの日のあとで",
+      "KR": "벚꽃이 흩날리던 그날 이후",
+      "TW": "在櫻花紛飛的那天之後"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_fusang"
+  },
+  "565": {
+    "titles": {
+      "CN": "凛冽如恶鬼",
+      "EN": "As Cool As A Demon",
+      "JP": "凛として鬼の如く",
+      "KR": "악귀처럼 매서운 추위",
+      "TW": "凜冽如惡鬼"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_guinu"
+  },
+  "566": {
+    "titles": {
+      "CN": "像牛仔一样!",
+      "EN": "Duelling Sunshine!",
+      "JP": "サンシャイン・デュエル！",
+      "KR": "카우보이처럼!",
+      "TW": "像牛仔一樣!"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_dahuangfeng"
+  },
+  "567": {
+    "titles": {
+      "CN": "突如其来的罗曼史",
+      "EN": "A Whirlwind Romance",
+      "JP": "ラブロマンスは突然に",
+      "KR": "갑작스런 로맨스",
+      "TW": "突如其來的羅曼史"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_kasabulanka"
+  },
+  "568": {
+    "titles": {
+      "CN": "太阳般的辣妹",
+      "EN": "Light Up My Day",
+      "JP": "太陽のギャル",
+      "KR": "태양을 닮은 소녀",
+      "TW": "太陽般的辣妹"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_mabuerheide"
+  },
+  "569": {
+    "titles": {
+      "CN": "欲速则不达",
+      "EN": "Full Steam Ahead!",
+      "JP": "急がば回れ！",
+      "KR": "급할수록 돌아가라",
+      "TW": "欲速則不達"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_daofeng"
+  },
+  "570": {
+    "titles": {
+      "CN": "从内到外魅力MAX！",
+      "EN": "Hidden Charm",
+      "JP": "裏表魅力MAXガール",
+      "KR": "매력 발산 MAX!",
+      "TW": "從內到外魅力MAX！"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_junhe"
+  },
+  "571": {
+    "titles": {
+      "CN": "essential.",
+      "EN": "Quintessential",
+      "JP": "essential.",
+      "KR": "essential.",
+      "TW": "essential."
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_wuerlixi"
+  },
+  "572": {
+    "titles": {
+      "CN": "夏日里的“惊喜”",
+      "EN": "Summer Surprise",
+      "JP": "夏の日の「サプライズ」",
+      "KR": "여름의 \"서프라이즈\"",
+      "TW": "夏日裡的“驚喜”"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_aisijimoren"
+  },
+  "573": {
+    "titles": {
+      "CN": "“我”独一无二的价值",
+      "EN": "Uniquely \"Me\"",
+      "JP": "「ワタシ」にしかない価値を",
+      "KR": "\"나\"만의 가치",
+      "TW": "“我”獨一無二的價值"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_aidingbao"
+  },
+  "574": {
+    "titles": {
+      "CN": "暴风雨与麦芽糖",
+      "EN": "Cinnamon Roll on a Rainy Day",
+      "JP": "スイート・デイは二人の雨模様",
+      "KR": "폭풍우와 호박엿",
+      "TW": "暴風雨與麥芽糖"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_hailunna"
+  },
+  "575": {
+    "titles": {
+      "CN": "西南风，全速前进！",
+      "EN": "A Gust of Motivation!",
+      "JP": "リベッチオ、全力でがんばるよ！",
+      "KR": "리베치오, 전속 전진!",
+      "TW": "西南風，全速前進！"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_xinanfeng"
+  },
+  "576": {
+    "titles": {
+      "CN": "听你说喜欢",
+      "EN": "Nursing Honesty",
+      "JP": "好きを伝えよう！",
+      "KR": "좋아한다고 말해",
+      "TW": "聽妳說喜歡"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_jiaweisi"
+  },
+  "577": {
+    "titles": {
+      "CN": "薰衣草味的“恶魔”",
+      "EN": "Work Hard, Play Harder!",
+      "JP": "クーちゃんが秘書艦！",
+      "KR": "라벤더 향기의 “악마”",
+      "TW": "薰衣草味的“惡魔”"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_shuixingjinian"
+  },
+  "578": {
+    "titles": {
+      "CN": "与牛仔的旅途",
+      "EN": "Song of Nevada",
+      "JP": "ネバダとの旅",
+      "KR": "카우보이와의 여행",
+      "TW": "與牛仔的旅途"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_neihuada"
+  },
+  "579": {
+    "titles": {
+      "CN": "花之语",
+      "EN": "The Language of the Flowers",
+      "JP": "言の葉、空に舞う花びら",
+      "KR": "꽃말",
+      "TW": "花之語"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_huayue"
+  },
+  "580": {
+    "titles": {
+      "CN": "元气甜心的爱意攻势",
+      "EN": "All-Love Assault!",
+      "JP": "大大大大好きアタック！",
+      "KR": "애정 공세!",
+      "TW": "元氣甜心的愛意攻勢"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_bulvxieer"
+  },
+  "581": {
+    "titles": {
+      "CN": "港区秘闻特别篇",
+      "EN": "The Sensationalist Sensation",
+      "JP": "母港ジャーナル・THE特別号！",
+      "KR": "<모항 비화> 특별판",
+      "TW": "港區秘聞特別篇"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_aerfuleiduo"
+  },
+  "582": {
+    "titles": {
+      "CN": "为了眼中的光芒",
+      "EN": "Searching for the Light",
+      "JP": "瞳に宿る光のために",
+      "KR": "눈에 깃든 빛을 위하여",
+      "TW": "為了眼中的光芒"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_yinggelahan"
+  },
+  "583": {
+    "titles": {
+      "CN": "热闹的“环球”晚宴",
+      "EN": "A Party for the Ages",
+      "JP": "オール陣営パーティーナイト！",
+      "KR": "떠들썩한 '세계 여행' 파티",
+      "TW": "熱鬧的「環球」晚宴"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_xiyatu"
+  },
+  "584": {
+    "titles": {
+      "CN": "于阳光照耀之外",
+      "EN": "Where the Sun Doesn't Shine",
+      "JP": "日陰のトリチェリ",
+      "KR": "햇빛이 빛나는 밖",
+      "TW": "於陽光照耀之外"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_tuolichaili"
+  },
+  "585": {
+    "titles": {
+      "CN": "献给碧海之歌",
+      "EN": "An Ode to the Sea",
+      "JP": "青き海と仲間のための",
+      "KR": "푸른 바다에 바치는 노래",
+      "TW": "獻給碧海之歌"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_liekexingdun"
+  },
+  "586": {
+    "titles": {
+      "CN": "“好孩子”的偷懒时间",
+      "EN": "Slacking Off with the \"Good\" Girl",
+      "JP": "「いい子」とのおサボりタイム",
+      "KR": "“착한 아이”의 게으름 피우기 시간",
+      "TW": "「好孩子」的偷懶時間"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_yade"
+  },
+  "587": {
+    "titles": {
+      "CN": "绽放的铁蓝蔷薇",
+      "EN": "The Iron Rose Blooms",
+      "JP": "ほころぶアイアンローズ",
+      "KR": "피어나는 아이언 로즈",
+      "TW": "綻放的鐵藍薔薇"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_saidelici"
+  },
+  "588": {
+    "titles": {
+      "CN": "最甜蜜的发明",
+      "EN": "Your Dear Inventor",
+      "JP": "あなたのためのインベンション",
+      "KR": "당신을 위한 발명",
+      "TW": "最甜蜜的發明"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_dafenqi"
+  },
+  "589": {
+    "titles": {
+      "CN": "与你一起的风景",
+      "EN": "A View For Two With You",
+      "JP": "あなたと共に見る風景",
+      "KR": "당신과 함께 보는 풍경",
+      "TW": "與你一起的風景"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_peisagenuo"
+  },
+  "590": {
+    "titles": {
+      "CN": "守护之刃需守护",
+      "EN": "The Protector Needs Protecting",
+      "JP": "守られし悪しき剣",
+      "KR": "지켜야 하는 마검",
+      "TW": "守護之刃需守護"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_edu"
+  },
+  "591": {
+    "titles": {
+      "CN": "隐藏于纯白之下",
+      "EN": "Veiled in White",
+      "JP": "白に隠されしもの",
+      "KR": "순백에 감추어진 것",
+      "TW": "隱藏於純白之下"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_kelaimengsuo"
+  },
+  "592": {
+    "titles": {
+      "CN": "全都交给我就好了！",
+      "EN": "Captain Pompey Has You Covered!",
+      "JP": "キャプテンポンペイにおまかせを！",
+      "KR": "캡틴 폼페이에게 맡겨주시라!",
+      "TW": "全都交給我就好了！"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_pangpei"
+  },
+  "593": {
+    "titles": {
+      "CN": "主持人、艺人与秘书舰",
+      "EN": "Personality, Presenter, Secretary",
+      "JP": "タレントキャスターセクレタリー！",
+      "KR": "탤런트 캐스터 세크리터리!",
+      "TW": "主持人、藝人與秘書艦"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_guandao"
+  },
+  "594": {
+    "titles": {
+      "CN": "不可思议的“大危机”",
+      "EN": "Mysteries and Danger!",
+      "JP": "不思議に大ピンチ！？",
+      "KR": "수수께끼와 대위기?!",
+      "TW": "不可思議的「大危機」"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_fushun"
+  },
+  "595": {
+    "titles": {
+      "CN": "提升棋力的妙手",
+      "EN": "The Go Master and Her Disciple",
+      "JP": "棋力を上達させる妙手",
+      "KR": "바둑 솜씨를 숙달하는 묘수",
+      "TW": "提升棋力的妙手"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_zhenhai"
+  },
+  "596": {
+    "titles": {
+      "CN": "消除疲劳的秘诀是？",
+      "EN": "The Secret to Curing Exhaustion?!",
+      "JP": "疲労回復の秘訣とは⁉",
+      "KR": "피로 회복의 비결은?!",
+      "TW": "消除疲勞的秘訣是？"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_shenghaxintuo"
+  },
+  "597": {
+    "titles": {
+      "CN": "与天使的约会",
+      "EN": "Date with an Angel",
+      "JP": "天使とのランデブー",
+      "KR": "천사와의 밀회",
+      "TW": "與天使的約會"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_xiafei"
+  },
+  "598": {
+    "titles": {
+      "CN": "出发！寻找灵感之旅！",
+      "EN": "Set Sail! An Inspiration-Seeking Journey",
+      "JP": "いざ出発！閃きを求める旅へ",
+      "KR": "떠나자! 영감을 찾아서",
+      "TW": "出發！尋找靈感之旅！"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_haitian"
+  },
+  "599": {
+    "titles": {
+      "CN": "激荡的荒海之神",
+      "EN": "Lord of Raging Seas",
+      "JP": "激動する荒海の主",
+      "KR": "격동하는 황량한 바다의 주인",
+      "TW": "激蕩的荒海之神"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_aijier"
+  },
+  "600": {
+    "titles": {
+      "CN": "阿尔萨斯过热中！",
+      "EN": "Emotional Overload",
+      "JP": "アルザス、オーバーヒート！",
+      "KR": "알자스, 오버히트!",
+      "TW": "亞爾薩斯過熱中！"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_aersasi"
+  },
+  "601": {
+    "titles": {
+      "CN": "谈心小屋，今日休假！",
+      "EN": "Consultation Corner's Day Off",
+      "JP": "今日はお休み相談屋",
+      "KR": "오늘은 브레머튼 쉬는 날",
+      "TW": "談心小屋，今日休假！"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_bulaimodun"
+  },
+  "602": {
+    "titles": {
+      "CN": "高雄的修行",
+      "EN": "A Study in Takao",
+      "JP": "タカオ・スタディー",
+      "KR": "타카오의 수행",
+      "TW": "高雄的修行"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_gaoxiong"
+  },
+  "603": {
+    "titles": {
+      "CN": "外出！寻得珍宝吧！",
+      "EN": "Set Sail - Treasure Voyage!",
+      "JP": "お出かけ！お宝探し！",
+      "KR": "외출! 보물 찾기!",
+      "TW": "外出！尋得珍寶吧！"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_weidahao"
+  },
+  "604": {
+    "titles": {
+      "CN": "属于彼此的甜蜜饼干",
+      "EN": "Our Sweet Cookies",
+      "JP": "二人だけのスイートクッキー",
+      "KR": "둘만의 달콤한 쿠키",
+      "TW": "屬於彼此的甜蜜餅乾"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_hao"
+  },
+  "605": {
+    "titles": {
+      "CN": "夺回甜蜜美梦！",
+      "EN": "Sweet Dreams, Come Back to Me",
+      "JP": "スイートドリームを取り戻せ",
+      "KR": "달콤한 꿈을 되찾아라"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_lvzuofu"
+  },
+  "606": {
+    "titles": {
+      "CN": "田园美味食记",
+      "EN": "From Farm to Fork!",
+      "JP": "それゆけグルメファーム！",
+      "KR": "맛있는 농장으로 출발!"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_longwu"
+  },
+  "607": {
+    "titles": {
+      "CN": "指挥官，该动筷了！",
+      "EN": "Commander, It's Time to Eat!",
+      "JP": "指揮官、ご飯の時間ですよ！",
+      "KR": "지휘관님, 식사 시간이에요!"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_jian"
+  },
+  "608": {
+    "titles": {
+      "CN": " 风暴中心的依偎",
+      "EN": "Warmth in the Storm",
+      "JP": "ネッスル・イン・ストーム",
+      "KR": "폭풍 속 보금자리"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_mojiaduoer"
+  },
+  "609": {
+    "titles": {
+      "CN": "独占时光",
+      "EN": "Bonded Together",
+      "JP": "二人繋ぎ",
+      "KR": "하나로 묶인 두 사람"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_qiabayefu"
+  },
+  "610": {
+    "titles": {
+      "CN": "无效节能",
+      "EN": "Ineffective Energy Saving",
+      "JP": "無効な省エネ",
+      "KR": "무효한 에너지 절약"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_bunao"
+  },
+  "611": {
+    "titles": {
+      "CN": "魔女的命运之夜",
+      "EN": "A Night with the Unhulde",
+      "JP": "魔女の運命の夜",
+      "KR": "마녀와 운명의 밤"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_aogusite"
+  },
+  "612": {
+    "titles": {
+      "CN": "微醺心事",
+      "EN": "Intoxicating Feelings",
+      "JP": "思い、酔いしれて",
+      "KR": "마음, 도취되어"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_dunkeerke"
+  },
+  "613": {
+    "titles": {
+      "CN": "花与剑的魔术师",
+      "EN": "Magician of Flowers and Swords",
+      "JP": "花と剣の魔術師",
+      "KR": "꽃과 검의 마술사"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_huajian"
+  },
+  "614": {
+    "titles": {
+      "CN": "天衣结缘",
+      "EN": "A Bond Woven by Thread",
+      "JP": "天衣結縁",
+      "KR": "천의의 결연",
+      "TW": "天衣結緣"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_dulianglai"
+  },
+  "615": {
+    "titles": {
+      "CN": "大海之音",
+      "EN": "Sounds of the Ocean",
+      "JP": "大海の音",
+      "KR": "너른 바다의 소리",
+      "TW": "大海之音"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_zhenzhuhao"
+  },
+  "616": {
+    "titles": {
+      "CN": "花开电器城",
+      "EN": "An Electronics Store in Bloom",
+      "JP": "花咲く家電",
+      "KR": "꽃이 피는 가전제품"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_qisheng"
+  },
+  "617": {
+    "titles": {
+      "CN": "幸福是不可计算数",
+      "EN": "Happiness Is Incalculable",
+      "JP": "幸せは計算不可能数",
+      "KR": "행복은 계산 불가능"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_fage"
+  },
+  "618": {
+    "titles": {
+      "CN": "撒丁威光入门指南",
+      "EN": "The Guide to Sardegnian Glory",
+      "JP": "威光ガイドツアー",
+      "KR": "위광 가이드 투어",
+      "TW": "薩丁威光入門指南"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_weineituo"
+  },
+  "619": {
+    "titles": {
+      "CN": "投资，然后失败吧！",
+      "EN": "A Disastrous Investment",
+      "JP": "投資して、しかして破綻せよ",
+      "KR": "투자하고 파산하라"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_dingan"
+  },
+  "620": {
+    "titles": {
+      "CN": "林间风与心之罗盘",
+      "EN": "Forest Breeze and the Compass of the Heart",
+      "JP": "森の風と心の羅針盤"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_aerbien"
+  },
+  "1000": {
+    "titles": {
+      "CN": "领航员养成计划",
+      "EN": "Project Identity: TB",
+      "JP": "TB育成計画",
+      "KR": "TB 육성 계획",
+      "TW": "領航員養成計劃"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "1001": {
+    "titles": {
+      "CN": "心与心的交汇",
+      "EN": "Convergence of Hearts",
+      "JP": "分かり合う心",
+      "KR": "이어진 마음",
+      "TW": "心與心的交匯"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "1002": {
+    "titles": {
+      "CN": "倾心交谈",
+      "EN": "Heartfelt Conversations",
+      "JP": "耳を傾ければ",
+      "KR": "귀를 기울이면",
+      "TW": "傾心交談"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "1003": {
+    "titles": {
+      "CN": "领洋者养成计划",
+      "EN": "Project Identity: Oceana",
+      "JP": "ナビゲーター育成",
+      "KR": "네비게이터 육성",
+      "TW": "領洋者養成計劃"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "1004": {
+    "titles": {
+      "CN": "心之絮语",
+      "EN": "Navi's Thoughts",
+      "JP": "ナビィの心の声",
+      "KR": "네비의 마음 속 목소리",
+      "TW": "心之絮語"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "1005": {
+    "titles": {
+      "CN": "来访记事",
+      "EN": "Shipgirl Interactions",
+      "JP": "仲間会話",
+      "KR": "동료와의 회의",
+      "TW": "來訪記事"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "non-archived": {
+    "titles": {
+      "CN": "non-archived",
+      "EN": "non-archived",
+      "JP": "non-archived",
+      "KR": "non-archived",
+      "TW": "non-archived"
+    },
+    "type": "non-archived",
+    "subtype": 0,
+    "icon": "title_event"
+  },
+  "126": {
+    "titles": {
+      "EN": "The War God's Return ",
+      "JP": "軍神の帰還"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "5": {
+    "titles": {
+      "JP": "ソロモン海にて・上"
+    },
+    "type": 1,
+    "subtype": 0,
+    "icon": "title_main"
+  },
+  "127": {
+    "titles": {
+      "JP": "最近、綾波の様子が…？"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "title_event"
+  },
+  "201": {
+    "titles": {
+      "JP": "『装甲騎兵ボトムズ』コラボシナリオ"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "title_event"
+  }
+}

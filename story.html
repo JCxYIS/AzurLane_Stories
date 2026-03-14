@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azur Lane Story</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-top">
+            <a href="index.html" class="back-link">← Back</a>
+            <div class="music-controls">
+                <span id="music-song-id">No BGM</span>
+                <button id="music-play-btn">▶</button>
+                <input type="range" id="music-volume" min="0" max="1" step="0.01" value="1">
+            </div>
+        </div>
+        <h1><span id="story-title">Loading...</span></h1>
+        <div class="tabs" id="region-tabs"></div>
+        <div class="chapter-tabs" id="chapter-tabs"></div>
+    </div>
+    
+    <div class="story-content" id="story-content">
+        <!-- Story content injected here -->
+    </div>
+
+    <!-- The id tells the JS what folder to fetch from -->
+    <script src="js/story.js"></script>
+</body>
+</html>
