@@ -1,4 +1,5 @@
 let groupsData = {};
+let showDebugInfo = false;
 const regionTabsContainer = document.getElementById('region-tabs');
 const sectionsContainer = document.getElementById('sections-container');
 
@@ -83,6 +84,7 @@ function selectRegion(region) {
 
 function renderGrid() {
     sectionsContainer.innerHTML = '';
+    const tocItems = [];
 
     let typeMap = {};
     Object.keys(groupsData).forEach(g_id => {
@@ -93,18 +95,21 @@ function renderGrid() {
     });
 
     let sortedTypes = Object.keys(typeMap).sort((a, b) => {
-        // if (a === "non-archived") return 1;
-        // if (b === "non-archived") return -1;
         return parseInt(a) - parseInt(b);
     });
 
     sortedTypes.forEach(type => {
+        const typeName = typeNames[type] || `${type}`;
+        const typeId = `type-${type}`;
+        tocItems.push({ level: 1, text: typeName, id: typeId });
+
         const section = document.createElement("div");
         section.className = "type-section";
 
-        const header = document.createElement("div");
+        const header = document.createElement("h2");
         header.className = "type-header";
-        header.textContent = typeNames[type] || `${type}`;
+        header.id = typeId;
+        header.textContent = typeName;
         section.appendChild(header);
 
         if (type === "2") {
@@ -120,9 +125,14 @@ function renderGrid() {
             let sortedSubtypes = Object.keys(subtypeMap).sort((a, b) => parseInt(a) - parseInt(b));
 
             sortedSubtypes.forEach(sub => {
-                const subHeader = document.createElement("div");
+                const subName = (subtypeNames[type] && subtypeNames[type][sub]) || `Subtype ${sub}`;
+                const subId = `type-${type}-sub-${sub}`;
+                tocItems.push({ level: 2, text: subName, id: subId });
+
+                const subHeader = document.createElement("h3");
                 subHeader.className = "subtype-header";
-                subHeader.textContent = (subtypeNames[type] && subtypeNames[type][sub]) || `Subtype ${sub}`;
+                subHeader.id = subId;
+                subHeader.textContent = subName;
                 section.appendChild(subHeader);
 
                 const grid = document.createElement("div");
@@ -144,6 +154,29 @@ function renderGrid() {
 
         sectionsContainer.appendChild(section);
     });
+
+    renderToc(tocItems);
+}
+
+function renderToc(items) {
+    const tocContainer = document.getElementById('toc-container');
+    if (!tocContainer) return;
+
+    if (items.length === 0) {
+        tocContainer.style.display = 'none';
+        return;
+    }
+
+    tocContainer.style.display = 'flex';
+    tocContainer.innerHTML = '<span class="toc-label">Jump to:</span>';
+
+    items.forEach(item => {
+        const link = document.createElement('a');
+        link.href = `#${item.id}`;
+        link.className = `toc-link level-${item.level}`;
+        link.textContent = item.text;
+        tocContainer.appendChild(link);
+    });
 }
 
 function renderCardsToGrid(groupIds, grid) {
@@ -157,21 +190,36 @@ function renderCardsToGrid(groupIds, grid) {
             else title = `Group ${g_id}`;
         }
 
+        const iconUrl = `https://cdn.nagami.moe/memoryicon/${data.icon}.png`;
+
         const card = document.createElement("a");
         card.className = "card";
         card.href = `story.html?id=${g_id}`;
 
         card.innerHTML = `
-            <div class="card-img-placeholder">
-                Story Group ${g_id} <br>
-                Type-SubType: ${data.type}-${data.subtype}<br>
-                Icon: ${data.icon}<br>
+            <div class="card-img-container">
+                <img src="${iconUrl}" class="card-icon" alt="${title}" loading="lazy">
+                <div class="card-debug-info ${showDebugInfo ? 'visible' : ''}">
+                    StoryGroup: ${g_id}<br>
+                    Type-SubType: ${data.type}-${data.subtype}<br>
+                    Icon: ${data.icon}
+                </div>
             </div>
             <div class="card-title">${title}</div>
         `;
         grid.appendChild(card);
     });
 }
+
+// Toggle debug info with 'i' key
+document.addEventListener('keydown', (e) => {
+    if (e.key.toLowerCase() === 'i') {
+        showDebugInfo = !showDebugInfo;
+        document.querySelectorAll('.card-debug-info').forEach(el => {
+            el.classList.toggle('visible', showDebugInfo);
+        });
+    }
+});
 
 // Start app
 fetchGroupsData();
@@ -195,19 +243,13 @@ async function fetchCommitInfo() {
         }
 
         const timeEl = document.getElementById('footer-commit-time');
-        const linkEl = document.getElementById('footer-commit-link');
         const idEl = document.getElementById('footer-commit-id');
 
         if (timeEl) timeEl.textContent = commitTime || 'unknown';
 
-        if (idEl && linkEl) {
+        if (idEl) {
             const shortId = commitId ? commitId.slice(0, 7) : 'unknown';
             idEl.textContent = shortId;
-            if (commitId) {
-                linkEl.href = `https://github.com/JCxYIS/AzurLane_Stories/commit/${commitId}`;
-                linkEl.target = '_blank';
-                linkEl.rel = 'noopener noreferrer';
-            }
         }
     } catch (e) {
         console.warn('Could not load commit info:', e);

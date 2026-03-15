@@ -2,27 +2,24 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 20px;
-  background-color: rgb(24, 28, 36);;
+  background-color: rgb(24, 28, 36);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #e9e7e7;
 }
 h1 {
   text-align: left;
-  margin-bottom: 10px;
+  margin: 0 0 5px 0;
 }
-.header-controls {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 2px solid #e9e7e7;
-  padding-bottom: 10px;
-  margin-bottom: 30px;
-}
+/* .header-controls removed in favor of .header */
 .header {
   position: sticky;
   top: 0;
   background-color: rgba(49, 57, 74, 0.9);
   z-index: 100;
-  padding: 10px 10px 0px 10px;
+  padding: 10px 10px 0px 15px;
   margin-top: -10px; /* Offset the body padding slightly if needed */
   border-radius: 6px;
 }
@@ -89,6 +86,58 @@ h1 {
   color: #fff;
 }
 
+/* ── TOC (Sticky Header Navigation) ─────────────────────────────── */
+.toc-container {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 10px;
+  border-top: 1px solid rgba(233, 231, 231, 0.1);
+  padding: 8px 0 5px 0;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: thin;
+  font-size: 0.9em;
+}
+
+.toc-container::-webkit-scrollbar {
+  height: 4px;
+}
+.toc-container::-webkit-scrollbar-thumb {
+  background: rgba(204, 204, 204, 0.3);
+  border-radius: 4px;
+}
+
+.toc-label {
+  font-weight: bold;
+  color: #888;
+  margin-right: 5px;
+  flex-shrink: 0;
+}
+
+.toc-link {
+  color: #39c5bb;
+  text-decoration: none;
+  transition: all 0.2s;
+  padding: 2px 4px;
+  flex-shrink: 0;
+}
+
+.toc-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.toc-link.level-1 {
+  font-weight: bold;
+}
+
+.toc-link.level-2 {
+  
+}
+
+/* ────────────────────────────────────────────────────────────────── */
+
 .sections-container {
   display: flex;
   flex-direction: column;
@@ -96,21 +145,22 @@ h1 {
 .type-section {
   margin-bottom: 40px;
 }
-.type-header {
-  border-bottom: 2px solid #ddd;
+h2.type-header {
+  border-bottom: 2px solid #555;
   padding-bottom: 8px;
   margin-bottom: 20px;
   color: #ddd;
   font-size: 1.75em;
   font-weight: bold;
+  scroll-margin-top: 120px; /* Buffer for anchor jumping */
 }
-.subtype-header {
+h3.subtype-header {
   font-size: 1.5em;
   color: #eee;
   margin: 30px 0 15px 0;
-  /* padding-left: 12px; */
   font-weight: 600;
   letter-spacing: 0.5px;
+  scroll-margin-top: 120px; /* Buffer for anchor jumping */
 }
 .grid-container {
   display: grid;
@@ -136,23 +186,54 @@ h1 {
   transform: translateY(-5px);
   box-shadow: 5px 8px 15px #39c5bb26;
 }
-.card-img-placeholder {
+.card-img-container {
   width: 100%;
-  height: 90px;
-  /* height: 120px; */
-  background-color: #273237;
+  aspect-ratio: 370 / 138;
+  background-color: #1a1f24;
+  position: relative;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #888;
-  font-size: 0.9em;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+}
+.card-icon {
+  width: 100%;
+  height: 175%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.card:hover .card-icon {
+  transform: scale(1.05);
+}
+.card-debug-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.8em;
+  font-family: monospace;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  padding: 10px;
+}
+.card-debug-info.visible {
+  opacity: 1;
 }
 .card-title {
   font-weight: bold;
   text-align: center;
-  font-size: 1.1em;
-  padding: 0 10px;
+  padding: 0 5px;
   word-wrap: break-word;
   width: 100%;
   box-sizing: border-box;
@@ -315,22 +396,6 @@ h1 {
 
 .footer-commit-time {
   color: #aaa;
-}
-
-.footer-commit-link {
-  color: #39c5bb;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.footer-commit-link:hover {
-  color: #6ddbd6;
-  text-decoration: underline;
-}
-
-.footer-commit-link code {
-  font-family: monospace;
-  font-size: 0.95em;
 }
 
 .footer-links a {
