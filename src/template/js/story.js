@@ -1,6 +1,9 @@
 let storyData = {};
 let titlesData = {};
 
+let showDebugInfo = false;
+let hideUi = false;
+
 const regionTabsContainer = document.getElementById('region-tabs');
 const chapterTabsContainer = document.getElementById('chapter-tabs');
 const contentContainer = document.getElementById('story-content');
@@ -98,7 +101,10 @@ async function fetchStoryData() {
   } catch (e) {
     console.error("Failed to load story data", e);
     titleElem.textContent = "Error loading story data.";
-    contentContainer.innerHTML = "<p>Ensure you are running a local web server (e.g., python -m http.server).</p>";
+    contentContainer.innerHTML = `
+    <img src="https://raw.githubusercontent.com/Fernando2603/AzurLane/main/images/skin/305055/painting.png" style="width: 100%;">
+    <p style="text-align: center;">Looks like you walk into a wrong door... Only our cute Nagato-sama stranded here.</p>
+    `;
   }
 }
 
@@ -113,6 +119,7 @@ function init() {
     currentRegion = availableRegions[0];
     if (availableRegions.includes("EN")) currentRegion = "EN";
     else if (availableRegions.includes("JP")) currentRegion = "JP";
+    else if (availableRegions.includes("CN")) currentRegion = "CN";
   }
 
   renderRegionTabs();
@@ -132,6 +139,15 @@ function renderRegionTabs() {
 }
 
 function selectRegion(region) {
+  // lookup new chapter name in new language
+  const chapters = Object.keys(storyData[currentRegion]);
+  let newChapterIndex = 0;
+  if (chapters.includes(currentChapter)) {
+    newChapterIndex = chapters.indexOf(currentChapter);
+  }
+  const chaptersNewRegion = Object.keys(storyData[region])
+  currentChapter = chaptersNewRegion[newChapterIndex];
+
   currentRegion = region;
   localStorage.setItem('selectedRegion', region);
 
@@ -145,11 +161,6 @@ function selectRegion(region) {
   });
 
   renderChapterTabs();
-
-  const chapters = Object.keys(storyData[region]);
-  if (!chapters.includes(currentChapter)) {
-    currentChapter = chapters[0];
-  }
   selectChapter(currentChapter);
 }
 
@@ -171,6 +182,7 @@ function renderChapterTabs() {
 
 function selectChapter(chapter) {
   currentChapter = chapter;
+  document.body.style.backgroundImage = "";
 
   Array.from(chapterTabsContainer.children).forEach(btn => {
     btn.classList.toggle('active', btn.textContent === chapter);
@@ -219,11 +231,12 @@ function renderContent() {
       div.className = 'bg-change';
       div.innerHTML = '🖼 Background: ' + s.bgName;
       div.style.cursor = 'pointer';
+      let urlStr = `url(https://cdn.nagami.moe/bg/${s.bgName}.png)`;
+      if (!document.body.style.backgroundImage) {
+        document.body.style.backgroundImage = urlStr;
+      }
       div.onclick = () => {
-        document.body.style.backgroundImage = `url(https://cdn.nagami.moe/bg/${s.bgName}.png)`;
-        document.body.style.backgroundSize = 'cover';
-        document.body.style.backgroundAttachment = 'fixed';
-        document.body.style.backgroundPosition = 'center';
+        document.body.style.backgroundImage = urlStr;
       };
       contentContainer.appendChild(div);
     }
@@ -256,6 +269,10 @@ function renderContent() {
           img.alt = `${s.actorName} (${s.actor})`;
           // img.onerror = () => { img.style.display = 'none'; }; // Graceful fallback
           bannerDiv.appendChild(img);
+        }
+        else {
+          // hide banner if no actor
+          // bannerDiv.style.display = 'none';
         }
 
         const contentDiv = document.createElement('div');
@@ -292,3 +309,16 @@ function renderContent() {
 }
 
 fetchStoryData();
+
+
+// Toggle debug info with 'i' key
+document.addEventListener('keydown', (e) => {
+  if (e.key.toLowerCase() === 'i') {
+    showDebugInfo = !showDebugInfo;
+  }
+  if (e.key.toLowerCase() === 'o') {
+    hideUi = !hideUi;
+    document.body.style.opacity = hideUi ? 0 : 1;
+    document.body.style.transition = 'opacity 0.25s';
+  }
+});

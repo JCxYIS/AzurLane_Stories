@@ -91,11 +91,20 @@ class StoryReader:
             if not chapters_dict:
                 continue
                 
+            # Use the icon from the first valid memory_template chapter as the group icon, or fallback to group_data.icon
+            first_mem_icon = None
+            for mem_id in memories:
+                tmpl = self.memory_templates.get(str(mem_id))
+                if tmpl and tmpl.get("icon"):
+                    first_mem_icon = tmpl["icon"]
+                    break
+            group_icon = first_mem_icon or group_data.get("icon", "title_event")
+
             parsed[str(g_id)] = {
                 "title": group_title,
                 "type": group_data.get("type", 0),
                 "subtype": group_data.get("subtype", 0),
-                "icon": group_data.get("icon", "title_event"),
+                "icon": group_icon,
                 "chapters": chapters_dict
             }
 

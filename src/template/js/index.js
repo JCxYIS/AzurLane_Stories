@@ -1,4 +1,5 @@
 let groupsData = {};
+let showDebugInfo = false;
 const regionTabsContainer = document.getElementById('region-tabs');
 const sectionsContainer = document.getElementById('sections-container');
 
@@ -189,21 +190,36 @@ function renderCardsToGrid(groupIds, grid) {
             else title = `Group ${g_id}`;
         }
 
+        const iconUrl = `https://cdn.nagami.moe/memoryicon/${data.icon}.png`;
+
         const card = document.createElement("a");
         card.className = "card";
         card.href = `story.html?id=${g_id}`;
 
         card.innerHTML = `
-            <div class="card-img-placeholder">
-                Story Group ${g_id} <br>
-                Type-SubType: ${data.type}-${data.subtype}<br>
-                Icon: ${data.icon}<br>
+            <div class="card-img-container">
+                <img src="${iconUrl}" class="card-icon" alt="${title}" loading="lazy">
+                <div class="card-debug-info ${showDebugInfo ? 'visible' : ''}">
+                    StoryGroup: ${g_id}<br>
+                    Type-SubType: ${data.type}-${data.subtype}<br>
+                    Icon: ${data.icon}
+                </div>
             </div>
             <div class="card-title">${title}</div>
         `;
         grid.appendChild(card);
     });
 }
+
+// Toggle debug info with 'i' key
+document.addEventListener('keydown', (e) => {
+    if (e.key.toLowerCase() === 'i') {
+        showDebugInfo = !showDebugInfo;
+        document.querySelectorAll('.card-debug-info').forEach(el => {
+            el.classList.toggle('visible', showDebugInfo);
+        });
+    }
+});
 
 // Start app
 fetchGroupsData();

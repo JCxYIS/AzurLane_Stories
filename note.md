@@ -3,7 +3,6 @@
 ## todo
 
 - fix missing character img (e.g. story 338, character 900315 (ヘレナ(META), 900232 (オブザーバー))
-- story cover img
 - group timeline
 
 ## Terms
@@ -62,8 +61,11 @@ git pull
 git sparse-checkout set
 ```
 
-## Data Sources | Special Thanks
+## Data Sources
 
 - [AzurLaneData by AzurLaneTools](https://github.com/AzurLaneTools/AzurLaneData)
 - [Azur Lane Resources by Fernando2603](https://github.com/Fernando2603/AzurLane/tree/main)
+  - [bgm list](https://raw.githubusercontent.com/Fernando2603/AzurLane/main/bgm_link.json)
+  - [skin list](https://raw.githubusercontent.com/Fernando2603/AzurLane/refs/heads/main/skin.json)
 - [Azur Lane Utility on azurlane.nagami.moe](https://azurlane.nagami.moe/)
+  - cdn
