@@ -42,11 +42,9 @@ class HtmlWriter:
         # Ensure root output directory exists
         os.makedirs(self.root_output_dir, exist_ok=True)
 
-        # Copy index.html
-        shutil.copy2(os.path.join(self.template_dir, "index.html"), os.path.join(self.root_output_dir, "index.html"))
-        
-        # Copy story.html into stories/
-        shutil.copy2(os.path.join(self.template_dir, "story.html"), os.path.join(self.root_output_dir, "story.html"))
+        # Copy files
+        for file in ['index.html', 'story.html', 'favicon.ico']:
+            shutil.copy2(os.path.join(self.template_dir, file), os.path.join(self.root_output_dir, file))
         
         # Copy css and js folders
         for folder in ["css", "js"]:
