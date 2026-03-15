@@ -60,6 +60,18 @@ function updateMusicUI() {
 bgmPlayer.onplay = updateMusicUI;
 bgmPlayer.onpause = updateMusicUI;
 
+// if we came from the index page, go back to preserve its state (scroll, tabs)
+const backLink = document.querySelector('.back-link');
+if (backLink) {
+  backLink.onclick = (e) => {
+    if (document.referrer && document.referrer.includes('index.html')) {
+      console.log("Referer is index.html, use go back instead of redirect.");
+      e.preventDefault();
+      window.history.back();
+    }
+  };
+}
+
 async function fetchStoryData() {
   try {
     const urlParams = new URLSearchParams(window.location.search);

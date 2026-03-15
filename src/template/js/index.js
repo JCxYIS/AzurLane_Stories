@@ -195,19 +195,13 @@ async function fetchCommitInfo() {
         }
 
         const timeEl = document.getElementById('footer-commit-time');
-        const linkEl = document.getElementById('footer-commit-link');
         const idEl = document.getElementById('footer-commit-id');
 
         if (timeEl) timeEl.textContent = commitTime || 'unknown';
 
-        if (idEl && linkEl) {
+        if (idEl) {
             const shortId = commitId ? commitId.slice(0, 7) : 'unknown';
             idEl.textContent = shortId;
-            if (commitId) {
-                linkEl.href = `https://github.com/JCxYIS/AzurLane_Stories/commit/${commitId}`;
-                linkEl.target = '_blank';
-                linkEl.rel = 'noopener noreferrer';
-            }
         }
     } catch (e) {
         console.warn('Could not load commit info:', e);

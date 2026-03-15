@@ -317,22 +317,6 @@ h1 {
   color: #aaa;
 }
 
-.footer-commit-link {
-  color: #39c5bb;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.footer-commit-link:hover {
-  color: #6ddbd6;
-  text-decoration: underline;
-}
-
-.footer-commit-link code {
-  font-family: monospace;
-  font-size: 0.95em;
-}
-
 .footer-links a {
   display: inline-flex;
   align-items: center;

@@ -1,5 +1,11 @@
 # AZL_ScriptSite dev notes
 
+## todo
+
+- fix missing character img (e.g. story 338, character 900315 (ヘレナ(META), 900232 (オブザーバー))
+- story cover img
+- group timeline
+
 ## Terms
 
 ```
