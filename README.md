@@ -4,9 +4,8 @@ The memory archive for Azur Lane, automatically generated and hosted on GitHub P
 
 > **Live Site**: [https://jcxyis.github.io/AzurLane_Stories](https://jcxyis.github.io/AzurLane_Stories)
 
-|                                                               |                                                               |
-| ------------------------------------------------------------- | ------------------------------------------------------------- |
 | ![alt text](https://static.jcxyis.com/images/QtYY801Vrj.webp) | ![alt text](https://static.jcxyis.com/images/hVJJS9hqbs.webp) |
+| ------------------------------------------------------------- | ------------------------------------------------------------- |
 
 ## Automated Update
 
