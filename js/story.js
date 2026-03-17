@@ -201,7 +201,40 @@ function renderContent() {
   const scripts = storyData[currentRegion][currentChapter];
   if (!scripts) return;
 
-  scripts.forEach(s => {
+  let activeOptions = [];
+  let renderedOptionFlags = new Set();
+  let insideOptionBranch = false;
+
+  scripts.forEach((s, index) => {
+    if (s.options && s.options.length > 0) {
+      activeOptions = s.options;
+      renderedOptionFlags.clear();
+      insideOptionBranch = false;
+    }
+
+    if (s.optionFlag !== undefined) {
+      if (!renderedOptionFlags.has(s.optionFlag)) {
+        renderedOptionFlags.add(s.optionFlag);
+        insideOptionBranch = true;
+
+        const hr = document.createElement('hr');
+        contentContainer.appendChild(hr);
+
+        // const optIndex = activeOptions.findIndex(o => o.flag === s.optionFlag) + 1;
+        const optContent = activeOptions.find(o => o.flag === s.optionFlag)?.content || '';
+
+        const optDiv = document.createElement('div');
+        optDiv.className = 'option-title';
+        optDiv.innerHTML = `<strong>&gt; ${optContent}</strong>`;
+        contentContainer.appendChild(optDiv);
+      }
+    } else {
+      if (insideOptionBranch) {
+        insideOptionBranch = false;
+        const hr = document.createElement('hr');
+        contentContainer.appendChild(hr);
+      }
+    }
     // stop bgm is typically top-priority (to stop last playback)
     if (s.stopbgm) {
       const div = document.createElement('div');
