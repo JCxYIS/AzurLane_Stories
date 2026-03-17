@@ -15,14 +15,18 @@ Memories    |  [3911, 3912, 3913, ..., 3923]
 Stories     |  [..., MAIZANGYUBIANZHIHUA1, ...]
 ```
 
-## char note ad-hoc check
+## check
 
 ```
 (story.html?id=158)
 (story.html?id=219)
-900236 (story.html?id=185)
-403036 (story.html?id=285)
-303190 雲仙 | factiontag  ワタツミの心 (story.html?id=257)
+
+吟ずる瑠璃の楽章 (story.html?id=215) Chap30 "記録の反撃" -> STORY=2110
+軍神の帰還
+
+CHAR=900236 (story.html?id=185)
+CHAR=403036 (story.html?id=285)
+CHAR=303190 雲仙 | factiontag  ワタツミの心 (story.html?id=257)
 
 900232 オブザーバー & 900315 ヘレナ(META) (story.html?id=338)
 ```

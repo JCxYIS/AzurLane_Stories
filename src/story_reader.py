@@ -80,12 +80,13 @@ class StoryReader:
                 chapter_title = self.replace_namecodes(chapter_title)
                 story_ref = str(template_data.get('story', "NON_EXISTENT")).lower()
                 
-                # The story mapping often uses lowercase keys in `story.json`
-                if story_ref in self.stories:
-                    val = self.stories[story_ref]
-                    if isinstance(val, dict) and 'scripts' in val:
-                        chapters_dict[chapter_title] = val['scripts']
-                        used_stories.add(story_ref)
+                # Check directly or interpolate
+                scripts = self._resolve_story_scripts(story_ref, memories, mem_id)
+                if scripts:
+                    chapters_dict[chapter_title] = scripts
+                    used_stories.add(story_ref)
+                else:
+                    print(f"WARN: Story {story_ref} not found in stories (GROUP={g_id}, TITLE={group_title}, MEM={mem_id})")
 
             # Cleanup empty groups
             if not chapters_dict:
@@ -129,10 +130,95 @@ class StoryReader:
                 chapter_title = story_key
                 parsed["non-archived"]["chapters"][chapter_title] = val['scripts']
                 
-        if not parsed["non-archived"]["chapters"]:
-            del parsed["non-archived"]
+        if not parsed.get("non-archived", {}).get("chapters"):
+            parsed.pop("non-archived", None)
             
         return parsed
+
+    def _resolve_story_scripts(self, story_ref, memories, current_mem_id):
+        """
+        Resolve story scripts from story_ref, memories, and current_mem_id, even if "story" is not a valid entry. (pointer ot sequence)
+        | story_ref: "story" in memory_template
+        | memories: memories list in memory_group
+        | current_mem_id: current memory id
+        """
+        # 1. normal/branch stories
+        scripts = self._fetch_base_or_branched(story_ref)
+        if scripts: return scripts
+        
+        # 2. point to pure numeric (placeholder, invalid for us), interpolate from sequence
+        if story_ref.isdigit():
+            interpolated_ref = self._interpolate_missing_story(memories, current_mem_id)
+            if interpolated_ref:
+                scripts = self._fetch_base_or_branched(interpolated_ref)
+                if scripts: return scripts
+                
+        return None
+
+    def _fetch_base_or_branched(self, base_ref):
+        """
+        base_ref-1, base_ref-2
+        """
+        if not base_ref: return None
+        # Normal
+        if base_ref in self.stories:
+            val = self.stories[base_ref]
+            if isinstance(val, dict) and 'scripts' in val:
+                return val['scripts']
+                
+        # Branched check (like base_ref-1, base_ref-2...)
+        branch_scripts = []
+        i = 1
+        while f"{base_ref}-{i}" in self.stories:
+            val = self.stories[f"{base_ref}-{i}"]
+            if isinstance(val, dict) and 'scripts' in val:
+                branch_scripts.extend(val['scripts'])
+            i += 1
+
+        # if len(branch_scripts) > 0:
+        #     print(f'NOTE: Found {len(branch_scripts)} scripts for {base_ref} in branched stories.')
+
+        return branch_scripts if branch_scripts else None
+
+    def _interpolate_missing_story(self, memories, current_mem_id):
+        """
+        Interpolate missing story from memories and current_mem_id.
+        找前後規則推斷
+        """
+        try:
+            current_idx = memories.index(current_mem_id)
+        except ValueError:
+            return None
+            
+        def extract_prefix_num(s):
+            if not s: return None
+            s = s.lower()
+            m = re.match(r'^([a-z]+)(\d+)(-[0-9]+)?$', s)
+            if m:
+                return m.group(1), int(m.group(2))
+            return None
+            
+        # Scan surrounding memories
+        for offset in range(1, 10):
+            # Backward
+            if current_idx - offset >= 0:
+                prev_mem = str(memories[current_idx - offset])
+                prev_story = self.memory_templates.get(prev_mem, {}).get('story', '').lower()
+                if not prev_story.isdigit():
+                    res = extract_prefix_num(prev_story)
+                    if res: 
+                        # print(f'NOTE: Interpolated story {current_mem_id} from {prev_story} (offset: +{offset})')
+                        return f"{res[0]}{res[1] + offset}"
+            # Forward
+            if current_idx + offset < len(memories):
+                next_mem = str(memories[current_idx + offset])
+                next_story = self.memory_templates.get(next_mem, {}).get('story', '').lower()
+                if not next_story.isdigit():
+                    res = extract_prefix_num(next_story)
+                    if res: 
+                        # print(f'NOTE: Interpolated story {current_mem_id} from {next_story} (offset: -{offset})')
+                        return f"{res[0]}{res[1] - offset}"
+        return None
 
     def resolve_actor_name(self, actor_id):
         """Resolves a numeric actor ID using ship_skin_template.json"""
