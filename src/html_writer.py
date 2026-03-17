@@ -105,6 +105,19 @@ class HtmlWriter:
                     
                     reader = story_readers_by_region.get(region)
                     
+                    # Options
+                    if 'options' in s:
+                        opts = []
+                        for opt in s['options']:
+                            content = opt.get('content', '')
+                            if reader:
+                                content = reader.replace_namecodes(content)
+                            opts.append({'content': content, 'flag': opt.get('flag')})
+                        ps['options'] = opts
+                    
+                    if 'optionFlag' in s:
+                        ps['optionFlag'] = s['optionFlag']
+                    
                     # Sequence
                     if s.get('sequence'):
                         seq_text = []
