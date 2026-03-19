@@ -4576,6 +4576,36 @@
     "subtype": 3,
     "icon": "oceana_baifang1"
   },
+  "1006": {
+    "titles": {
+      "CN": "探索者养成计划",
+      "EN": "Project Identity: Explorer",
+      "JP": "スカベンジャー育成"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "tb_zhuxian"
+  },
+  "1007": {
+    "titles": {
+      "CN": "心之絮语",
+      "EN": "Navi's Thoughts",
+      "JP": "ローラーの心の声"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "oceana_tanxin"
+  },
+  "1008": {
+    "titles": {
+      "CN": "来访记事",
+      "EN": "Shipgirl Interactions",
+      "JP": "仲間会話"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "explorer_baifang1"
+  },
   "non-archived": {
     "titles": {
       "CN": "non-archived",
