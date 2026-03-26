@@ -3102,6 +3102,16 @@
     "subtype": 2,
     "icon": "memory_chunmankezhan1"
   },
+  "359": {
+    "titles": {
+      "CN": "漫游者招募计划",
+      "EN": "The Vagabond's Recruitment Plan",
+      "JP": "ワンダラー招集計画"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "memory_manyouzhezhaomujihua"
+  },
   "501": {
     "titles": {
       "CN": "明石的委托",
@@ -4498,7 +4508,8 @@
     "titles": {
       "CN": "林间风与心之罗盘",
       "EN": "Forest Breeze and the Compass of the Heart",
-      "JP": "森の風と心の羅針盤"
+      "JP": "森の風と心の羅針盤",
+      "KR": "숲의 바람과 마음의 나침반"
     },
     "type": 3,
     "subtype": 0,
