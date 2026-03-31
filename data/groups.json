@@ -3112,6 +3112,17 @@
     "subtype": 2,
     "icon": "memory_manyouzhezhaomujihua"
   },
+  "360": {
+    "titles": {
+      "CN": "闪耀★布里★大作战",
+      "JP": "煌く★ブリ★大作戦",
+      "KR": "빛나는★부린★대작전",
+      "TW": "閃耀★布里★大作戰"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "memory_shanyaobulidazuozhan"
+  },
   "501": {
     "titles": {
       "CN": "明石的委托",
