@@ -3106,7 +3106,8 @@
     "titles": {
       "CN": "漫游者招募计划",
       "EN": "The Vagabond's Recruitment Plan",
-      "JP": "ワンダラー招集計画"
+      "JP": "ワンダラー招集計画",
+      "TW": "漫遊者招募計劃"
     },
     "type": 2,
     "subtype": 2,
@@ -4603,7 +4604,8 @@
     "titles": {
       "CN": "探索者养成计划",
       "EN": "Project Identity: Explorer",
-      "JP": "スカベンジャー育成"
+      "JP": "スカベンジャー育成",
+      "KR": "스캐빈저 육성"
     },
     "type": 2,
     "subtype": 3,
@@ -4613,7 +4615,8 @@
     "titles": {
       "CN": "心之絮语",
       "EN": "Lora's Thoughts",
-      "JP": "ローラーの心の声"
+      "JP": "ローラーの心の声",
+      "KR": "로라의 마음 속 목소리"
     },
     "type": 2,
     "subtype": 3,
@@ -4623,7 +4626,8 @@
     "titles": {
       "CN": "来访记事",
       "EN": "Shipgirl Interactions",
-      "JP": "仲間会話"
+      "JP": "仲間会話",
+      "KR": "동료와의 회의"
     },
     "type": 2,
     "subtype": 3,
