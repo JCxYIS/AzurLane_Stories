@@ -338,6 +338,13 @@ function renderContent() {
         contentContainer.appendChild(box);
       }
     }
+
+    if (s.options && s.options.length === 1) {
+      const optDiv = document.createElement('div');
+      optDiv.className = 'option-title';
+      optDiv.innerHTML = `<strong>&gt; ${s.options[0].content}</strong>`;
+      contentContainer.appendChild(optDiv);
+    }
   });
 }
 
