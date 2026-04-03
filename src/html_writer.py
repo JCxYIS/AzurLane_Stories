@@ -85,8 +85,10 @@ class HtmlWriter:
         
         processed_data = {}
         for region, chapters in regions_data.items():
-            processed_data[region] = {}
-            for chapter, scripts in chapters.items():
+            processed_data[region] = []
+            for chap_obj in chapters:
+                chapter_title = chap_obj["title"]
+                scripts = chap_obj["scripts"]
                 processed_scripts = []
                 prev_bg = None
                 for s in scripts:
@@ -192,8 +194,8 @@ class HtmlWriter:
                             
                     processed_scripts.append(ps)
                 
-                chap_key = chapter if chapter else "1"
-                processed_data[region][chap_key] = processed_scripts
+                chap_title = chapter_title if chapter_title else "1"
+                processed_data[region].append({"title": chap_title, "scripts": processed_scripts})
 
         # Combine titles and regions into a single JSON object
         final_payload = {

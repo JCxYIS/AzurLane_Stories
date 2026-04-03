@@ -69,7 +69,7 @@ class StoryReader:
                 
             memories = group_data.get('memories', [])
             
-            chapters_dict = {}
+            chapters_list = []
             for mem_id in memories:
                 mem_key = str(mem_id)
                 template_data = self.memory_templates.get(mem_key)
@@ -83,13 +83,13 @@ class StoryReader:
                 # Check directly or interpolate
                 scripts = self._resolve_story_scripts(story_ref, memories, mem_id)
                 if scripts:
-                    chapters_dict[chapter_title] = scripts
+                    chapters_list.append({"title": chapter_title, "scripts": scripts})
                     used_stories.add(story_ref)
                 else:
                     print(f"WARN: Story {story_ref} not found in stories (GROUP={g_id}, TITLE={group_title}, MEM={mem_id})")
 
             # Cleanup empty groups
-            if not chapters_dict:
+            if not chapters_list:
                 continue
                 
             # Use the icon from the first valid memory_template chapter as the group icon, or fallback to group_data.icon
@@ -106,7 +106,7 @@ class StoryReader:
                 "type": group_data.get("type", 0),
                 "subtype": group_data.get("subtype", 0),
                 "icon": group_icon,
-                "chapters": chapters_dict
+                "chapters": chapters_list
             }
 
         # Handle Orphans
@@ -114,7 +114,7 @@ class StoryReader:
         parsed["non-archived"] = {
             "title": orphan_group_title,
             "type": "non-archived",
-            "chapters": {}
+            "chapters": []
         }
         
         for story_key, val in self.stories.items():
@@ -128,7 +128,7 @@ class StoryReader:
             if story_key.lower() not in used_stories:
                 # Use the key itself as the chapter title
                 chapter_title = story_key
-                parsed["non-archived"]["chapters"][chapter_title] = val['scripts']
+                parsed["non-archived"]["chapters"].append({"title": chapter_title, "scripts": val['scripts']})
                 
         if not parsed.get("non-archived", {}).get("chapters"):
             parsed.pop("non-archived", None)
