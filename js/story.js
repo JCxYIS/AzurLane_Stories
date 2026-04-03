@@ -10,7 +10,7 @@ const contentContainer = document.getElementById('story-content');
 const titleElem = document.getElementById('story-title');
 
 let currentRegion = null;
-let currentChapter = null;
+let currentChapterIndex = 0;
 const regionOrder = ["EN", "CN", "JP", "KR", "TW"];
 let availableRegions = [];
 
@@ -139,15 +139,6 @@ function renderRegionTabs() {
 }
 
 function selectRegion(region) {
-  // lookup new chapter name in new language
-  const chapters = Object.keys(storyData[currentRegion]);
-  let newChapterIndex = 0;
-  if (chapters.includes(currentChapter)) {
-    newChapterIndex = chapters.indexOf(currentChapter);
-  }
-  const chaptersNewRegion = Object.keys(storyData[region])
-  currentChapter = chaptersNewRegion[newChapterIndex];
-
   currentRegion = region;
   localStorage.setItem('selectedRegion', region);
 
@@ -161,31 +152,48 @@ function selectRegion(region) {
   });
 
   renderChapterTabs();
-  selectChapter(currentChapter);
+
+  if (storyData[currentRegion] && currentChapterIndex >= storyData[currentRegion].length) {
+    currentChapterIndex = 0;
+  }
+
+  if (storyData[currentRegion] && storyData[currentRegion].length > 0) {
+    selectChapter(currentChapterIndex);
+  }
 }
 
 function renderChapterTabs() {
   chapterTabsContainer.innerHTML = '';
   if (!storyData[currentRegion]) return;
 
-  const chapters = Object.keys(storyData[currentRegion]);
+  const chapters = storyData[currentRegion];
+  const titleCounts = {};
 
-  chapters.forEach(chapter => {
+  chapters.forEach((chapterData, index) => {
     const btn = document.createElement('button');
     btn.className = 'chapter-btn';
-    btn.textContent = chapter;
-    btn.onclick = () => selectChapter(chapter);
-    if (chapter === currentChapter) btn.classList.add('active');
+
+    let displayTitle = chapterData.title;
+    if (!titleCounts[displayTitle]) {
+      titleCounts[displayTitle] = 1;
+    } else {
+      titleCounts[displayTitle]++;
+      displayTitle = `${displayTitle} (${titleCounts[displayTitle]})`;
+    }
+
+    btn.textContent = displayTitle;
+    btn.onclick = () => selectChapter(index);
+    if (index === currentChapterIndex) btn.classList.add('active');
     chapterTabsContainer.appendChild(btn);
   });
 }
 
-function selectChapter(chapter) {
-  currentChapter = chapter;
+function selectChapter(index) {
+  currentChapterIndex = index;
   document.body.style.backgroundImage = "";
 
-  Array.from(chapterTabsContainer.children).forEach(btn => {
-    btn.classList.toggle('active', btn.textContent === chapter);
+  Array.from(chapterTabsContainer.children).forEach((btn, i) => {
+    btn.classList.toggle('active', i === index);
   });
 
   renderContent();
@@ -198,7 +206,8 @@ function selectChapter(chapter) {
 
 function renderContent() {
   contentContainer.innerHTML = '';
-  const scripts = storyData[currentRegion][currentChapter];
+  if (!storyData[currentRegion] || !storyData[currentRegion][currentChapterIndex]) return;
+  const scripts = storyData[currentRegion][currentChapterIndex].scripts;
   if (!scripts) return;
 
   let activeOptions = [];
@@ -337,6 +346,13 @@ function renderContent() {
         box.appendChild(contentDiv);
         contentContainer.appendChild(box);
       }
+    }
+
+    if (s.options && s.options.length === 1) {
+      const optDiv = document.createElement('div');
+      optDiv.className = 'option-title';
+      optDiv.innerHTML = `<strong>&gt; ${s.options[0].content}</strong>`;
+      contentContainer.appendChild(optDiv);
     }
   });
 }
