@@ -3107,6 +3107,7 @@
       "CN": "漫游者招募计划",
       "EN": "The Vagabond's Recruitment Plan",
       "JP": "ワンダラー招集計画",
+      "KR": "유람자 모집 계획",
       "TW": "漫遊者招募計劃"
     },
     "type": 2,
@@ -4527,6 +4528,16 @@
     "type": 3,
     "subtype": 0,
     "icon": "memory_aerbien"
+  },
+  "621": {
+    "titles": {
+      "CN": "真实与伪饰的她",
+      "EN": "The Facts and Fictions of Devonshire",
+      "JP": "真実と虚飾のカノジョ"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "memory_dewenjun"
   },
   "1000": {
     "titles": {
