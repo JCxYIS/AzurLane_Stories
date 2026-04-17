@@ -3126,6 +3126,26 @@
     "subtype": 2,
     "icon": "memory_shanyaobulidazuozhan"
   },
+  "361": {
+    "titles": {
+      "CN": "假日航线·闪耀海滨-「关卡篇」",
+      "EN": "Beachside Brilliance ~Stages~",
+      "JP": "きらめく砂浜~ステージ編~"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "memory_shanyaohaibin1"
+  },
+  "362": {
+    "titles": {
+      "CN": "假日航线·闪耀海滨-「维纳斯篇」",
+      "EN": "Beachside Brilliance ~Venus~",
+      "JP": "きらめく砂浜~ヴィーナス編~"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "memory_shanyaohaibin2"
+  },
   "501": {
     "titles": {
       "CN": "明石的委托",
