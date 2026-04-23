@@ -2952,7 +2952,8 @@
   "346": {
     "titles": {
       "CN": "今年的促销形式是！",
-      "EN": "The New Sales Campaign Just Dropped!"
+      "EN": "The New Sales Campaign Just Dropped!",
+      "TW": "今年的促銷形式是！"
     },
     "type": 2,
     "subtype": 3,
@@ -4376,7 +4377,7 @@
       "EN": "Sweet Dreams, Come Back to Me",
       "JP": "スイートドリームを取り戻せ",
       "KR": "달콤한 꿈을 되찾아라",
-      "TW": "奪回甜蜜美夢！"
+      "TW": "夺回甜蜜美梦！"
     },
     "type": 3,
     "subtype": 0,
@@ -4554,7 +4555,8 @@
     "titles": {
       "CN": "真实与伪饰的她",
       "EN": "The Facts and Fictions of Devonshire",
-      "JP": "真実と虚飾のカノジョ"
+      "JP": "真実と虚飾のカノジョ",
+      "KR": "진실과 허식의 그녀"
     },
     "type": 3,
     "subtype": 0,
