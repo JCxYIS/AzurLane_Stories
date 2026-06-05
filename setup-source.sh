@@ -17,36 +17,36 @@ git config core.sparseCheckoutCone false
 
 # Set required files
 cat <<EOF >> .git/info/sparse-checkout
-/CN/GameCfg/story/
-/EN/GameCfg/story/
-/JP/GameCfg/storyjp/
-/KR/GameCfg/story/
-/TW/GameCfg/story/
-/CN/ShareCfg/ship_skin_template.lua
-/EN/ShareCfg/ship_skin_template.lua
-/JP/ShareCfg/ship_skin_template.lua
-/KR/ShareCfg/ship_skin_template.lua
-/TW/ShareCfg/ship_skin_template.lua
-/CN/ShareCfg/ship_skin_template_sublist/
-/EN/ShareCfg/ship_skin_template_sublist/
-/JP/ShareCfg/ship_skin_template_sublist/
-/KR/ShareCfg/ship_skin_template_sublist/
-/TW/ShareCfg/ship_skin_template_sublist/
-/CN/ShareCfg/memory_template.lua
-/EN/ShareCfg/memory_template.lua
-/JP/ShareCfg/memory_template.lua
-/KR/ShareCfg/memory_template.lua
-/TW/ShareCfg/memory_template.lua
-/CN/ShareCfg/memory_group.lua
-/EN/ShareCfg/memory_group.lua
-/JP/ShareCfg/memory_group.lua
-/KR/ShareCfg/memory_group.lua
-/TW/ShareCfg/memory_group.lua
-/CN/ShareCfg/name_code.lua
-/EN/ShareCfg/name_code.lua
-/JP/ShareCfg/name_code.lua
-/KR/ShareCfg/name_code.lua
-/TW/ShareCfg/name_code.lua
+/CN/gamecfg/story/
+/EN/gamecfg/story/
+/JP/gamecfg/storyjp/
+/KR/gamecfg/story/
+/TW/gamecfg/story/
+/CN/sharecfg/ship_skin_template.lua
+/EN/sharecfg/ship_skin_template.lua
+/JP/sharecfg/ship_skin_template.lua
+/KR/sharecfg/ship_skin_template.lua
+/TW/sharecfg/ship_skin_template.lua
+/CN/sharecfg/ship_skin_template_sublist/
+/EN/sharecfg/ship_skin_template_sublist/
+/JP/sharecfg/ship_skin_template_sublist/
+/KR/sharecfg/ship_skin_template_sublist/
+/TW/sharecfg/ship_skin_template_sublist/
+/CN/sharecfg/memory_template.lua
+/EN/sharecfg/memory_template.lua
+/JP/sharecfg/memory_template.lua
+/KR/sharecfg/memory_template.lua
+/TW/sharecfg/memory_template.lua
+/CN/sharecfg/memory_group.lua
+/EN/sharecfg/memory_group.lua
+/JP/sharecfg/memory_group.lua
+/KR/sharecfg/memory_group.lua
+/TW/sharecfg/memory_group.lua
+/CN/sharecfg/name_code.lua
+/EN/sharecfg/name_code.lua
+/JP/sharecfg/name_code.lua
+/KR/sharecfg/name_code.lua
+/TW/sharecfg/name_code.lua
 EOF
 
 git pull --depth=1 origin main

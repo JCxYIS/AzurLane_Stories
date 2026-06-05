@@ -17,7 +17,8 @@ const subtypeNames = {
     "2": { // Subtypes for Type 2 (Event)
         "1": "Event (EX)",
         "2": "Special (SP)",
-        "3": "Permanent (Daily Life)"
+        "3": "Permanent (Daily Life)",
+        "4": "Hall of Fame",
     }
 };
 

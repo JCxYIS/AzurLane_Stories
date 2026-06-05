@@ -124,7 +124,7 @@ def extract_lua_table(s, start_idx):
 
 def parse_lua_config_file(filepath):
     """
-    Parses a ShareCfg Lua file (e.g. name_code.lua) and returns a python dict.
+    Parses a sharecfg Lua file (e.g. name_code.lua) and returns a python dict.
     We support:
     - Recursive loading and merging of ship_skin_template sublist files.
     - Multiple index assignments pattern (pg.base.name[1] = { ... }) transformed and parsed in one go.

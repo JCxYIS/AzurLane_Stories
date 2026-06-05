@@ -11,10 +11,10 @@ class StoryReader:
         self.region = region
         story_folder = "storyjp" if region == "JP" else "story"
         
-        self.story_dirpath = os.path.join(data_dir, region, "GameCfg", story_folder)
-        self.ship_skin_filepath = os.path.join(data_dir, region, "ShareCfg", "ship_skin_template.lua")
-        self.memory_group_filepath = os.path.join(data_dir, region, "ShareCfg", "memory_group.lua")
-        self.memory_template_filepath = os.path.join(data_dir, region, "ShareCfg", "memory_template.lua")
+        self.story_dirpath = os.path.join(data_dir, region, "gamecfg", story_folder)
+        self.ship_skin_filepath = os.path.join(data_dir, region, "sharecfg", "ship_skin_template.lua")
+        self.memory_group_filepath = os.path.join(data_dir, region, "sharecfg", "memory_group.lua")
+        self.memory_template_filepath = os.path.join(data_dir, region, "sharecfg", "memory_template.lua")
         
         self.stories = {}
         self.skin_templates = {}
@@ -30,7 +30,7 @@ class StoryReader:
             self.memory_groups = parse_lua_config_file(self.memory_group_filepath)
             self.memory_templates = parse_lua_config_file(self.memory_template_filepath)
                 
-            name_code_filepath = os.path.join(self.data_dir, self.region, "ShareCfg", "name_code.lua")
+            name_code_filepath = os.path.join(self.data_dir, self.region, "sharecfg", "name_code.lua")
             if os.path.exists(name_code_filepath):
                 self.name_codes = parse_lua_config_file(name_code_filepath)
                     
