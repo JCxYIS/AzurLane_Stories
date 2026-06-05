@@ -1,20 +1,20 @@
-import json
 import os
 import re
+from lua_parser import parse_lua_config_file, LazyStoryDict
 
 class StoryReader:
     def __init__(self, data_dir=None, region="JP"):
-        # default read path: `../AzurLaneData`
+        # default read path: `../AzurLaneDataLua`
         if data_dir is None:
-            data_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "AzurLaneData")
+            data_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "AzurLaneDataLua")
         self.data_dir = data_dir
         self.region = region
-        story_filename = "storyjp.json" if region == "JP" else "story.json"
+        story_folder = "storyjp" if region == "JP" else "story"
         
-        self.story_filepath = os.path.join(data_dir, region, "GameCfg", story_filename)
-        self.ship_skin_filepath = os.path.join(data_dir, region, "ShareCfg", "ship_skin_template.json")
-        self.memory_group_filepath = os.path.join(data_dir, region, "ShareCfg", "memory_group.json")
-        self.memory_template_filepath = os.path.join(data_dir, region, "ShareCfg", "memory_template.json")
+        self.story_dirpath = os.path.join(data_dir, region, "GameCfg", story_folder)
+        self.ship_skin_filepath = os.path.join(data_dir, region, "ShareCfg", "ship_skin_template.lua")
+        self.memory_group_filepath = os.path.join(data_dir, region, "ShareCfg", "memory_group.lua")
+        self.memory_template_filepath = os.path.join(data_dir, region, "ShareCfg", "memory_template.lua")
         
         self.stories = {}
         self.skin_templates = {}
@@ -22,28 +22,20 @@ class StoryReader:
         self.memory_templates = {}
         self.name_codes = {}
         self._load_data()
-
+ 
     def _load_data(self):
         try:
-            with open(self.story_filepath, 'r', encoding='utf-8') as f:
-                self.stories = json.load(f)
-            
-            with open(self.ship_skin_filepath, 'r', encoding='utf-8') as f:
-                self.skin_templates = json.load(f)
+            self.stories = LazyStoryDict(self.story_dirpath)
+            self.skin_templates = parse_lua_config_file(self.ship_skin_filepath)
+            self.memory_groups = parse_lua_config_file(self.memory_group_filepath)
+            self.memory_templates = parse_lua_config_file(self.memory_template_filepath)
                 
-            with open(self.memory_group_filepath, 'r', encoding='utf-8') as f:
-                self.memory_groups = json.load(f)
-                
-            with open(self.memory_template_filepath, 'r', encoding='utf-8') as f:
-                self.memory_templates = json.load(f)
-                
-            name_code_filepath = os.path.join(self.data_dir, self.region, "ShareCfg", "name_code.json")
+            name_code_filepath = os.path.join(self.data_dir, self.region, "ShareCfg", "name_code.lua")
             if os.path.exists(name_code_filepath):
-                with open(name_code_filepath, 'r', encoding='utf-8') as f:
-                    self.name_codes = json.load(f)
+                self.name_codes = parse_lua_config_file(name_code_filepath)
                     
         except Exception as e:
-            print(f"Error loading JSON data for {self.region}: {e}")
+            print(f"Error loading Lua data for {self.region}: {e}")
 
     def get_parsed_stories(self):
         """
@@ -117,15 +109,14 @@ class StoryReader:
             "chapters": []
         }
         
-        for story_key, val in self.stories.items():
-            if not isinstance(val, dict) or 'scripts' not in val:
-                continue
-                
-            # Exclude primarily numeric keys like 1, 2, 3 as they are usually irrelevant fragments if not linked
+        for story_key in self.stories.keys():
             if story_key.isdigit():
                 continue
                 
             if story_key.lower() not in used_stories:
+                val = self.stories[story_key]
+                if not isinstance(val, dict) or 'scripts' not in val:
+                    continue
                 # Use the key itself as the chapter title
                 chapter_title = story_key
                 parsed["non-archived"]["chapters"].append({"title": chapter_title, "scripts": val['scripts']})
@@ -235,9 +226,9 @@ class StoryReader:
         # if the actor_group is the same as the actor_id_endwith0_group, then use the name of the actor_id_endwith0_str
         actor_id_endwith0_str = actor_id_str[:-1] + "0"
         if actor_id_endwith0_str in self.skin_templates:
-            actor_group = self.skin_templates[actor_id_str]['ship_group']        
-            actor_id_endwith0_group = self.skin_templates[actor_id_endwith0_str]['ship_group']
-            if actor_group == actor_id_endwith0_group:
+            actor_group = self.skin_templates[actor_id_str].get('ship_group')        
+            actor_id_endwith0_group = self.skin_templates[actor_id_endwith0_str].get('ship_group')
+            if actor_group is not None and actor_id_endwith0_group is not None and actor_group == actor_id_endwith0_group:
                 actor_id_endwith0_rawname = self.skin_templates[actor_id_endwith0_str]['name']
                 actor_name = self.resolve_actor_name(actor_id_endwith0_rawname)
                 actor_skin_name = self.resolve_actor_name(actor_rawname)

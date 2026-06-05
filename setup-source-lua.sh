@@ -27,6 +27,11 @@ cat <<EOF >> .git/info/sparse-checkout
 /JP/ShareCfg/ship_skin_template.lua
 /KR/ShareCfg/ship_skin_template.lua
 /TW/ShareCfg/ship_skin_template.lua
+/CN/ShareCfg/ship_skin_template_sublist/
+/EN/ShareCfg/ship_skin_template_sublist/
+/JP/ShareCfg/ship_skin_template_sublist/
+/KR/ShareCfg/ship_skin_template_sublist/
+/TW/ShareCfg/ship_skin_template_sublist/
 /CN/ShareCfg/memory_template.lua
 /EN/ShareCfg/memory_template.lua
 /JP/ShareCfg/memory_template.lua

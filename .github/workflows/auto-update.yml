@@ -22,7 +22,7 @@ jobs:
       - name: Check for updates (Should we run?)
         id: check_update
         run: |
-          TARGET_REPO="https://github.com/AzurLaneTools/AzurLaneData.git"
+          TARGET_REPO="https://github.com/AzurLaneTools/AzurLaneLuaScripts.git"
 
           LATEST_SHA=$(git ls-remote "$TARGET_REPO" refs/heads/main | awk '{print $1}')
           echo "Sauce Repo last commit: $LATEST_SHA"
@@ -47,8 +47,13 @@ jobs:
       - name: Run sparse checkout script
         if: steps.check_update.outputs.DO_UPDATE == 'true'
         run: |
-          chmod +x ./setup-source.sh
-          ./setup-source.sh
+          chmod +x ./setup-source-lua.sh
+          ./setup-source-lua.sh
+
+      - name: Install dependencies
+        if: steps.check_update.outputs.DO_UPDATE == 'true'
+        run: |
+          python3 -m pip install -r requirements.txt
 
       - name: Run main processing script
         if: steps.check_update.outputs.DO_UPDATE == 'true'
@@ -64,4 +69,4 @@ jobs:
           publish_dir: ./output
           user_name: "Bot"
           user_email: "268117545+jcxyis-bot[bot]@users.noreply.github.com"
-          commit_message: "Auto update -> https://github.com/AzurLaneTools/AzurLaneData/commit/${{ env.TARGET_SHA }}"
+          commit_message: "Auto update -> https://github.com/AzurLaneTools/AzurLaneLuaScripts/commit/${{ env.TARGET_SHA }}"

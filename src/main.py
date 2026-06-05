@@ -2,6 +2,13 @@ import argparse
 import sys
 import traceback
 import os
+
+# Reconfigure stdout/stderr to use UTF-8 to prevent UnicodeEncodeError on Windows
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
+if hasattr(sys.stderr, 'reconfigure'):
+    sys.stderr.reconfigure(encoding='utf-8')
+
 from story_reader import StoryReader
 from html_writer import HtmlWriter
 
@@ -18,8 +25,8 @@ def main():
     parser.add_argument(
         "--data-dir",
         type=str,
-        default=os.path.join(project_root, "AzurLaneData"),
-        help="Path to the AzurLaneData directory."
+        default=os.path.join(project_root, "AzurLaneDataLua"),
+        help="Path to the AzurLaneDataLua directory."
     )
     parser.add_argument(
         "--out-dir",
