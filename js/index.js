@@ -10,6 +10,7 @@ const typeNames = {
     "1": "Main Story",
     "2": "Event",
     "3": "Character Story",
+    "4": "Hall of Fame",
     "non-archived": "Non Archived"
 };
 
@@ -17,8 +18,7 @@ const subtypeNames = {
     "2": { // Subtypes for Type 2 (Event)
         "1": "Event (EX)",
         "2": "Special (SP)",
-        "3": "Permanent (Daily Life)",
-        "4": "Hall of Fame",
+        "3": "Permanent (Daily Life)",        
     }
 };
 
