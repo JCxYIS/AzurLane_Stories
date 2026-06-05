@@ -1,7 +1,7 @@
 #!/bin/bash
 
-REPO_URL="https://github.com/AzurLaneTools/AzurLaneData.git"
-TARGET_DIR="AzurLaneData"
+REPO_URL="https://github.com/AzurLaneTools/AzurLaneLuaScripts.git"
+TARGET_DIR="AzurLaneDataLua"
 
 # Remove old
 echo "Recreating $TARGET_DIR"
@@ -17,31 +17,36 @@ git config core.sparseCheckoutCone false
 
 # Set required files
 cat <<EOF >> .git/info/sparse-checkout
-/CN/GameCfg/story.json
-/EN/GameCfg/story.json
-/JP/GameCfg/storyjp.json
-/KR/GameCfg/story.json
-/TW/GameCfg/story.json
-/CN/ShareCfg/ship_skin_template.json
-/EN/ShareCfg/ship_skin_template.json
-/JP/ShareCfg/ship_skin_template.json
-/KR/ShareCfg/ship_skin_template.json
-/TW/ShareCfg/ship_skin_template.json
-/CN/ShareCfg/memory_template.json
-/EN/ShareCfg/memory_template.json
-/JP/ShareCfg/memory_template.json
-/KR/ShareCfg/memory_template.json
-/TW/ShareCfg/memory_template.json
-/CN/ShareCfg/memory_group.json
-/EN/ShareCfg/memory_group.json
-/JP/ShareCfg/memory_group.json
-/KR/ShareCfg/memory_group.json
-/TW/ShareCfg/memory_group.json
-/CN/ShareCfg/name_code.json
-/EN/ShareCfg/name_code.json
-/JP/ShareCfg/name_code.json
-/KR/ShareCfg/name_code.json
-/TW/ShareCfg/name_code.json
+/CN/GameCfg/story/
+/EN/GameCfg/story/
+/JP/GameCfg/storyjp/
+/KR/GameCfg/story/
+/TW/GameCfg/story/
+/CN/ShareCfg/ship_skin_template.lua
+/EN/ShareCfg/ship_skin_template.lua
+/JP/ShareCfg/ship_skin_template.lua
+/KR/ShareCfg/ship_skin_template.lua
+/TW/ShareCfg/ship_skin_template.lua
+/CN/ShareCfg/ship_skin_template_sublist/
+/EN/ShareCfg/ship_skin_template_sublist/
+/JP/ShareCfg/ship_skin_template_sublist/
+/KR/ShareCfg/ship_skin_template_sublist/
+/TW/ShareCfg/ship_skin_template_sublist/
+/CN/ShareCfg/memory_template.lua
+/EN/ShareCfg/memory_template.lua
+/JP/ShareCfg/memory_template.lua
+/KR/ShareCfg/memory_template.lua
+/TW/ShareCfg/memory_template.lua
+/CN/ShareCfg/memory_group.lua
+/EN/ShareCfg/memory_group.lua
+/JP/ShareCfg/memory_group.lua
+/KR/ShareCfg/memory_group.lua
+/TW/ShareCfg/memory_group.lua
+/CN/ShareCfg/name_code.lua
+/EN/ShareCfg/name_code.lua
+/JP/ShareCfg/name_code.lua
+/KR/ShareCfg/name_code.lua
+/TW/ShareCfg/name_code.lua
 EOF
 
 git pull --depth=1 origin main

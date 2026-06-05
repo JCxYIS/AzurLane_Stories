@@ -9,7 +9,7 @@ The memory archive for Azur Lane, automatically generated and hosted on GitHub P
 
 ## Automated Update
 
-This project includes a GitHub Actions workflow that automatically checks for updates from [AzurLaneData Repository](https://github.com/AzurLaneTools/AzurLaneData), and regenerates the site daily.
+This project includes a GitHub Actions workflow that automatically checks for updates from [AzurLaneDataLua Repository](https://github.com/AzurLaneTools/AzurLaneLuaScripts), and regenerates the site daily.
 
 ## Keyboard Shortcuts
 
@@ -17,6 +17,9 @@ This project includes a GitHub Actions workflow that automatically checks for up
 - `o`: Toggle UI (Story Page)
 
 ## Development note
+
+> Because [AzurLaneData Repository](https://github.com/AzurLaneTools/AzurLaneData) is no longer updating, we are changing data source to [AzurLaneDataLua Repository](https://github.com/AzurLaneTools/AzurLaneLuaScripts).   
+> If you want to load from old data source, please use [json branch](https://github.com/JCxYIS/AzurLane_Stories/tree/web)
 
 ### Requirements
 

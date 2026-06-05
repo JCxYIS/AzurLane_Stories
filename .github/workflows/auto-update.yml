@@ -47,8 +47,8 @@ jobs:
       - name: Run sparse checkout script
         if: steps.check_update.outputs.DO_UPDATE == 'true'
         run: |
-          chmod +x ./setup-source-lua.sh
-          ./setup-source-lua.sh
+          chmod +x ./setup-source.sh
+          ./setup-source.sh
 
       - name: Install dependencies
         if: steps.check_update.outputs.DO_UPDATE == 'true'
@@ -69,4 +69,4 @@ jobs:
           publish_dir: ./output
           user_name: "Bot"
           user_email: "268117545+jcxyis-bot[bot]@users.noreply.github.com"
-          commit_message: "Auto update -> https://github.com/AzurLaneTools/AzurLaneLuaScripts/commit/${{ env.TARGET_SHA }}"
+          commit_message: "Auto update -> Match https://github.com/AzurLaneTools/AzurLaneLuaScripts/commit/${{ env.TARGET_SHA }}"
