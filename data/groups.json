@@ -3216,12 +3216,22 @@
       "CN": "红树林的守护精灵",
       "EN": "Guardian Fae of the Mangroves",
       "JP": "エヴァーツェンコラボストーリー",
-      "KR": "맹그로브의 수호정령",
+      "KR": "에버트센 콜라보 스토리",
       "TW": "紅樹林的守護精靈"
     },
     "type": 2,
     "subtype": 3,
     "icon": "memory_hongshulindeshouhujingling"
+  },
+  "369": {
+    "titles": {
+      "CN": "美梦巡演奇妙夜",
+      "EN": "Miracle by Midnight",
+      "JP": "幻夢のカヴァルカード"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "memory_meimengxunyanqimiaoye1"
   },
   "501": {
     "titles": {
@@ -4500,7 +4510,8 @@
       "CN": "独占时光",
       "EN": "Bonded Together",
       "JP": "二人繋ぎ",
-      "KR": "하나로 묶인 두 사람"
+      "KR": "하나로 묶인 두 사람",
+      "TW": "獨佔時光"
     },
     "type": 3,
     "subtype": 0,
@@ -4656,7 +4667,8 @@
     "titles": {
       "CN": "心之所绘",
       "EN": "What the Heart Draws",
-      "JP": "心に描くもの"
+      "JP": "心に描くもの",
+      "KR": "마음에 그리는 것"
     },
     "type": 3,
     "subtype": 0,
