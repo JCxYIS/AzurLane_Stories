@@ -122,17 +122,54 @@ def extract_lua_table(s, start_idx):
         
     return None
 
+def parse_sharecfgdata_file(filepath):
+    """
+    Parses a streaming config file in sharecfgdata (e.g. ship_skin_template.lua)
+    which consists of multiple lines like _G.pg.base.ship_skin_template[ID] = { ... }
+    """
+    if not os.path.exists(filepath):
+        return {}
+        
+    with open(filepath, 'r', encoding='utf-8') as f:
+        content = f.read()
+        
+    cfg_name = os.path.splitext(os.path.basename(filepath))[0]
+    pattern = re.compile(
+        r'_G\.pg\.base\.' + re.escape(cfg_name) + r'\[(\d+)\]\s*=\s*(\{.*?^\})',
+        re.DOTALL | re.MULTILINE
+    )
+    
+    data = {}
+    for match in pattern.finditer(content):
+        id_str = match.group(1)
+        table_str = match.group(2)
+        try:
+            parsed = luadata.unserialize(table_str)
+            if isinstance(parsed, (list, tuple)) and len(parsed) > 0:
+                data[id_str] = parsed[0]
+            elif isinstance(parsed, dict):
+                data[id_str] = parsed
+        except Exception as e:
+            print(f"Error parsing entry {id_str} in {filepath}: {e}")
+            
+    return data
+
 def parse_lua_config_file(filepath):
     """
     Parses a sharecfg Lua file (e.g. name_code.lua) and returns a python dict.
     We support:
-    - Recursive loading and merging of ship_skin_template sublist files.
+    - Recursive loading of sharecfgdata files if it's ship_skin_template.lua.
     - Multiple index assignments pattern (pg.base.name[1] = { ... }) transformed and parsed in one go.
     - Single table assignments pattern (pg.base.name = { ... }) parsed directly.
     """
     filename = os.path.basename(filepath)
     if filename == "ship_skin_template.lua":
         dirpath = os.path.dirname(filepath)
+        region_dir = os.path.dirname(dirpath)
+        sharecfgdata_path = os.path.join(region_dir, "sharecfgdata", "ship_skin_template.lua")
+        if os.path.exists(sharecfgdata_path):
+            return parse_sharecfgdata_file(sharecfgdata_path)
+            
         sublist_dir = os.path.join(dirpath, "ship_skin_template_sublist")
         data = {}
         if os.path.exists(sublist_dir):
