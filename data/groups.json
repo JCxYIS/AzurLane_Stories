@@ -3228,7 +3228,9 @@
     "titles": {
       "CN": "美梦巡演奇妙夜",
       "EN": "Miracle by Midnight",
-      "JP": "幻夢のカヴァルカード"
+      "JP": "幻夢のカヴァルカード",
+      "KR": "환몽의 카발카드",
+      "TW": "美夢巡演奇妙夜"
     },
     "type": 2,
     "subtype": 2,
@@ -4674,6 +4676,16 @@
     "type": 3,
     "subtype": 0,
     "icon": "title_chara_lafeier"
+  },
+  "624": {
+    "titles": {
+      "CN": "为了绝对的笑容",
+      "EN": "For the Perfect Smile",
+      "JP": "絶対的な笑顔のために"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_pulimaosi"
   },
   "1000": {
     "titles": {
