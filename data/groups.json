@@ -3236,6 +3236,16 @@
     "subtype": 2,
     "icon": "memory_meimengxunyanqimiaoye1"
   },
+  "370": {
+    "titles": {
+      "CN": "自动步兵人形之旅",
+      "EN": "An Android's Journey",
+      "JP": "自動歩兵人形の旅"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "memory_zidongbubingrenxingzhilv"
+  },
   "501": {
     "titles": {
       "CN": "明石的委托",
