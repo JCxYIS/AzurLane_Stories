@@ -3246,6 +3246,24 @@
     "subtype": 2,
     "icon": "memory_zidongbubingrenxingzhilv"
   },
+  "371": {
+    "titles": {
+      "CN": "怪谈纪实：逃离白夜山庄！",
+      "JP": "怪談実録：白夜ヴィラより脱出せよ！"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "memory_guaitanjishi1"
+  },
+  "373": {
+    "titles": {
+      "CN": "特别竞拍时刻",
+      "JP": "特別オークション"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "memory_tebiejingpaishike"
+  },
   "501": {
     "titles": {
       "CN": "明石的委托",
@@ -4691,7 +4709,9 @@
     "titles": {
       "CN": "为了绝对的笑容",
       "EN": "For the Perfect Smile",
-      "JP": "絶対的な笑顔のために"
+      "JP": "絶対的な笑顔のために",
+      "KR": "절대적인 미소를 위해",
+      "TW": "為了絕對的笑容"
     },
     "type": 3,
     "subtype": 0,
