@@ -3252,17 +3252,30 @@
     "titles": {
       "CN": "怪谈纪实：逃离白夜山庄！",
       "EN": "Authentic Horror Story: Escape from White Night Manor!",
-      "JP": "怪談実録：白夜ヴィラより脱出せよ！"
+      "JP": "怪談実録：白夜ヴィラより脱出せよ！",
+      "KR": "괴담 실록: 백야 빌라에서 탈출하라!",
+      "TW": "怪談紀實：逃離白夜山莊！"
     },
     "type": 2,
     "subtype": 2,
     "icon": "memory_guaitanjishi1"
+  },
+  "372": {
+    "titles": {
+      "CN": "有客自来",
+      "EN": "Fateful Encounter",
+      "JP": "有客自来"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "memory_youkezilai"
   },
   "373": {
     "titles": {
       "CN": "特别竞拍时刻",
       "EN": "Top Bidder",
       "JP": "特別オークション",
+      "KR": "特别竞拍时刻",
       "TW": "特別競標時刻"
     },
     "type": 2,
@@ -4721,6 +4734,16 @@
     "type": 3,
     "subtype": 0,
     "icon": "title_chara_pulimaosi"
+  },
+  "625": {
+    "titles": {
+      "CN": "我们的第八大不可思议",
+      "EN": "Our Eighth Mystery",
+      "JP": "あたしたちの、八番目の不思議"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_shengtafei"
   },
   "1000": {
     "titles": {
