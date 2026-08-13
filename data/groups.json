@@ -3275,12 +3275,30 @@
       "CN": "特别竞拍时刻",
       "EN": "Top Bidder",
       "JP": "特別オークション",
-      "KR": "特别竞拍时刻",
+      "KR": "특별 경매 시간",
       "TW": "特別競標時刻"
     },
     "type": 2,
     "subtype": 3,
     "icon": "memory_tebiejingpaishike"
+  },
+  "374": {
+    "titles": {
+      "CN": "沉溺于星光之城",
+      "JP": "夢光のアストリウム"
+    },
+    "type": 2,
+    "subtype": 1,
+    "icon": "memory_chenniyuxingguangzhicheng1"
+  },
+  "375": {
+    "titles": {
+      "CN": "滨海极速：夏日狂飙",
+      "JP": "フラッシュウェーブ：サマーレース"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "memory_binhaijisu1"
   },
   "501": {
     "titles": {
