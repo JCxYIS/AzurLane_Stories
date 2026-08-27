@@ -3288,7 +3288,9 @@
     "titles": {
       "CN": "沉溺于星光之城",
       "EN": "Depths of the Astrarium",
-      "JP": "夢光のアストリウム"
+      "JP": "夢光のアストリウム",
+      "KR": "몽광의 아스트라리움",
+      "TW": "沉溺於星光之城"
     },
     "type": 2,
     "subtype": 1,
@@ -3298,11 +3300,23 @@
     "titles": {
       "CN": "滨海极速：夏日狂飙",
       "EN": "Scorching Summer Wavechasers",
-      "JP": "フラッシュウェーブ：サマーレース"
+      "JP": "フラッシュウェーブ：サマーレース",
+      "KR": "플래시 웨이브: 서머 레이스",
+      "TW": "濱海極速：夏日狂飆"
     },
     "type": 2,
     "subtype": 3,
     "icon": "memory_binhaijisu1"
+  },
+  "376": {
+    "titles": {
+      "CN": "“大人物”的预告信",
+      "EN": "The Big Shot's Proclamation",
+      "JP": "「偉いやつ」の予告状"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "memory_darenwudeyugaoxin"
   },
   "501": {
     "titles": {
