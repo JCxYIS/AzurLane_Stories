@@ -3318,6 +3318,16 @@
     "subtype": 2,
     "icon": "memory_darenwudeyugaoxin"
   },
+  "377": {
+    "titles": {
+      "CN": "Fight！都市求职大作战！",
+      "EN": "Fight On! The Ultimate Job-Hunting Operation!",
+      "JP": "ファイト一発！就活大作戦！"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "memory_dushiqiuzhidazuozhan"
+  },
   "501": {
     "titles": {
       "CN": "明石的委托",
@@ -4782,6 +4792,16 @@
     "type": 3,
     "subtype": 0,
     "icon": "title_chara_shengtafei"
+  },
+  "626": {
+    "titles": {
+      "CN": "驻留的幽香",
+      "EN": "Her Scent Lingers",
+      "JP": "幽かに聞かせば、白鳳の香"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_baifeng"
   },
   "1000": {
     "titles": {
