@@ -3328,6 +3328,26 @@
     "subtype": 2,
     "icon": "memory_dushiqiuzhidazuozhan"
   },
+  "378": {
+    "titles": {
+      "CN": "幽影迷城",
+      "EN": "Tales of the Paranormal",
+      "JP": "妖異奇譚"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "memory_youyingmicheng1"
+  },
+  "379": {
+    "titles": {
+      "CN": "异常的日常进行中",
+      "EN": "A Slightly Paranormal State of Affairs",
+      "JP": "今日も異常な日常"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "memory_yichangderichangjinxingzhong1"
+  },
   "501": {
     "titles": {
       "CN": "明石的委托",
