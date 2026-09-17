@@ -3324,7 +3324,9 @@
     "titles": {
       "CN": "Fight！都市求职大作战！",
       "EN": "Fight On! The Ultimate Job-Hunting Operation!",
-      "JP": "ファイト一発！就活大作戦！"
+      "JP": "ファイト一発！就活大作戦！",
+      "KR": "Fight! 도시 구직 대작전!",
+      "TW": "Fight！都市求職大作戰！"
     },
     "type": 2,
     "subtype": 2,
@@ -4639,7 +4641,8 @@
       "CN": "无效节能",
       "EN": "Ineffective Energy Saving",
       "JP": "無効な省エネ",
-      "KR": "무효한 에너지 절약"
+      "KR": "무효한 에너지 절약",
+      "TW": "無效節能"
     },
     "type": 3,
     "subtype": 0,
@@ -4718,7 +4721,8 @@
       "CN": "幸福是不可计算数",
       "EN": "Happiness Is Incalculable",
       "JP": "幸せは計算不可能数",
-      "KR": "행복은 계산 불가능"
+      "KR": "행복은 계산 불가능",
+      "TW": "幸福是不可計算數"
     },
     "type": 3,
     "subtype": 0,
@@ -4819,7 +4823,9 @@
     "titles": {
       "CN": "驻留的幽香",
       "EN": "Her Scent Lingers",
-      "JP": "幽かに聞かせば、白鳳の香"
+      "JP": "幽かに聞かせば、白鳳の香",
+      "KR": "하얀 봉황의 그윽한 향기",
+      "TW": "駐留的幽香"
     },
     "type": 3,
     "subtype": 0,
