@@ -3336,7 +3336,9 @@
     "titles": {
       "CN": "幽影迷城",
       "EN": "Tales of the Paranormal",
-      "JP": "妖異奇譚"
+      "JP": "妖異奇譚",
+      "KR": "유영 미성",
+      "TW": "幽影迷城"
     },
     "type": 2,
     "subtype": 2,
@@ -3346,7 +3348,9 @@
     "titles": {
       "CN": "异常的日常进行中",
       "EN": "A Slightly Paranormal State of Affairs",
-      "JP": "今日も異常な日常"
+      "JP": "今日も異常な日常",
+      "KR": "이상한 일상 진행 중",
+      "TW": "異常的日常進行中"
     },
     "type": 2,
     "subtype": 3,
