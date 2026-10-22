@@ -3356,6 +3356,26 @@
     "subtype": 3,
     "icon": "memory_yichangderichangjinxingzhong1"
   },
+  "380": {
+    "titles": {
+      "CN": "飓风与雾霭回廊",
+      "EN": "Tempesta and the Corridor of Fog",
+      "JP": "テンペスタと霧靄回廊"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "memory_jufengyuwuaihuilang1"
+  },
+  "381": {
+    "titles": {
+      "CN": "光与暗的邀约",
+      "EN": "Heaven or Hell: The Beckoning",
+      "JP": "光と闇の物語"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "memory_guangyuandeyaoyue"
+  },
   "501": {
     "titles": {
       "CN": "明石的委托",
@@ -4839,7 +4859,9 @@
     "titles": {
       "CN": "伏尔加的“健康任务”",
       "EN": "Volga's Healthy Missions",
-      "JP": "ヴォルガの「健康任務」"
+      "JP": "ヴォルガの「健康任務」",
+      "KR": "볼가의 「건강 임무」",
+      "TW": "窩瓦的「健康任務」"
     },
     "type": 3,
     "subtype": 0,
