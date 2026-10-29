@@ -3360,7 +3360,8 @@
     "titles": {
       "CN": "飓风与雾霭回廊",
       "EN": "Tempesta and the Corridor of Fog",
-      "JP": "テンペスタと霧靄回廊"
+      "JP": "テンペスタと霧靄回廊",
+      "TW": "颶風與霧靄迴廊 "
     },
     "type": 2,
     "subtype": 2,
@@ -3370,7 +3371,8 @@
     "titles": {
       "CN": "光与暗的邀约",
       "EN": "Heaven or Hell: The Beckoning",
-      "JP": "光と闇の物語"
+      "JP": "光と闇の物語",
+      "TW": "光與暗的邀約 "
     },
     "type": 2,
     "subtype": 3,
