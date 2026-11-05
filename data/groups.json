@@ -3361,6 +3361,7 @@
       "CN": "飓风与雾霭回廊",
       "EN": "Tempesta and the Corridor of Fog",
       "JP": "テンペスタと霧靄回廊",
+      "KR": "템페스타와 안개 회랑",
       "TW": "颶風與霧靄迴廊 "
     },
     "type": 2,
@@ -3372,6 +3373,7 @@
       "CN": "光与暗的邀约",
       "EN": "Heaven or Hell: The Beckoning",
       "JP": "光と闇の物語",
+      "KR": "빛과 어둠의 이야기",
       "TW": "光與暗的邀約 "
     },
     "type": 2,
@@ -4868,6 +4870,16 @@
     "type": 3,
     "subtype": 0,
     "icon": "title_chara_fuerjia"
+  },
+  "628": {
+    "titles": {
+      "CN": "此刻即永恒",
+      "EN": "The Eternal Now",
+      "JP": "今、即ち永遠なり"
+    },
+    "type": 3,
+    "subtype": 0,
+    "icon": "title_chara_xiangbin"
   },
   "1000": {
     "titles": {
