@@ -3380,6 +3380,26 @@
     "subtype": 3,
     "icon": "memory_guangyuandeyaoyue"
   },
+  "382": {
+    "titles": {
+      "CN": "开幕！天使们的碧蓝舞台-「展会篇」",
+      "EN": "It's Showtime! Angels' Azur Stage - Club Exhibition",
+      "JP": "開幕！天使たちのアズールステージ-「ステージ編」"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "memory_tianshimengdebilanwutai1"
+  },
+  "383": {
+    "titles": {
+      "CN": "开幕！天使们的碧蓝舞台-「日常篇」",
+      "EN": "It's Showtime! Angels' Azur Stage - Daily Stories",
+      "JP": "開幕！天使たちのアズールステージ-「日常編」"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "memory_tianshimengdebilanwutai2"
+  },
   "501": {
     "titles": {
       "CN": "明石的委托",
