@@ -3400,6 +3400,16 @@
     "subtype": 2,
     "icon": "memory_tianshimengdebilanwutai2"
   },
+  "384": {
+    "titles": {
+      "CN": "港区时尚特刊：心动诊疗时间",
+      "EN": "Port Fashion Collection: Heartful Remedies",
+      "JP": "着せ替え特集：ナイトコール"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "memory_gangqushishangtekan"
+  },
   "501": {
     "titles": {
       "CN": "明石的委托",
@@ -4895,7 +4905,8 @@
     "titles": {
       "CN": "此刻即永恒",
       "EN": "The Eternal Now",
-      "JP": "今、即ち永遠なり"
+      "JP": "今、即ち永遠なり",
+      "KR": "지금이 곧 영원이 되리"
     },
     "type": 3,
     "subtype": 0,
