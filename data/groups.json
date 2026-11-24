@@ -3406,7 +3406,28 @@
     "titles": {
       "CN": "港区时尚特刊：心动诊疗时间",
       "EN": "Port Fashion Collection: Heartful Remedies",
-      "JP": "着せ替え特集：ナイトコール"
+      "JP": "着せ替え特集：ナイトコール",
+      "TW": "港區時尚特刊：心動診療時間"
+    },
+    "type": 2,
+    "subtype": 3,
+    "icon": "memory_gangqushishangtekan"
+  },
+  "385": {
+    "titles": {
+      "CN": "真理学院的转校生",
+      "EN": "The Transfer Student of Veritas Academy",
+      "JP": "真理学園の転校生"
+    },
+    "type": 2,
+    "subtype": 2,
+    "icon": "memory_zhenlixueyuandezhuanxiaosheng1"
+  },
+  "386": {
+    "titles": {
+      "CN": "港区时尚特刊：美丽水世界",
+      "EN": "Port Fashion Collection: Autumnal Waterworld",
+      "JP": "着せ替え特集：秋の水世界"
     },
     "type": 2,
     "subtype": 3,
